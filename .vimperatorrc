@@ -1,0 +1,8 @@
+"2.3.1 (created: 2010/04/07 18:56:53)
+
+set runtimepath=/home/yueyang/.vimperator
+source! /home/yueyang/.vimperatorrc.local
+
+" vim: set ft=vimperator:
+
+:map <F2> :tabopen  ~/.mozilla/firefox/jo7b9euf.default/bookmarks.html<CR>
