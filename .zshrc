@@ -105,6 +105,7 @@ hash -d T="/home/yueyang/Temp"
 hash -d C="/home/yueyang/Workspace/C"
 hash -d Cpp="/home/yueyang/Workspace/Cpp"
 hash -d P="/home/yueyang/Workspace/Python"
+hash -d p="/home/yueyang/Workspace/Perl"
 hash -d PHP="/home/yueyang/Workspace/PHP"
 hash -d W="/home/yueyang/Workspace/03_code/src"
 
