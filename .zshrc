@@ -294,3 +294,4 @@ uncmp () {
 
 #auto into paht
 setopt autocd
+
