@@ -20,3 +20,10 @@ updata-notifier &
 
 exec /usr/local/bin/awesome
 
+#wapper random
+while true;
+do
+    awsetbg -r </home/yueyang/Pictures/wapper>
+      sleep 15m
+    done &
+

@@ -1,11 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/yueyang/Workspace/C'
-let g:netrw_dirhist_2='/home/yueyang/src/curl-7.21.6'
-let g:netrw_dirhist_3='/home/yueyang/tmp/test'
-let g:netrw_dirhist_4='/usr/local/include/libxml2'
-let g:netrw_dirhist_5='/home/yueyang/.filezilla'
-let g:netrw_dirhist_6='/home/yueyang/tmp'
-let g:netrw_dirhist_7='/etc/httpd/run'
-let g:netrw_dirhist_8='/media/代码阅读方法与实践/socket/test'
-let g:netrw_dirhist_9='/home/yueyang/Documents'
+let g:netrw_dirhist_cnt =0
