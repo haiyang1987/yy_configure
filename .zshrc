@@ -292,6 +292,6 @@ uncmp () {
   fi
 }
 
-#auto into paht
+#auto into path
 setopt autocd
 
