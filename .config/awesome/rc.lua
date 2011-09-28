@@ -248,7 +248,7 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
                               awful.key({ modkey,           }, "F6",    function () awful.util.spawn("virtualbox") end),
                               awful.key({ modkey,           }, "F7",    function () awful.util.spawn("evolution") end),
                               awful.key({ modkey,           }, "F8",    function () awful.util.spawn("rhythmbox") end),
-                              awful.key({ modkey,           }, "F9",    function () awful.util.spawn("") end),
+                              awful.key({ modkey,           }, "F9",    function () awful.util.spawn("gnome-volume-control") end),
                               awful.key({ modkey,           }, "F10",   function () awful.util.spawn("gnome-screenshot") end),
                               awful.key({ modkey,           }, "F11",   function () awful.util.spawn("filezilla") end),
                               awful.key({ modkey,           }, "F12",   function () awful.util.spawn("gnome-screensaver-command -l") end),

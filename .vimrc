@@ -827,4 +827,7 @@ set tags=/home/yueyang/src/tags
 
 let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
 set grepprg=/bin/grep\ -nH
+""""""""""""""""""""""""""""""""""""""""
+let NERDChristmasTree=1
+set linespace=0
 
