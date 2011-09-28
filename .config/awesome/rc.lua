@@ -167,7 +167,7 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
                                   end, mytasklist.buttons)
 
                                   -- Create the wibox
-                                  mywibox[s] = awful.wibox({ position = "bottom", screen = s })
+                                  mywibox[s] = awful.wibox({ position = "top", screen = s })
                                   -- Add widgets to the wibox - order matters
                                   mywibox[s].widgets = {
                                       {
@@ -374,12 +374,6 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
                                   properties = { tag = tags[1][2], switchtotag = true } },
                                   { rule = { class = "Google-chrome" },
                                   properties = { tag = tags[1][2], switchtotag = true } },
-                                  { rule = { class = "Seamonkey" },
-                                  properties = { tag = tags[1][2], switchtotag = true } },
-                                  { rule = { class = "Seamonkey-bin" },
-                                  properties = { tag = tags[1][2], switchtotag = true } },
-                                  { rule = { class = "Epiphany" },
-                                  properties = { tag = tags[1][2], switchtotag = true } },
                                   -- tag 3: M_Coder
                                   -- Only need Terminal
 
@@ -397,25 +391,9 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
                                   { rule = { class = "nautilus" },
                                   properties = { tag = tags[1][7], switchtotag = true } },
 
-                                  -- tag 8: media
-                                  -- { rule = { class = "MPlayer" },
-                                  -- properties = { tag = tags[1][8], switchtotag = true, floating = true } },
-                                  -- { rule = { class = "Audacious" },
-                                  -- properties = { tag = tags[1][8], switchtotag = true, floating = true } },
-                                  -- { rule = { class = "Gmpc" },
-                                  -- properties = { tag = tags[1][8], switchtotag = true, floating = true } },
-                                  -- { rule = { class = "Smplayer" },
-                                  -- properties = { tag = tags[1][8], switchtotag = true, floating = true } },
-                                  -- { rule = { class = "Totem" },
-                                  -- properties = { tag = tags[1][8], switchtotag = true, floating = true } },
-                                  -- { rule = { class = "Vlc" },
-                                  -- properties = { tag = tags[1][8], switchtotag = true, floating = true } },
-                                  -- { rule = { class = "Gnome-volume-control" },
-                                  -- properties = { tag = tags[1][8], switchtotag = true, floating = true } },
-                                  -- { rule = { class = "Xfce4-mixer" },
-                                  -- properties = { tag = tags[1][8], switchtotag = true, floating = true } },
+                                  -- tag 8: Mics
 
-                                  -- tag 9: other
+                                  -- tag 9: Virtual-Box
                                   { rule = { class = "virtualbox" },
                                   properties = { tag = tags[1][9] } },
                               }
