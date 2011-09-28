@@ -89,7 +89,7 @@
     (add-to-list 'default-frame-alist '(font . "Droid Sans Mono-10"))
 
     ;;不要生成临时文件
-(setq-default make-backup-files nil)
+    (setq-default make-backup-files nil)
 
     ;;设置中文语言环境
     ;;(set-language-environment 'Chinese-GB)

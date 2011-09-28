@@ -433,3 +433,18 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
                               -- added for autostart
                               os.execute(".scripts/start-awesome.sh &")
 
+                              autorun = true
+                              autorunApps =
+                              {
+                                  "firefox",
+                                  "virtualbox",
+                                  "google-chrome",
+                                  "evolution",
+                                  "rhythmbox",
+                              }
+                              if autorun then
+                                  for app = 1, #autorunApps do
+                                      awful.util.spawn(autorunApps[app])
+                                  end
+                              end
+
