@@ -72,7 +72,7 @@ tags = {}
 for s = 1, screen.count() do
     -- Each screen has its own tag table.
     -- tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9 }, s)
-    tags[s] = awful.tag({ "1.Manager", "2.Browsers", "3.Main_Coder", "4.Slave_Coder", "5.SSH",
+    tags[s] = awful.tag({ "1.Manager", "2.Browsers", "3.Main_Code", "4.Slave_Code", "5.SSH",
     "6.Emacs", "7.Files", "8.Misc", "9.Virtual-Box", "10.Other" }, s, awful.layout.suit.tile)
 end
 -- }}}
@@ -437,10 +437,6 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
                               autorunApps =
                               {
                                   "firefox",
-                                  "virtualbox",
-                                  "google-chrome",
-                                  "evolution",
-                                  "rhythmbox",
                               }
                               if autorun then
                                   for app = 1, #autorunApps do

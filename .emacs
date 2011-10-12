@@ -188,16 +188,16 @@
 (setq enable-recursive-minibuffers t)
 
     ;;显示80列就换行
-    ;;(add-hook 'message-mode-hook (lambda ()
+    (add-hook 'message-mode-hook (lambda ()
                 ;;(setq default-fill-column 80) 
                 ;;(turn-on-auto-fill)))
 
 
     ;;禁止终端响铃
-(setq visiable-bell t) 
+    (setq visiable-bell t) 
         
     ;;设置tab为4个空格的宽度
-    ;;(setq default-tab-width 4)
+    (setq default-tab-width 4)
 
     ;;设置一下备份时的版本控制，这样更加安全。
     (setq version-control t)
@@ -397,7 +397,7 @@
 
     ;; session.el
     (require 'session)
-        (add-hook 'after-init-hook 'session-initialize)
+    (add-hook 'after-init-hook 'session-initialize)
 
 
 
@@ -521,9 +521,9 @@
 
     ;;Define own hook
     (defun MyCppHook ()
-     (setq indent-tabs-mode nil)
-     (setq global-hl-line-mode t)
-     (c-set-style "MyCppStyle"))                                   ;;设置这个hook对应于MyCppStyle
+    (setq indent-tabs-mode nil)
+    (setq global-hl-line-mode t)
+    (c-set-style "MyCppStyle"))                                   ;;设置这个hook对应于MyCppStyle
     (add-hook 'c++-mode-hook 'MyCppHook)                ;;将此hook应用于所有的c++模式。
 
 
@@ -813,10 +813,10 @@
     (require 'auto-header)
 
     ;; 设置文件头中的姓名
-    (setq header-full-name "吴旭")
+    (setq header-full-name "yueyang")
 
     ;; 设置邮箱
-    (setq header-email-address "admirestator#gmail.com")
+    (setq header-email-address "bj.yueyang#gmail.com")
 
     ;; 设置每次保存时要更新的项目
     (setq header-update-on-save

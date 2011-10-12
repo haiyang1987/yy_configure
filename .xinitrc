@@ -7,7 +7,7 @@ xsetroot -solid black &
 gnome-screensaver &
 
 #enbale gnome theme
-gnome-settings-daemon &
+#gnome-settings-daemon &
 
 #enable power
 gnome-power-manager &
@@ -18,12 +18,10 @@ nm-applet &
 #enable auto-updata
 updata-notifier &
 
-exec /usr/local/bin/awesome
-
 #wapper random
-while true;
-do
-    awsetbg -r </home/yueyang/Pictures/wapper>
-      sleep 15m
-    done &
-
+#while true;
+#do
+#  awsetbg -r /home/yueyang/Pictures/wapper/linux
+#  sleep 10m
+#done &
+#

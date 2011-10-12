@@ -1,2 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/yueyang/tmp/04-CDN/install/jsoncpp-src-0.5.0/test/data'
+let g:netrw_dirhist_2='/home/yueyang/Workspace/C/src/sub_projects/python/decode_feiliao/scripts'
+let g:netrw_dirhist_3='/home/yueyang/Workspace/C/src/sub_projects/python/decode_feiliao/conf'
