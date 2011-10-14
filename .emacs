@@ -154,7 +154,7 @@
 
 
     ;;用一个很大的 kill ring. 这样防止我不小心删掉重要的东西。
-(setq kill-ring-max 200)
+(setq kill-ring-max 2000)
 
     ;;显示括号匹配
 (show-paren-mode t) 
@@ -946,8 +946,8 @@
     ;;======================            Load linum                 =====================
     ;;调用linum.el(line number)来显示行号：
     ;;(add-to-list 'load-path"~/.emacs.d/plugins")
-    (require 'linum)
-(global-linum-mode 1)
+    (require 'linum-settings)
+    (global-linum-mode 1)
     ;;----------------------            END    linum                ---------------------
 
 
@@ -1036,6 +1036,40 @@
      )
      ;;;
 
+
+;;; package-list-package
+(save-excursion
+  (set-buffer buffer)
+  (goto-char (point-min))
+  (re-search-forward "^$" nil 'move)
+  (eval-region (point) (point-max))
+  (kill-buffer (current-buffer))))
+
+;;; This was installed by package-install.el.
+;;; This provides support for the package system and
+;;; interfacing with ELPA, the package archive.
+;;; Move this code earlier if you want to reference
+;;; packages in your .emacs.
+(when
+    (load
+     (expand-file-name "~/.emacs.d/elpa/package.el"))
+  (package-initialize))
+
+
+;;; This was installed by package-install.el.
+;;; This provides support for the package system and
+;;; interfacing with ELPA, the package archive.
+;;; Move this code earlier if you want to reference
+;;; packages in your .emacs.
+(when
+    (load
+     (expand-file-name "~/.emacs.d/elpa/package.el"))
+  (package-initialize))
+(put 'upcase-region 'disabled nil)
+(put 'set-goal-column 'disabled nil)
+
+(let ((buffer (url-retrieve-synchronously
+                              "http://tromey.com/elpa/package-install.el")))
 
 
 ;;; This was installed by package-install.el.

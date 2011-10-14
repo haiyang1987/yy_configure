@@ -1,22 +1,24 @@
 #!/usr/bin/env bash
 
-sleep 100
-xsetroot -solid black &
+#sleep 100
+#xsetroot -solid black &
+
+ibus-daemon > /dev/null 2>&1 &
 
 #enable screen saver
-gnome-screensaver &
+gnome-screensaver > /dev/null 2>&1 &
 
 #enbale gnome theme
 #gnome-settings-daemon &
 
 #enable power
-gnome-power-manager &
+gnome-power-manager > /dev/null 2>&1 &
 
 #enable network manager
-nm-applet &
+nm-applet > /dev/null 2>&1 &
 
 #enable auto-updata
-updata-notifier &
+updata-notifier > /dev/null 2>&1 &
 
 #wapper random
 #while true;
