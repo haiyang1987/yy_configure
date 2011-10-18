@@ -1,9 +1,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Filename:      .emacs
 ;;                
-;; Copyright (C) 2010,  admirestator
-;; Version:       20110906
-;; Author:        admirestator <admirestator#gmail.com>
+;; Copyright (C) 2010, picg 
+;; Version:       20111017
+;; Author:        picg <bj.yueyang#gmail.com>
 ;; Created at:    Mon Jun 21 15:56:07 2010
 ;;                
 ;; Description:   将此文件重命名为".emacs"，并在用户家
@@ -1037,14 +1037,6 @@
      ;;;
 
 
-;;; package-list-package
-(save-excursion
-  (set-buffer buffer)
-  (goto-char (point-min))
-  (re-search-forward "^$" nil 'move)
-  (eval-region (point) (point-max))
-  (kill-buffer (current-buffer))))
-
 ;;; This was installed by package-install.el.
 ;;; This provides support for the package system and
 ;;; interfacing with ELPA, the package archive.
@@ -1092,3 +1084,41 @@
     (load
      (expand-file-name "~/.emacs.d/elpa/package.el"))
   (package-initialize))
+
+;;; ==================== package-list-package ====================
+(save-excursion
+  (set-buffer buffer)
+  (goto-char (point-min))
+  (re-search-forward "^$" nil 'move)
+  (eval-region (point) (point-max))
+  (kill-buffer (current-buffer))))
+
+
+(setq-default make-backup-files nil)
+
+;; ========= Gnus Gmail Configure ==========
+;(add-to-list 'gnus-secondary-select-methods '(nnimap "gmail"
+;    (nnimap-address "imap.gmail.com")
+;    (nnimap-server-port 993)
+;    (nnimap-stream ssl)))
+;
+;(setq gnus-select-method '(nnimap "gmail"
+;    (nnimap-address "imap.gmail.com")
+;    (nnimap-server-port 993)
+;    (nnimap-stream ssl)))
+;
+;(setq message-send-mail-function 'smtpmail-send-it
+;    smtpmail-starttls-credentials '(("smtp.gmail.com" 587 nil nil))
+;    smtpmail-auth-credentials '(("smtp.gmail.com" 587 "bj.yueyang@gmail.com" nil))
+;    smtpmail-default-smtp-server "smtp.gmail.com"
+;    smtpmail-smtp-server "smtp.gmail.com"
+;    smtpmail-smtp-service 587
+;    smtpmail-local-domain "feinno.com")
+;
+;(setq mail-sources
+;      '((pop :server "pop.gmail.com"
+;             :port 995
+;             :user "bj.yueyang@gmail.com"
+;             :password ""
+;             :stream ssl)))
+;

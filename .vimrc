@@ -831,3 +831,7 @@ set grepprg=/bin/grep\ -nH
 let NERDChristmasTree=1
 set linespace=0
 
+set tabstop=4
+set softtabstop=4
+set autoindent
+
