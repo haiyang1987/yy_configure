@@ -5,4 +5,5 @@ source! /home/yueyang/.vimperatorrc.local
 
 " vim: set ft=vimperator:
 
+set set encoding=UTF-8
 :map <F2> :tabopen  ~/.mozilla/firefox/jo7b9euf.default/bookmarks.html<CR>
