@@ -105,9 +105,11 @@ hash -d T="/home/yueyang/Temp"
 hash -d C="/home/yueyang/Workspace/C"
 hash -d Cpp="/home/yueyang/Workspace/Cpp"
 hash -d P="/home/yueyang/Workspace/Python"
+hash -d R="/home/yueyang/Workspace/Ruby"
 hash -d p="/home/yueyang/Workspace/Perl"
 hash -d PHP="/home/yueyang/Workspace/PHP"
 hash -d W="/home/yueyang/Workspace/03_code/src"
+hash -d F="/home/yueyang/Workspace/fetion_interface/src"
 
 ##for Emacs在Emacs终端中使用Zsh的一些设置 不推荐在Emacs中使用它
 if [[ "$TERM" == "dumb" ]]; then
@@ -265,8 +267,8 @@ $PR_CYAN$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT$PR_NO_COLOUR '
 
 setprompt
 
-#export WORKON_HOME=$HOME/.virtualenvs
-#source /usr/local/bin/virtualenvwrapper.sh
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/bin/virtualenvwrapper.sh
 
 alias Emacs="emacs -nw"
 
