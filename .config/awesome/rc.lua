@@ -71,9 +71,9 @@ layouts =
 tags = {}
 for s = 1, screen.count() do
     -- Each screen has its own tag table.
-    -- tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9 }, s)
+    --tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 }, s)
     tags[s] = awful.tag({ "1.Manager", "2.Browsers", "3.Main_Code", "4.Slave_Code", "5.SSH",
-    "6.Emacs", "7.Files", "8.Misc", "9.Virtual-Box", "10.Other" }, s, awful.layout.suit.tile)
+    "6.Swap", "7.Files", "8.Misc", "9.Virtual-Box", "10.Other" }, s, awful.layout.suit.tile)
 end
 -- }}}
 
@@ -242,7 +242,7 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
                               awful.key({ modkey, "Control" }, "n", awful.client.restore),
                               -- Added by 8pm
                               awful.key({ modkey,           }, "F2",    function () awful.util.spawn("gnome-terminal") end),
-                              awful.key({ modkey,           }, "F3",    function () awful.util.spawn("firefox") end),
+                              awful.key({ modkey,           }, "F3",    function () awful.util.spawn("/opt/firefox/firefox") end),
                               awful.key({ modkey,           }, "F4",    function () awful.util.spawn("google-chrome") end),
                               awful.key({ modkey,           }, "F5",    function () awful.util.spawn("nautilus --no-desktop") end),
                               awful.key({ modkey,           }, "F6",    function () awful.util.spawn("virtualbox") end),
@@ -368,11 +368,7 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
                                   -- tag 2: code
                                   { rule = { class = "Firefox" },
                                   properties = { tag = tags[1][2], switchtotag = true } },
-                                  { rule = { class = "Firefox-bin" },
-                                  properties = { tag = tags[1][2], switchtotag = true } },
-                                  { rule = { class = "Chromium-browser" },
-                                  properties = { tag = tags[1][2], switchtotag = true } },
-                                  { rule = { class = "Google-chrome" },
+                                  { rule = { class = "chrome" },
                                   properties = { tag = tags[1][2], switchtotag = true } },
                                   -- tag 3: M_Coder
                                   -- Only need Terminal
@@ -391,7 +387,9 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
                                   { rule = { class = "nautilus" },
                                   properties = { tag = tags[1][7], switchtotag = true } },
 
-                                  -- tag 8: Mics
+                                  -- tag 8: Misc
+                                  { rule = { class = "evolution" },
+                                  properties = { tag = tags[1][8], switchtotag = true } },
 
                                   -- tag 9: Virtual-Box
                                   { rule = { class = "virtualbox" },
@@ -436,7 +434,7 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
                               autorun = true
                               autorunApps =
                               {
-                                  "firefox",
+                                  "/opt/firefox/firefox",
                               }
                               if autorun then
                                   for app = 1, #autorunApps do

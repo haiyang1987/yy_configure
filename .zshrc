@@ -105,6 +105,8 @@ hash -d T="/home/yueyang/Temp"
 hash -d C="/home/yueyang/Workspace/C"
 hash -d Cpp="/home/yueyang/Workspace/Cpp"
 hash -d P="/home/yueyang/Workspace/Python"
+hash -d J="/home/yueyang/Workspace/Java"
+hash -d j="/home/yueyang/Workspace/JS"
 hash -d R="/home/yueyang/Workspace/Ruby"
 hash -d p="/home/yueyang/Workspace/Perl"
 hash -d PHP="/home/yueyang/Workspace/PHP"
@@ -276,12 +278,12 @@ alias Emacs="emacs -nw"
 uncmp () {
   if [ -f $1 ] ; then
     case $1 in
-      *.tar.bz2)   tar xjf $1        ;;
-      *.tar.gz)    tar xzf $1     ;;
+      *.tar.bz2)   tar vxjf $1        ;;
+      *.tar.gz)    tar vxzf $1     ;;
       *.bz2)       bunzip2 $1       ;;
       *.rar)       unrar x $1     ;;
       *.gz)        gunzip $1     ;;
-      *.tar)       tar xf $1        ;;
+      *.tar)       tar vxf $1        ;;
       *.tbz2)      tar xjf $1      ;;
       *.tgz)       tar xzf $1       ;;
       *.zip)       unzip $1     ;;
