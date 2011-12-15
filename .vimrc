@@ -834,3 +834,7 @@ set tabstop=4
 set softtabstop=4
 set autoindent
 
+""""""""""""""""""""""""""""""""""""""""
+"tencent weibo
+"let g:weibo_access_token = '2412A18EDE68C007B906721C5DDA0BE9'
+
