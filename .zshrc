@@ -1,13 +1,7 @@
-#普通命令提示符，在控制台下可以正常显示，如需使用取消注释，并把底部有关提示符的语句注释掉
-##RPROMPT='%/'
-#PROMPT='%{[36m%}%n%{[35m%}@%{[34m%}%M %{[33m%}%D %T  %{[32m%}%/ 
-#%{[31m%}>>%{[m%}'
-
 #set char
 #export LANG=zh_CN.UTF-8
 export LANG=en_US.UTF-8
 
-#关于历史纪录的配置
 # number of lines kept in history
 export HISTSIZE=100000
 # # number of lines saved in the history after logout
@@ -20,15 +14,15 @@ setopt INC_APPEND_HISTORY
 #Disable core dumps
 limit coredumpsize 0
 
-#Emacs风格键绑定
+#bind Emacs Sytle key 
 bindkey -e
-#设置DEL键为向后删除
+#set Delete delete char forword
 bindkey "\e[3~" delete-char
 
-#以下字符视为单词的一部分
+#as a part of word
 WORDCHARS='*?_-[]~=&;!#$%^(){}<>'
 
-#自动补全功能
+#auto full
 setopt AUTO_LIST
 setopt AUTO_MENU
 setopt MENU_COMPLETE
@@ -56,7 +50,7 @@ zstyle ':completion::complete:*' '\\'
 zstyle ':completion:*:*:*:default' menu yes select
 zstyle ':completion:*:*:default' force-list always
 
-# GNU Colors 需要/etc/DIR_COLORS文件 否则自动补全时候选菜单中的选项不能彩色显示
+#GNU Colors need /etc/DIR_COLORS
 [ -f /etc/DIR_COLORS ] && eval $(dircolors -b /etc/DIR_COLORS)
 export ZLSCOLORS="${LS_COLORS}"
 zmodload zsh/complist
@@ -80,7 +74,7 @@ zstyle ':completion:*:descriptions' format $'\e[01;33m -- %d --\e[0m'
 zstyle ':completion:*:messages' format $'\e[01;35m -- %d --\e[0m'
 zstyle ':completion:*:warnings' format $'\e[01;31m -- No Matches Found --\e[0m'
 
-#命令别名
+#Alias
 alias cp='cp -iv'
 alias mv='mv -iv'
 alias rm='rm -iv'
@@ -98,7 +92,7 @@ alias cd..='cd ../..'
 alias cd...='cd ../../..'
 
 
-#路径别名 进入相应的路径时只要 cd ~xxx
+#alias of path
 hash -d S="/home/yueyang/Workspace/Shell"
 hash -d D="/usr/local/lib/python2.6/dist-packages" 
 hash -d T="/home/yueyang/Temp"
@@ -113,7 +107,7 @@ hash -d PHP="/home/yueyang/Workspace/PHP"
 hash -d W="/home/yueyang/Workspace/03_code/src"
 hash -d F="/home/yueyang/Workspace/fetion_interface/src"
 
-##for Emacs在Emacs终端中使用Zsh的一些设置 不推荐在Emacs中使用它
+#used zsh setting in Emacs terminal 
 if [[ "$TERM" == "dumb" ]]; then
 setopt No_zle
 PROMPT='%n@%M %/
@@ -124,7 +118,7 @@ fi
 
 
 
-#效果超炫的提示符，如需要禁用，注释下面配置   
+#
 function precmd {
     
     local TERMWIDTH
@@ -270,7 +264,7 @@ $PR_CYAN$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT$PR_NO_COLOUR '
 setprompt
 
 export WORKON_HOME=$HOME/.virtualenvs
-source /usr/bin/virtualenvwrapper.sh
+#source /usr/bin/virtualenvwrapper.sh
 
 alias Emacs="emacs -nw"
 
@@ -299,4 +293,4 @@ uncmp () {
 #auto into path
 setopt autocd
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
