@@ -178,12 +178,12 @@ NERDComComment	NERD_commenter.txt	/*NERDComComment*
 NERDComCredits	NERD_commenter.txt	/*NERDComCredits*
 NERDComDefaultDelims	NERD_commenter.txt	/*NERDComDefaultDelims*
 NERDComEOLComment	NERD_commenter.txt	/*NERDComEOLComment*
-NERDComFiletypes	NERD_commenter.txt	/*NERDComFiletypes*
 NERDComFunctionality	NERD_commenter.txt	/*NERDComFunctionality*
 NERDComFunctionalityDetails	NERD_commenter.txt	/*NERDComFunctionalityDetails*
 NERDComFunctionalitySummary	NERD_commenter.txt	/*NERDComFunctionalitySummary*
 NERDComHeuristics	NERD_commenter.txt	/*NERDComHeuristics*
 NERDComInsertComment	NERD_commenter.txt	/*NERDComInsertComment*
+NERDComInstallation	NERD_commenter.txt	/*NERDComInstallation*
 NERDComInvertComment	NERD_commenter.txt	/*NERDComInvertComment*
 NERDComIssues	NERD_commenter.txt	/*NERDComIssues*
 NERDComLicense	NERD_commenter.txt	/*NERDComLicense*
@@ -1909,6 +1909,7 @@ csupport	csupport.txt	/*csupport*
 csupport-Ctrl-j	csupport.txt	/*csupport-Ctrl-j*
 csupport-ad-mappings	csupport.txt	/*csupport-ad-mappings*
 csupport-c++	csupport.txt	/*csupport-c++*
+csupport-c++-ex	csupport.txt	/*csupport-c++-ex*
 csupport-c++-method-impl	csupport.txt	/*csupport-c++-method-impl*
 csupport-c++-normal-mode	csupport.txt	/*csupport-c++-normal-mode*
 csupport-c++-visual-mode	csupport.txt	/*csupport-c++-visual-mode*
@@ -1928,7 +1929,7 @@ csupport-ctags-make	csupport.txt	/*csupport-ctags-make*
 csupport-ctags-templates	csupport.txt	/*csupport-ctags-templates*
 csupport-custom	csupport.txt	/*csupport-custom*
 csupport-custom-glob-vars	csupport.txt	/*csupport-custom-glob-vars*
-csupport-custom-root-menu	csupport.txt	/*csupport-custom-root-menu*
+csupport-custom-root	csupport.txt	/*csupport-custom-root*
 csupport-dictionary	csupport.txt	/*csupport-dictionary*
 csupport-folding	csupport.txt	/*csupport-folding*
 csupport-help	csupport.txt	/*csupport-help*
@@ -1939,6 +1940,7 @@ csupport-idioms-function	csupport.txt	/*csupport-idioms-function*
 csupport-idioms-input	csupport.txt	/*csupport-idioms-input*
 csupport-idioms-output	csupport.txt	/*csupport-idioms-output*
 csupport-prep	csupport.txt	/*csupport-prep*
+csupport-prep-ex	csupport.txt	/*csupport-prep-ex*
 csupport-prep-if0	csupport.txt	/*csupport-prep-if0*
 csupport-prep-normal-mode	csupport.txt	/*csupport-prep-normal-mode*
 csupport-prep-visual-mode	csupport.txt	/*csupport-prep-visual-mode*
@@ -1952,6 +1954,8 @@ csupport-run-hardcopy	csupport.txt	/*csupport-run-hardcopy*
 csupport-run-indent	csupport.txt	/*csupport-run-indent*
 csupport-run-make	csupport.txt	/*csupport-run-make*
 csupport-run-make-args	csupport.txt	/*csupport-run-make-args*
+csupport-run-make-clean	csupport.txt	/*csupport-run-make-clean*
+csupport-run-make-run	csupport.txt	/*csupport-run-make-run*
 csupport-run-output	csupport.txt	/*csupport-run-output*
 csupport-run-splint	csupport.txt	/*csupport-run-splint*
 csupport-run-templates	csupport.txt	/*csupport-run-templates*
@@ -1962,6 +1966,7 @@ csupport-stat-normal-mode	csupport.txt	/*csupport-stat-normal-mode*
 csupport-stat-visual-mode	csupport.txt	/*csupport-stat-visual-mode*
 csupport-system-wide	csupport.txt	/*csupport-system-wide*
 csupport-templates	csupport.txt	/*csupport-templates*
+csupport-templates-bind	csupport.txt	/*csupport-templates-bind*
 csupport-templates-date	csupport.txt	/*csupport-templates-date*
 csupport-templates-definition	csupport.txt	/*csupport-templates-definition*
 csupport-templates-expansion	csupport.txt	/*csupport-templates-expansion*

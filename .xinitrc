@@ -29,5 +29,7 @@ xscreensaver > /dev/null 2>&1 &
 #done &
 #
 
+LANGUAGE=en /usr/lib/chromium
+
 # call awesome
 exec awesome

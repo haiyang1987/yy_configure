@@ -368,7 +368,7 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
                                   -- tag 2: code
                                   { rule = { class = "Firefox" },
                                   properties = { tag = tags[1][2], switchtotag = true } },
-                                  { rule = { class = "chrome" },
+                                  { rule = { class = "chromium" },
                                   properties = { tag = tags[1][2], switchtotag = true } },
                                   -- tag 3: M_Coder
                                   -- Only need Terminal
