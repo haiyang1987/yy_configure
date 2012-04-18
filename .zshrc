@@ -106,6 +106,7 @@ hash -d p="/home/yueyang/Workspace/Perl"
 hash -d PHP="/home/yueyang/Workspace/PHP"
 hash -d W="/home/yueyang/Workspace/03_code/src"
 hash -d F="/home/yueyang/Workspace/fetion_interface/src"
+hash -d CI="/home/yueyang/Workspace/CI/04_源码/01_接口/src"
 
 #used zsh setting in Emacs terminal 
 if [[ "$TERM" == "dumb" ]]; then
@@ -264,7 +265,7 @@ $PR_CYAN$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT$PR_NO_COLOUR '
 setprompt
 
 export WORKON_HOME=$HOME/.virtualenvs
-#source /usr/bin/virtualenvwrapper.sh
+source /usr/bin/virtualenvwrapper.sh
 
 alias Emacs="emacs -nw"
 

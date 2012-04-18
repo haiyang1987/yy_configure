@@ -1,10 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/home/yueyang/Workspace/fetion_interface/src/sub_projects/wap_inf/data'
-let g:netrw_dirhist_2='/home/yueyang/Workspace/fetion_interface/src/sub_projects/wap_inf/.svn'
-let g:netrw_dirhist_3='/home/yueyang/Workspace/fetion_interface/src/sub_projects/wap_inf/data'
-let g:netrw_dirhist_4='/home/yueyang/Workspace/fetion_interface/src/sub_projects/c_feiliao/src'
-let g:netrw_dirhist_5='/home/yueyang/Workspace/Python/sms_send/src'
-let g:netrw_dirhist_6='/home/yueyang/Workspace/C/management_node/bin'
-let g:netrw_dirhist_7='/etc/cron.daily'
-let g:netrw_dirhist_8='/home/yueyang'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/etc/chromium-browser'
+let g:netrw_dirhist_2='/etc/profile.d'
+let g:netrw_dirhist_3='/home/yueyang/Workspace/C/queue/include'
+let g:netrw_dirhist_4='/home/yueyang/Workspace/C/sync-userinfo/.git'
+let g:netrw_dirhist_5='/home/yueyang/Workspace/fetion_interface/src/receiver/conf'

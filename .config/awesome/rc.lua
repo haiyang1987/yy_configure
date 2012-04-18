@@ -242,7 +242,7 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
                               awful.key({ modkey, "Control" }, "n", awful.client.restore),
                               -- Added by 8pm
                               awful.key({ modkey,           }, "F2",    function () awful.util.spawn("gnome-terminal") end),
-                              awful.key({ modkey,           }, "F3",    function () awful.util.spawn("firefox") end),
+                              awful.key({ modkey,           }, "F3",    function () awful.util.spawn("firefox-beta-bin") end),
                               awful.key({ modkey,           }, "F4",    function () awful.util.spawn("chromium") end),
                               awful.key({ modkey,           }, "F5",    function () awful.util.spawn("nautilus --no-desktop") end),
                               awful.key({ modkey,           }, "F6",    function () awful.util.spawn("virtualbox") end),

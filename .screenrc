@@ -1,6 +1,6 @@
 startup_message off
 
-defscrollback 5120
+defscrollback 10240
 
 altscreen on
 
