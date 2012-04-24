@@ -160,7 +160,7 @@
 (show-paren-mode t) 
 
     ;;隐藏工具栏
-    ;;(tool-bar-mode nil) 
+(tool-bar-mode nil) 
         
     ;;去掉菜单栏，将F10绑定为显示菜单栏，需要菜单栏了可以摁F10调出，再摁F10就去掉菜单
 (menu-bar-mode nil)
@@ -204,7 +204,7 @@
     (setq kept-new-versions 3)
     (setq delete-old-versions t)
     (setq kept-old-versions 2)
-(setq dired-kept-versions 1)
+    (setq dired-kept-versions 1)
 
     ;;设置备份时的版本控制，这样更加安全。
     (mapcar
