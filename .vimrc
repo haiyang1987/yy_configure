@@ -167,7 +167,8 @@ map <c-space> ?
 "Actually, the tab does not switch buffers, but my arrows
 "Bclose function ca be found in "Buffer related" section
 "map <leader>bd :Bclose<cr>
-"map <down> <leader>bd
+map <up> :set encoding<cr>
+map <down> <leader>bd
 "Use the arrows to something usefull
 map <right> :bn<cr>
 map <left> :bp<cr>

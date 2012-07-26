@@ -1,7 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/etc/chromium-browser'
-let g:netrw_dirhist_2='/etc/profile.d'
-let g:netrw_dirhist_3='/home/yueyang/Workspace/C/queue/include'
-let g:netrw_dirhist_4='/home/yueyang/Workspace/C/sync-userinfo/.git'
-let g:netrw_dirhist_5='/home/yueyang/Workspace/fetion_interface/src/receiver/conf'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/yueyang/Workspace/Python/fairy'
+let g:netrw_dirhist_2='/home/yueyang/Workspace/Python/feiliao_VGOP'
+let g:netrw_dirhist_3='/home/yueyang/Workspace/CI/04_源码/01_接口/src/active_user_30/tests'
+let g:netrw_dirhist_4='/home/yueyang/tmp/dea-read-only/info'

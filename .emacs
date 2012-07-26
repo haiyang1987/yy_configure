@@ -13,7 +13,7 @@
 ;;**********************    basic setting    *********************
 
 ;;Load_path
-(add-to-list 'load-path' "~/.emacs.d/plugins")
+(add-to-list 'load-path' "~/.emacs.d/auto-save-list")
 
 ;;todo_path
 (setq todo-file-do "~/emacs/todo/do")

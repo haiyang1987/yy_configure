@@ -51,6 +51,7 @@ modkey = "Mod4"
 -- Table of layouts to cover with awful.layout.inc, order matters.
 layouts =
 {
+    awful.layout.suit.max,
     awful.layout.suit.tile,
     awful.layout.suit.tile.left,
     awful.layout.suit.tile.bottom,
@@ -59,7 +60,6 @@ layouts =
     awful.layout.suit.fair.horizontal,
     awful.layout.suit.spiral,
     awful.layout.suit.spiral.dwindle,
-    awful.layout.suit.max,
     awful.layout.suit.max.fullscreen,
     awful.layout.suit.magnifier,
     awful.layout.suit.floating
@@ -242,13 +242,13 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
                               awful.key({ modkey, "Control" }, "n", awful.client.restore),
                               -- Added by 8pm
                               awful.key({ modkey,           }, "F2",    function () awful.util.spawn("gnome-terminal") end),
-                              awful.key({ modkey,           }, "F3",    function () awful.util.spawn("firefox-beta-bin") end),
+                              awful.key({ modkey,           }, "F3",    function () awful.util.spawn("firefox") end),
                               awful.key({ modkey,           }, "F4",    function () awful.util.spawn("chromium") end),
                               awful.key({ modkey,           }, "F5",    function () awful.util.spawn("nautilus --no-desktop") end),
                               awful.key({ modkey,           }, "F6",    function () awful.util.spawn("virtualbox") end),
                               awful.key({ modkey,           }, "F7",    function () awful.util.spawn("thunderbird") end),
                               awful.key({ modkey,           }, "F8",    function () awful.util.spawn("rhythmbox") end),
-                              awful.key({ modkey,           }, "F9",    function () awful.util.spawn("alsamixer") end),
+                              awful.key({ modkey,           }, "F9",    function () awful.util.spawn("filezilla") end),
                               awful.key({ modkey,           }, "F10",   function () awful.util.spawn("gnome-screenshot") end),
                               awful.key({ modkey,           }, "F11",   function () awful.util.spawn("filezilla") end),
                               awful.key({ modkey,           }, "F12",   function () awful.util.spawn("xscreensaver-command -l") end),
@@ -365,21 +365,21 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
                                   -- tag 1: Manager
                                   -- Only need Terminal
 
-                                  -- tag 2: code
+                                  -- tag 2: Browsers
                                   { rule = { class = "Firefox" },
                                   properties = { tag = tags[1][2], switchtotag = true } },
                                   { rule = { class = "chromium" },
                                   properties = { tag = tags[1][2], switchtotag = true } },
-                                  -- tag 3: M_Coder
+                                  -- tag 3: Main_Code
                                   -- Only need Terminal
 
-                                  -- tag 4: S_Coder
+                                  -- tag 4: Slave_Code
                                   -- Only need Terminal
 
                                   -- tag 5: SSH
                                   -- Only need Terminal
 
-                                  -- tag 6: Emacs
+                                  -- tag 6: Swap
                                   { rule = { class = "emacs" },
                                   properties = { tag = tags[1][6], switchtotag = true } },
 
@@ -434,7 +434,8 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
                               autorun = true
                               autorunApps =
                               {
-                                  "/opt/firefox/firefox",
+                                  "firefox",
+                                  "chromium"
                               }
                               if autorun then
                                   for app = 1, #autorunApps do
