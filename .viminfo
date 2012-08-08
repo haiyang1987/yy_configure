@@ -8,19 +8,26 @@
 # hlsearch on (H) or off (h):
 ~H
 # Last Search Pattern:
-~Msle0~/\<build\>
+~MSle0~/du
 
 # Last Substitute Search Pattern:
-~MSle0&\,
+~MSle0&\:
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :x
+:w
 :qa
 :q
-:w
+:19,39s/\://g
+:%19,39/\://gc
+:%s/\://gc
+:%s/\:/gc
+:set tags=../../tags
+:set tags
+:set tags=../
 :A
 :Project
 :wa
@@ -30,15 +37,19 @@ $
 :e Makefile
 :e test_filter.c
 :set shiftwidth=1
-:q!
-:'<,'>I1
-:'<,'>I2
-:'<,'>I+2
-:'<,'>I1+2
-:'<,'>I -2
-:set tags=../../tags
 
 # Search String History (newest to oldest):
+?/du
+? \<str\>
+?/sdf
+? \:
+?/str
+? \<src\>
+? \<ngx_decode_base64_internal\>
+?/base
+?/read
+? \<skip_spaces\>
+? \<s\>
 ? \<build\>
 ?/clang
 ?/buf
@@ -71,11 +82,8 @@ $
 ?/url_
 ?/memc
 ? \<NGX_MEMCPY_LIMIT\>
-? \<ngx_decode_base64_internal\>
 ? \<basis64\>
 ? \<len\>
-? \<s\>
-? \<src\>
 ? \<d\>
 ? \<dst\>
 ? \<inactive\>
@@ -181,7 +189,6 @@ $
 ?/if
 ??if
 ? \<if\>
-?/sdf
 ? \,
 ? \<constellation\>
 ? \<INC\>
@@ -277,7 +284,6 @@ $
 ?/awe
 ? \<table_name\>
 ?/k
-? ^
 ?/write
 ?/hash
 ?/lua
@@ -409,7 +415,6 @@ $
 ?/sms
 ? \<merge\>
 ? \<import_mysql\>
-?/base
 ?/import base
 ?/im
 ? \<error\>
@@ -632,13 +637,8 @@ $
 ? srv_
 ? srv_clt
 ? \<srv_responder\>
+? ^
 ? \<responder\>
-? \<srv_context\>
-? \<context\>
-?/conn
-? \<message\>
-? \<msg\>
-?/sock
 
 # Expression History (newest to oldest):
 
@@ -672,28 +672,28 @@ $
 
 # Registers:
 "0	CHAR	0
-	../src
+	duckduckgo
 "1	LINE	0
-	    return file_size;
+	    printf("%d\n", strcmp(tt, str));
 "2	LINE	0
-	    return file_size;
+	#include <stdlib.h>
 "3	LINE	0
-	    struct stat info;
+	}
 "4	LINE	0
+	}
+"5	LINE	0
+	    return file_size;
+"6	LINE	0
+	    return file_size;
+"7	LINE	0
+	    struct stat info;
+"8	LINE	0
 	    struct stat info;
 	    FILE *src_fd = NULL;
 	    FILE *dest_fd = NULL;
-"5	LINE	0
+"9	LINE	0
 	    FILE *src_fd = NULL;
 	    FILE *dest_fd = NULL;
-"6	LINE	0
-	
-"7	LINE	0
-	    printf("%d\n", file_size);
-"8	LINE	0
-	        printf("%d\n", (int)info.st_size);
-"9	LINE	0
-	
 "a@	CHAR	0
 	j$x
 "b	CHAR	0
@@ -701,279 +701,221 @@ $
 "k	CHAR	0
 	jk
 ""-	CHAR	0
-	/
+	duckduckgo
 
 # File marks:
-'0  13  33  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/test/Makefile
-'1  34  0  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/test/test_filter.c
-'2  19  4  ~/src/nginx-1.2.3/CHANGES
-'3  2  9  ~/src/nginx-1.2.3/objs/Makefile
-'4  8  1  ~/src/nginx-1.2.3/Makefile
-'5  50  0  ~/src/nginx-1.2.3/configure
-'6  4  0  ~/src/nginx-1.2.3/CHANGES
-'7  58  0  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
-'8  23  0  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.h
-'9  56  0  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
+'0  5  48  ~/.vimperatorrc
+'1  10  0  ~/.vimperatorrc
+'2  1  0  ~/NERD_tree_2
+'3  6  14  ~/.vimperatorrc
+'4  31  4  /tmp/test.c
+'5  1  0  ~/src/nginx-1.2.3/src/os/unix/rfork_thread.S
+'6  74  8  ~/src/nginx-1.2.3/src/os/unix/ngx_errno.c
+'7  92  0  ~/src/nginx-1.2.3/src/os/unix/ngx_linux_config.h
+'8  15  0  ~/src/nginx-1.2.3/src/os/unix/ngx_send.c
+'9  17  4  ~/src/nginx-1.2.3/src/os/unix/ngx_daemon.c
 
 # Jumplist (newest first):
--'  13  33  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/test/Makefile
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/test/Makefile
--'  34  0  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/test/test_filter.c
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/test/test_filter.c
--'  19  4  ~/src/nginx-1.2.3/CHANGES
--'  4  4  ~/src/nginx-1.2.3/CHANGES
--'  1  0  ~/src/nginx-1.2.3/CHANGES
--'  2  9  ~/src/nginx-1.2.3/objs/Makefile
--'  1124  1  ~/src/nginx-1.2.3/objs/Makefile
--'  1  0  ~/src/nginx-1.2.3/objs/Makefile
--'  8  1  ~/src/nginx-1.2.3/Makefile
--'  2  9  ~/src/nginx-1.2.3/Makefile
--'  1  0  ~/src/nginx-1.2.3/Makefile
--'  50  0  ~/src/nginx-1.2.3/configure
--'  92  0  ~/src/nginx-1.2.3/configure
--'  42  0  ~/src/nginx-1.2.3/configure
--'  111  0  ~/src/nginx-1.2.3/configure
--'  1  0  ~/src/nginx-1.2.3/configure
--'  5980  0  ~/src/nginx-1.2.3/CHANGES
--'  58  0  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  52  28  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  48  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  27  0  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  46  40  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  40  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  22  0  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.h
--'  41  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  44  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  23  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  56  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  57  0  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  26  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  47  24  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  58  0  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  52  28  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  48  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  27  0  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  46  40  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  40  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  22  0  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.h
--'  41  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  44  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  23  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  56  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  57  0  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  26  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  47  24  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  58  0  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  52  28  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  48  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  27  0  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  46  40  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  40  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  22  0  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.h
--'  41  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  44  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  23  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  56  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  57  0  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  26  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  47  24  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  58  0  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  52  28  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  48  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  27  0  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  46  40  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  40  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  22  0  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.h
--'  41  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  44  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  23  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  56  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  57  0  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  26  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  47  24  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  50  0  ~/src/nginx-1.2.3/configure
--'  92  0  ~/src/nginx-1.2.3/configure
--'  42  0  ~/src/nginx-1.2.3/configure
--'  111  0  ~/src/nginx-1.2.3/configure
--'  1  0  ~/src/nginx-1.2.3/configure
--'  58  0  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  52  28  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  48  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  27  0  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  46  40  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  40  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  22  0  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.h
--'  41  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  44  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  23  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  56  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  57  0  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  26  4  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  47  24  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  58  0  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  52  28  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  19  4  ~/src/nginx-1.2.3/CHANGES
--'  4  4  ~/src/nginx-1.2.3/CHANGES
--'  1  0  ~/src/nginx-1.2.3/CHANGES
+-'  5  48  ~/.vimperatorrc
+-'  10  0  ~/.vimperatorrc
+-'  1  0  ~/.vimperatorrc
+-'  6  0  ~/.vimperatorrc
+-'  1  0  ~/NERD_tree_2
+-'  5  0  ~/NERD_tree_2
+-'  5  0  ~/NERD_tree_1
+-'  1  0  ~/NERD_tree_1
+-'  31  4  /tmp/test.c
+-'  36  18  /tmp/test.c
+-'  29  10  /tmp/test.c
+-'  30  0  /tmp/test.c
+-'  34  0  /tmp/test.c
+-'  33  25  /tmp/test.c
+-'  38  11  /tmp/test.c
+-'  23  0  /tmp/test.c
+-'  28  6  /tmp/test.c
+-'  24  0  /tmp/test.c
+-'  22  4  /tmp/test.c
+-'  42  4  /tmp/test.c
+-'  1  0  /tmp/test.c
+-'  5  0  /tmp/test.c
+-'  9  17  /tmp/test.c
+-'  4  0  /tmp/test.c
+-'  40  12  /tmp/test.c
+-'  19  14  /tmp/test.c
+-'  6  19  /tmp/test.c
+-'  18  0  /tmp/test.c
+-'  1  0  ~/src/nginx-1.2.3/src/os/unix/rfork_thread.S
+-'  73  1  ~/src/nginx-1.2.3/src/os/unix/rfork_thread.S
+-'  74  8  ~/src/nginx-1.2.3/src/os/unix/ngx_errno.c
+-'  87  0  ~/src/nginx-1.2.3/src/os/unix/ngx_errno.c
+-'  1  0  ~/src/nginx-1.2.3/src/os/unix/ngx_errno.c
+-'  92  0  ~/src/nginx-1.2.3/src/os/unix/ngx_linux_config.h
+-'  1  0  ~/src/nginx-1.2.3/src/os/unix/ngx_linux_config.h
+-'  15  0  ~/src/nginx-1.2.3/src/os/unix/ngx_send.c
+-'  73  0  ~/src/nginx-1.2.3/src/os/unix/ngx_send.c
+-'  37  23  ~/src/nginx-1.2.3/src/os/unix/ngx_send.c
+-'  1  0  ~/src/nginx-1.2.3/src/os/unix/ngx_send.c
+-'  17  4  ~/src/nginx-1.2.3/src/os/unix/ngx_daemon.c
+-'  70  0  ~/src/nginx-1.2.3/src/os/unix/ngx_daemon.c
+-'  34  4  ~/src/nginx-1.2.3/src/os/unix/ngx_daemon.c
+-'  14  0  ~/src/nginx-1.2.3/src/os/unix/ngx_daemon.c
+-'  1  0  ~/src/nginx-1.2.3/src/os/unix/ngx_daemon.c
+-'  14  0  ~/src/nginx-1.2.3/src/core/ngx_config.h
+-'  124  0  ~/src/nginx-1.2.3/src/core/ngx_config.h
+-'  1  0  ~/src/nginx-1.2.3/src/core/ngx_config.h
+-'  60  4  ~/src/nginx-1.2.3/src/core/ngx_palloc.h
+-'  15  15  ~/src/nginx-1.2.3/src/core/ngx_core.h
+-'  64  4  ~/src/nginx-1.2.3/src/core/ngx_palloc.h
+-'  17  15  ~/src/nginx-1.2.3/src/core/ngx_core.h
+-'  64  0  ~/src/nginx-1.2.3/src/core/ngx_log.h
+-'  48  17  ~/src/nginx-1.2.3/src/core/ngx_log.h
+-'  19  0  ~/src/nginx-1.2.3/src/core/ngx_log.h
+-'  1  0  ~/src/nginx-1.2.3/src/core/ngx_log.h
+-'  32  15  ~/src/nginx-1.2.3/src/core/ngx_palloc.h
+-'  35  4  ~/src/nginx-1.2.3/src/core/ngx_palloc.h
+-'  63  4  ~/src/nginx-1.2.3/src/core/ngx_palloc.h
+-'  41  15  ~/src/nginx-1.2.3/src/core/ngx_palloc.h
+-'  43  0  ~/src/nginx-1.2.3/src/core/ngx_palloc.h
+-'  62  4  ~/src/nginx-1.2.3/src/core/ngx_palloc.h
+-'  16  15  ~/src/nginx-1.2.3/src/core/ngx_core.h
+-'  60  4  ~/src/nginx-1.2.3/src/core/ngx_buf.h
+-'  61  4  ~/src/nginx-1.2.3/src/core/ngx_palloc.h
+-'  59  0  ~/src/nginx-1.2.3/src/core/ngx_buf.h
+-'  18  15  ~/src/nginx-1.2.3/src/core/ngx_buf.h
+-'  20  0  ~/src/nginx-1.2.3/src/core/ngx_buf.h
+-'  1  0  ~/src/nginx-1.2.3/src/core/ngx_buf.h
+-'  1  0  ~/src/nginx-1.2.3/src/core/ngx_palloc.h
+-'  1  0  ~/src/nginx-1.2.3/src/core/ngx_core.h
+-'  127  19  ~/src/nginx-1.2.3/src/core/ngx_buf.c
+-'  122  0  ~/src/nginx-1.2.3/src/core/ngx_buf.c
+-'  220  0  ~/src/nginx-1.2.3/src/core/ngx_buf.c
+-'  1  0  ~/src/nginx-1.2.3/src/core/ngx_buf.c
+-'  21  0  ~/src/nginx-1.2.3/src/core/ngx_conf_file.c
+-'  20  0  ~/src/nginx-1.2.3/src/core/ngx_conf_file.c
+-'  1  0  ~/src/nginx-1.2.3/src/core/ngx_conf_file.c
+-'  121  4  ~/src/nginx-1.2.3/src/core/__Tag_List__
+-'  101  0  ~/src/nginx-1.2.3/src/core/__Tag_List__
+-'  565  0  ~/src/nginx-1.2.3/src/core/ngx_string.c
+-'  103  0  ~/src/nginx-1.2.3/src/core/ngx_string.c
+-'  650  0  ~/src/nginx-1.2.3/src/core/ngx_string.c
+-'  621  0  ~/src/nginx-1.2.3/src/core/ngx_string.c
+-'  606  16  ~/src/nginx-1.2.3/src/core/ngx_string.c
+-'  1208  1  ~/src/nginx-1.2.3/src/core/ngx_string.c
+-'  31  4  /tmp/test.c
+-'  36  18  /tmp/test.c
+-'  29  10  /tmp/test.c
+-'  30  0  /tmp/test.c
+-'  34  0  /tmp/test.c
+-'  33  25  /tmp/test.c
+-'  38  11  /tmp/test.c
+-'  23  0  /tmp/test.c
+-'  28  6  /tmp/test.c
+-'  24  0  /tmp/test.c
+-'  22  4  /tmp/test.c
+-'  42  4  /tmp/test.c
+-'  1  0  /tmp/test.c
 
 # Buffer list:
-%~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/test/Makefile	13	33
+%~/.vimperatorrc	5	48
 
 # History of marks within files (newest to oldest):
 
-> ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/test/Makefile
-	"	13	33
-	^	10	16
-	.	13	33
-	+	10	9
-	+	5	9
-	+	10	15
-	+	13	33
+> ~/.vimperatorrc
+	"	5	48
+	^	5	49
+	.	5	49
+	+	5	49
 
-> ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/test/test_filter.c
-	"	34	0
-	.	35	0
+> ~/NERD_tree_1
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/NERD_tree_2
+	"	1	0
+	.	1	0
+	+	1	0
+
+> /tmp/test.c
+	"	31	4
+	.	36	0
+	+	6	20
+	+	40	14
+	+	4	0
+	+	21	0
+	+	22	0
+	+	42	0
+	+	41	0
+	+	39	11
+	+	21	0
+	+	22	3
+	+	39	11
+	+	20	15
 	+	35	0
-
-> ~/src/nginx-1.2.3/CHANGES
-	"	19	4
-
-> ~/src/nginx-1.2.3/objs/Makefile
-	"	2	9
-	^	2	10
-	.	2	9
-	+	2	9
-
-> ~/src/nginx-1.2.3/Makefile
-	"	8	1
-
-> ~/src/nginx-1.2.3/configure
-	"	50	0
-
-> ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
-	"	58	0
-	^	54	26
-	.	54	25
-	+	6	38
-	+	18	0
-	+	22	0
-	+	22	0
-	+	56	0
-	+	22	0
-	+	21	2
-	+	22	55
-	+	56	0
-	+	18	0
-	+	19	17
-	+	19	0
-	+	20	0
-	+	19	14
-	+	56	24
-	+	56	0
-	+	19	0
-	+	19	0
-	+	58	0
-	+	56	0
-	+	56	0
-	+	56	0
-	+	28	26
-	+	31	14
-	+	32	0
-	+	56	0
-	+	32	0
-	+	56	0
-	+	31	16
-	+	30	19
+	+	36	16
+	+	35	0
 	+	34	0
-	+	33	0
-	+	34	27
+	+	36	19
+	+	30	40
 	+	30	0
-	+	31	0
-	+	34	0
-	+	28	0
-	+	31	0
-	+	56	0
-	+	23	0
-	+	23	13
-	+	34	33
-	+	40	32
-	+	34	35
-	+	40	37
-	+	56	0
-	+	35	24
-	+	34	0
-	+	36	0
-	+	41	21
-	+	39	0
-	+	36	21
-	+	38	40
-	+	36	21
-	+	38	0
-	+	36	0
-	+	36	0
-	+	36	26
-	+	36	37
-	+	36	0
-	+	37	17
-	+	42	28
-	+	40	36
-	+	56	0
-	+	23	0
-	+	27	0
-	+	46	30
-	+	23	19
-	+	48	0
-	+	47	36
-	+	56	0
-	+	34	7
-	+	28	30
 	+	30	0
-	+	28	30
-	+	29	0
-	+	34	0
-	+	47	25
-	+	27	21
-	+	47	0
-	+	56	0
-	+	47	8
-	+	23	21
-	+	47	37
-	+	56	0
-	+	55	0
-	+	56	0
-	+	23	0
-	+	23	0
-	+	24	0
-	+	26	0
-	+	57	0
-	+	56	0
-	+	56	0
-	+	52	22
-	+	50	0
-	+	52	0
-	+	50	6
-	+	52	26
-	+	54	25
-	n	41	4
+	+	36	0
 
-> ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.h
-	"	22	0
-	^	22	21
-	.	22	20
-	+	6	0
-	+	19	0
-	+	6	0
-	+	24	0
-	+	23	0
-	+	21	16
-	+	22	20
+> /usr/include/libavutil/crc.h
+	"	40	6
 
-> ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/__Tag_List__
+> /usr/include/__Tag_List__
 	"	5	4
-	.	6	0
-	+	7	0
-	+	7	0
-	+	6	0
+	.	10	0
+	+	10	0
 
-> /tmp/.X0-lock
-	"	1	7
+> ~/src/nginx-1.2.3/src/core/ngx_crc32.c
+	"	116	0
+
+> ~/src/nginx-1.2.3/src/core/__Tag_List__
+	"	10	4
+	.	11	0
+	+	285	0
+	+	243	0
+	+	243	0
+	+	243	0
+	+	243	0
+	+	242	0
+	+	199	0
+	+	156	0
+	+	120	0
+	+	85	0
+	+	85	0
+	+	85	0
+	+	85	0
+	+	85	0
+	+	85	0
+	+	85	0
+	+	85	0
+	+	85	0
+	+	85	0
+	+	85	0
+	+	85	0
+	+	85	0
+	+	85	0
+	+	85	0
+	+	85	0
+	+	85	0
+	+	85	0
+	+	85	0
+	+	85	0
+	+	85	0
+	+	85	0
+	+	84	0
+	+	63	0
+	+	21	0
+	+	11	0
+
+> /tmp/test.txt
+	"	5	0
+	^	5	0
+	.	4	0
+	+	4	0
+
+> ~/src/nginx-1.2.3/src/os/unix/rfork_thread.S
+	"	1	0
