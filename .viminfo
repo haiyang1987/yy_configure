@@ -8,41 +8,173 @@
 # hlsearch on (H) or off (h):
 ~H
 # Last Search Pattern:
-~MSle0~/clang
+~Msle0~/\<dst_len\>
 
 # Last Substitute Search Pattern:
-~MSle0&\,
+~MSle0&flag
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :qa
-:q
-:x
-:q!
-:e receiver.h
-:e main.py
 :w
-:e bin/data_handing.py
-:wa
-:sw
-:set tags=../../tags
+:e
+:x
+:e ciconnection.cpp
+:q!
+:w !sudo tee %
+:set tags=tags
+:q
 :A
-:Project
-:WA
-:a
-:e ../src/filter.c
-:e Makefile
-:e test_filter.c
-:set shiftwidth=1
-:'<,'>I1
+:e school.pb.h
+:grep 
+:e config.c
+:e ../conf/configure.cfg
+:e receiver.c
+:e community.pb-c.h
+:e inf_basic_info.c
+:wa
+:qa!
+:bn
 
 # Search String History (newest to oldest):
+? \<dst_len\>
+? \<s\>
+? \<len\>
+? \<d\>
+? \<src\>
+? \<dst\>
+?/^al
+?/al
+? \<qc\>
+?//%
+?/\%
+? \<where\>
+? \<true\>
+?/I
+?/userext
+?/user
+?/uid
+? \s\+$
+? \<every_line\>
+? \<_write_result_file\>
+?/write
+? \<line\>
+?/while
+?/whiel
+? \<do_url_query\>
+?/search
+?/micr
+? \<query_same_school_praise\>
+?/pr
+?/praise
+?/query
+?/ciquer
+? \<query_same_city_praise\>
+? \<affect\>
+?/tuid
+? \<mysql_query_rc\>
+? \<update_proto\>
+? \<syncpraise\>
+? \<syncemploymentinfo\>
+? \<tuid\>
+? \<user\>
+?/3 ==
+?/free_unpacked
+?/get_pac
+?/get_size
+?/unpack
+?/community__sync_
+?/community__sync_pra
+?/praise__unp
+?/p
+?/Community__sync
+? \<post_SPI_cb\>
+?/local
+? \<dump_base_user_info\>
+?/basic
+? \<db_name\>
+? \<file_name\>
+?/admin
+? \<dump_mobile_rang\>
+? \<dump_mysql_basic_tables\>
+? \<CLEANUP\>
+?/C
+?/1024
+?/128
+? \<_data\>
+? \<char\>
+? \<output\>
+? \<parser_xml\>
+? \<stream\>
+? \<get_mobile\>
+? \<request\>
+? \<send_str\>
+? \<input\>
+?/jjk
+?/1 ==
+?/affect
+? \<REQUEST_XML_BASE\>
+?/check
+? \<raw_string\>
+? \<raw_len\>
+? \<malloc_size\>
+? \<UID_LEN\>
+? \<die\>
+? \<check\>
+? \<snprintf\>
+?/sdfdsf
+? \<log4c_category_log\>
+?/ech
+?/F5
+?/child
+? \<printf\>
+?/print
+?/log
+? \<check_child\>
+? \<mni_fork\>
+? \<evbuf_length\>
+?/log4c
+? \<req\>
+?/less 
+?/http
+?/0
+?/flag
+?/aaaa
+?/A
+?/maxn
+?/gc
+? \<ngx_str_t\>
+?/ngx_str_
+?/st
+?/string
+? \<example_2\>
+? \<ptr\>
+? \<_ptr\>
+?/pt
+? \<sleep\>
+?/slee
+?/getpid
+?/par
+? \<pid\>
+?/-1
+?/example
+?/ex
+? \<rt\>
+? flag
+? \<flag\>
+?/fla
+?/option
+? \<ForkWork\>
+? \<DetectPids\>
+?/i
+? \<Ret\>
+? \<g_MapPids\>
+?/waitpid
+?/main
 ?/clang
 ?/gcc
-?/main
-? \s\+$
 ? \<send\>
 ? \<_line\>
 ? \<resule\>
@@ -56,7 +188,6 @@ $
 ?/delet
 ? \<full_filename\>
 ? \<full_filenamehh\>
-?/log
 ?/30
 ? \<days\>
 ? \<_generate_filename\>
@@ -102,11 +233,6 @@ $
 ? \<NGX_MEMCPY_LIMIT\>
 ? \<ngx_decode_base64_internal\>
 ? \<basis64\>
-? \<len\>
-? \<s\>
-? \<src\>
-? \<d\>
-? \<dst\>
 ? \<inactive\>
 ? \<pool\>
 ?/kj
@@ -115,18 +241,13 @@ $
 ?/thri
 ? \<read_callback\>
 ? \<x\>
-? \<parser_xml\>
 ?/pa
 ? \<ngx_alloc\>
 ? \<log\>
 ? \<mobile_value\>
 ? \<base\>
 ? \<t_base\>
-? \<send_str\>
-? \<get_mobile\>
 ? \<doc\>
-? \<request\>
-? \<_data\>
 ?/yes
 ?/for
 ?/repl
@@ -159,18 +280,14 @@ $
 ?/xml
 ? \<xmlKeepBlanksDefault\>
 ? \<work\>
-? \<stream\>
 ? );
 ?/exec
 ?/23xc
 ?/\\t
 ?/\t
 ? \<write_response\>
-? \<output\>
-?/print
 ? \<str_content\>
 ? \<size\>
-? \<ptr\>
 ?/34gg
 ?/wait
 ? \<ftpfile\>
@@ -192,10 +309,8 @@ $
 ? \<CURL\>
 ? \<str_str\>
 ? \<iolen\>
-? \<printf\>
 ?/}>
 ? \<content\>
-?/uid
 ? \<res\>
 ?/len
 ?/kk
@@ -255,7 +370,6 @@ $
 ? \<add_friend\>
 ? \<i\>
 ? \<lines\>
-? \<line\>
 ? \<import_path\>
 ? \<src_filename\>
 ? \<cur\>
@@ -287,13 +401,11 @@ $
 ? \<0\>
 ?/,
 ? \<now\>
-? \<file_name\>
 ? \<timedelta\>
 ? \<date\>
 ? \<datetime\>
 ? \<theme_path\>
 ?/back
-? \<req\>
 ? \<count\>
 ? \<avg\>
 ? \<sum\>
@@ -302,7 +414,6 @@ $
 ? \<table_name\>
 ?/k
 ? ^
-?/write
 ?/hash
 ?/lua
 ?/cons
@@ -314,7 +425,6 @@ $
 ? \<_sync_education_info\>
 ? \<department\>
 ? \<educations\>
-?/unpack
 ?/svn
 ? \<gr\>
 ? \<ci_web\>
@@ -337,16 +447,13 @@ $
 ?/fin
 ?/SMI
 ? \<insert_proto\>
-? \<log4c_category_log\>
 ?/4 ==
 ? \<create_thread\>
 ? \<queue_capacity\>
 ? \<bounds\>
 ?/queue
-?/3 ==
 ? \<CURLOPT_POSTFIELDS\>
 ? \<delete_proto\>
-? \<malloc_size\>
 ?/malloc
 ?/alloc
 ?/printf
@@ -375,7 +482,6 @@ $
 ? \<HTTP_BADMETHOD\>
 ?/badmo
 ? \<xmalloc\>
-? \<update_proto\>
 ?/war
 ?/xmalloc
 ? \<_get_upload_url\>
@@ -398,7 +504,6 @@ $
 ? \<open_dest_files\>
 ? \<open_src_file\>
 ? \<dest_fp_list\>
-?/while
 ? \<fp\>
 ? \<open_dest_file\>
 ?/e
@@ -422,7 +527,6 @@ $
 ? \<mysql_pwd\>
 ? \<interface_list\>
 ? \<upload_info\>
-?/user
 ?/user-info
 ? \<take_off\>
 ?/ct
@@ -472,8 +576,6 @@ $
 ? \<edu_uid_local_file\>
 ? \<edu_local_file\>
 ?/inf_local_file
-? \<dump_mysql_basic_tables\>
-?/basic
 ? \<_get_file_list\>
 ? \<file_list\>
 ?/del
@@ -518,18 +620,15 @@ $
 ? \<tm\>
 ? \<tmp\>
 ?/time
-? \<dump_base_user_info\>
 ? \<_gen_ctl_file_name\>
 ? \<retry\>
 ? ):
 ? \<def\>
 ?/utf
 ?/fixme
-? \<evbuf_length\>
 ?/ass
 ?/daemon
 ?/8888
-?/flag
 ?/curlcode
 ?/todo
 ?/tido
@@ -540,121 +639,24 @@ $
 ? \<download_server_info\>
 ?/education
 ?/ifno
-? \<affect\>
-?/aff
-? \<mysql\>
-?/new user
-?/new
-? \<new\>
-?/in
-?/update
-? \<receiverIP\>
-? \<MYSQL_PORT\>
-? \<raw_len\>
-? \<pop_string\>
-? \<reconnect\>
-?/ty_info
-?/ty_inof
-?/_info
-?/pop fro
-?/pop f
-?/emplo
-?/no
-? server_
-? \<server\>
-? server
-?/%s/server/server_/gc
-? \<get_conf\>
-?/res
-? \<receiver_conf\>
-? \<receiver_ip\>
-? \<server_ip\>
-? \<receiver\>
-?/config_sett
-? \<cfg\>
-? \<receiver_cfg\>
-? \<reveiver_cfg\>
-? \<conf\>
-? \<srv_conf\>
-? \<setting_inf\>
-? \<setting_srv\>
-?/count
-? ;
-? \<mysql_field_count\>
-? \<SQL\>
-?/sql
-?/upda
-?/delete
-? \<mysql_query_rc\>
-?  = NULL
-? \<neaf\>
-? \<pthread_create\>
-?/fox
-?/java
-? \<Java\>
-?/fa
-?/win
-? \<Person\>
-? \<AddPerson\>
-?/pack
-?/grou
-?/add
-? idp_v4\/1234@sta
-? 192.168.171.97
-?/3\.11^M
-?/content
-?/cont
-? \<check\>
-? \<short\>
-?/sho
-? \<contenttype\>
-? \<looptime\>
-? \<log4c_category_get\>
-?/stdout
-?/strout
-? \<mycat\>
-?/glog
-? \<apr_queue_size\>
-?/mps
-?/sfsdf
-? {
-? \<result\>
-? \<raw_string\>
-?/| 100011179 | 100011179     |       0 | 2003 
-?/class
-?/F5
-? \<createthread\>
-? \<create_queue\>
-? \<queue\>
-? \<apr_queue_create\>
-? \<apr_pool_create\>
-?/apr_
-? \<pmain\>
-? \<text_buf\>
-? \<sub_text_buf\>
-? \<proto_length\>
-? \<evhttp_send_error\>
-??w
-? \<xfree\>
-?/xfree
-? \<node_log\>
-?/return 2
 
 # Expression History (newest to oldest):
 
 # Input Line History (newest to oldest):
+@*
+@.
+@/home/yueyang/Workspace/CI/04_源码/01_接口/src/community_sync
+@community_sync
+@test
 @filter
 @send
 @get_mobile
-@*
-@.
 @/home/yueyang/Workspace/CI/04_源码/01_接口/src/community_complete_sync
 @community_complete_sync
 @usr/bni/perl -w
 @receiver
 @~/Workspace/Python/butterfly/
 @butterfly
-@test
 @count_delim
 @split_msg
 @pearson
@@ -667,34 +669,65 @@ $
 @sync_userinfo
 @thread
 @generate_constellation
+@send_sms
 
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	/
+"0	LINE	0
+	void
+	ngx_encode_base64(char *dst, size_t *dst_len, char *src, size_t src_len) {
 "1	LINE	0
-	>>>>>>> a2e9a3df73caf1cab2519365b23d90634e00147a
+	/* 
+	 * ===  FUNCTION  ======================================================================
+	 *         Name:  main
+	 *  Description:  
+	 * =====================================================================================
+	 */
 "2	LINE	0
-	    if(NULL == text_buf || NULL == sub_text_buf) {
+	alias editpdf='xournal'
 "3	LINE	0
-	=======
+	int main(int argc, char *argv[]) { 
+	    int flag = 0; 
+	    char passwd[10]; 
+	
+	    memset(passwd,0,sizeof(passwd)); 
+	
+	    strcpy(passwd, argv[1]); 
+	
+	    if(0 == strcmp("LinuxGeek", passwd)) { 
+	        flag = 1; 
+	    } 
+	
+	    if(flag) {
+	        printf("\n Password cracked \n"); 
+	    } else {
+	        printf("\n Incorrect passwd \n"); 
+	    } 
+	
+	    return 0; 
+	} 
 "4	LINE	0
-	<<<<<<< HEAD
+	    flag = 0; 
 "5	LINE	0
-	=======
-	    text_buf = xmalloc(proto_length + 20*1024);
-	>>>>>>> a2e9a3df73caf1cab2519365b23d90634e00147a
+	    char passwd[10]; 
 "6	LINE	0
-	<<<<<<< HEAD
+	    int flag = 0; 
 "7	LINE	0
-	=======
-	                "SMI: unpack SyncEducationInfo package exceptional");
-	>>>>>>> a2e9a3df73caf1cab2519365b23d90634e00147a
+	
 "8	LINE	0
-	<<<<<<< HEAD
+	
 "9	LINE	0
-	                if 
+	int main(void) { 
+	    char buff[10]; 
+	    memset(buff,0,sizeof(buff)); 
+	
+	    fgets(buff, 10, stdin); 
+	
+	    printf("\n The buffer entered is [%s]\n",buff); 
+	
+	    return 0; 
+	} 
 "a@	CHAR	0
 	j$x
 "b	CHAR	0
@@ -702,169 +735,191 @@ $
 "k	CHAR	0
 	jk
 ""-	CHAR	0
-	clang 
+	 {
 
 # File marks:
-'0  46  20  ~/Workspace/CI/04_源码/01_接口/src/lib/lib_gen_constellation/src/gen_constellation.c
-'1  38  0  ~/src/log4c-1.2.1-yueyang-1/src/log4c/buffer.h
-'2  358  1  ~/src/log4c-1.2.1-yueyang-1/src/log4c/rc.c
-'3  92  1  /tmp/grass-mud-horse-read-only/erlang/grass_mud_horse.erl
-'4  5  6  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/Makefile
-'5  111  4  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/inf_employment_info.c
-'6  127  4  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/inf_employment_info.c
-'7  6  20  ~/Workspace/CI/04_源码/01_接口/src/community_sync/inf_employment_info.c
-'8  3  10  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/Makefile
-'9  111  0  ~/src/log4c-1.2.1-yueyang-1/src/log4c/category.c
+'0  942  1  ~/.viminfo
+'1  174  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
+'2  19  0  ~/Workspace/CI/01_需求/校园变更.txt
+'3  36  73  ~/tmp/test_base64.c
+'4  91  12  ~/.bashrc
+'5  49  4  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/know.cpp
+'6  1  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
+'7  1  0  /etc/yaourtrc
+'8  83  4  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
+'9  64  0  /etc/pacman.d/mirrorlist
 
 # Jumplist (newest first):
--'  46  20  ~/Workspace/CI/04_源码/01_接口/src/lib/lib_gen_constellation/src/gen_constellation.c
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/lib/lib_gen_constellation/src/gen_constellation.c
--'  38  0  ~/src/log4c-1.2.1-yueyang-1/src/log4c/buffer.h
--'  1  0  ~/src/log4c-1.2.1-yueyang-1/src/log4c/buffer.h
--'  358  1  ~/src/log4c-1.2.1-yueyang-1/src/log4c/rc.c
--'  3  0  ~/src/log4c-1.2.1-yueyang-1/src/log4c/rc.c
--'  1  0  ~/src/log4c-1.2.1-yueyang-1/src/log4c/rc.c
--'  92  1  /tmp/grass-mud-horse-read-only/erlang/grass_mud_horse.erl
--'  1  0  /tmp/grass-mud-horse-read-only/erlang/grass_mud_horse.erl
--'  5  6  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/Makefile
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/Makefile
--'  3  0  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/Makefile
--'  111  4  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/inf_employment_info.c
--'  127  4  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/inf_employment_info.c
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/inf_employment_info.c
--'  6  20  ~/Workspace/CI/04_源码/01_接口/src/community_sync/inf_employment_info.c
--'  18  0  ~/Workspace/CI/04_源码/01_接口/src/community_sync/inf_employment_info.c
--'  111  0  ~/src/log4c-1.2.1-yueyang-1/src/log4c/category.c
--'  289  0  ~/src/log4c-1.2.1-yueyang-1/src/log4c/category.c
--'  1  0  ~/src/log4c-1.2.1-yueyang-1/src/log4c/category.c
--'  1  0  ~/src/log4c-1.2.1-yueyang-1/src/log4c/version.c
--'  1045  0  ~/src/libevent-2.0.19-stable/http.c
--'  1096  0  ~/src/libevent-2.0.19-stable/http.c
--'  1082  4  ~/src/libevent-2.0.19-stable/http.c
--'  1030  1  ~/src/libevent-2.0.19-stable/http.c
--'  1  0  ~/src/libevent-2.0.19-stable/http.c
--'  260  3  ~/src/libevent-2.0.19-stable/epoll.c
--'  473  0  ~/src/libevent-2.0.19-stable/epoll.c
--'  1  0  ~/src/libevent-2.0.19-stable/epoll.c
--'  15  0  /tmp/(K4 None Touch)2012-08-10.C14126.rtm/K4_4.0.0_to_4.0.1_����/Duokan2012_-�����Φ��.txt
--'  1  0  /tmp/(K4 None Touch)2012-08-10.C14126.rtm/K4_4.0.0_to_4.0.1_����/Duokan2012_-�����Φ��.txt
--'  2  0  /tmp/(K4 None Touch)2012-08-10.C14126.rtm/DK_System/bin/update.sh
--'  1  0  /tmp/(K4 None Touch)2012-08-10.C14126.rtm/DK_System/bin/update.sh
--'  47  0  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/receiver.h
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/receiver.h
--'  26  0  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/inf_basic_info.h
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/inf_basic_info.h
--'  79  8  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  81  28  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  65  9  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/hbase_all_friend/src/filter.c
--'  39  4  ~/Workspace/CI/04_源码/01_接口/src/data_handing/bin/data_handing.py
--'  33  9  ~/Workspace/CI/04_源码/01_接口/src/data_handing/bin/data_handing.py
--'  27  7  ~/Workspace/CI/04_源码/01_接口/src/data_handing/bin/data_handing.py
--'  46  4  ~/Workspace/CI/04_源码/01_接口/src/data_handing/bin/data_handing.py
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/data_handing/bin/data_handing.py
--'  165  12  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/main.py
--'  94  12  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/main.py
--'  164  16  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/main.py
--'  146  0  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/main.py
--'  144  8  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/main.py
--'  128  36  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/main.py
--'  111  36  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/main.py
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/main.py
--'  118  4  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/clean_data.py
--'  80  8  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/clean_data.py
--'  119  0  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/clean_data.py
--'  75  20  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/clean_data.py
--'  77  8  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/clean_data.py
--'  81  12  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/clean_data.py
--'  74  16  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/clean_data.py
--'  73  12  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/clean_data.py
--'  78  20  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/clean_data.py
--'  50  12  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/clean_data.py
--'  76  20  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/clean_data.py
--'  72  12  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/clean_data.py
--'  69  14  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/clean_data.py
--'  92  8  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/clean_data.py
--'  2  0  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/clean_data.py
--'  67  4  ~/Workspace/CI/04_源码/01_接口/src/remove_old_file/src/remove_old_file.py
--'  68  4  ~/Workspace/CI/04_源码/01_接口/src/remove_old_file/src/remove_old_file.py
--'  5  4  ~/Workspace/CI/04_源码/01_接口/src/remove_old_file/src/remove_old_file.py
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/remove_old_file/src/remove_old_file.py
--'  145  4  ~/Workspace/CI/04_源码/01_接口/src/lib_get_mobileno/src/g_mobile.c
--'  149  4  ~/Workspace/CI/04_源码/01_接口/src/lib_get_mobileno/src/g_mobile.c
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/lib_get_mobileno/src/g_mobile.c
--'  18  1  ~/Workspace/CI/04_源码/01_接口/src/lib_get_mobileno/src/Makefile
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/lib_get_mobileno/src/Makefile
--'  7  4  ~/Workspace/CI/04_源码/01_接口/src/lib_get_mobileno/src/__Tag_List__
--'  2  0  ~/Workspace/CI/04_源码/01_接口/src/lib_get_mobileno/src/__Tag_List__
--'  151  0  ~/Workspace/CI/04_源码/01_接口/src/lib_get_mobileno/src/g_mobile.c
--'  56  0  ~/Workspace/CI/04_源码/01_接口/src/data_handing/bin/send_sms.py
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/data_handing/bin/send_sms.py
--'  65  51  ~/Workspace/CI/04_源码/01_接口/src/data_handing/scripts/check.sh
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/data_handing/scripts/check.sh
--'  106  33  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/clean_data.py
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/clean_data.py
--'  74  19  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/put_whole_interface.py
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/put_whole_interface.py
--'  86  19  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/get_whole_interface.py
--'  93  0  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/get_whole_interface.py
--'  68  8  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/get_whole_interface.py
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/get_whole_interface.py
--'  3  0  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/main.py
--'  77  31  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/main.py
--'  54  45  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/main.py
--'  51  42  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/main.py
--'  49  44  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/main.py
--'  45  41  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/main.py
+-'  942  1  ~/.viminfo
+-'  1  0  ~/.viminfo
+-'  174  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
+-'  2  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
+-'  19  0  ~/Workspace/CI/01_需求/校园变更.txt
+-'  1  0  ~/Workspace/CI/01_需求/校园变更.txt
+-'  36  73  ~/tmp/test_base64.c
+-'  71  4  ~/tmp/test_base64.c
+-'  72  0  ~/tmp/test_base64.c
+-'  43  4  ~/tmp/test_base64.c
+-'  47  9  ~/tmp/test_base64.c
+-'  44  4  ~/tmp/test_base64.c
+-'  42  9  ~/tmp/test_base64.c
+-'  1  0  ~/tmp/test_base64.c
+-'  21  14  ~/tmp/test_base64.c
+-'  6  19  ~/tmp/test_base64.c
+-'  18  0  ~/tmp/test_base64.c
+-'  91  12  ~/.bashrc
+-'  1  0  ~/.bashrc
+-'  90  0  ~/.bashrc
+-'  23  14  ~/.bashrc
+-'  27  30  ~/.bashrc
+-'  2  0  ~/.bashrc
+-'  49  4  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/know.cpp
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/know.cpp
+-'  1  0  /etc/yaourtrc
+-'  50  0  /etc/yaourtrc
+-'  83  4  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
+-'  164  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
+-'  224  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  237  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  202  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  220  4  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  64  0  /etc/pacman.d/mirrorlist
+-'  59  0  /etc/pacman.d/mirrorlist
+-'  1  0  /etc/pacman.d/mirrorlist
+-'  3  0  ~/src/tengine-1.4.0/README
+-'  1  0  ~/src/tengine-1.4.0/README
+-'  34  4  /tmp/test.c
+-'  23  0  /tmp/test.c
+-'  22  0  /tmp/test.c
+-'  5  0  /tmp/test.c
+-'  21  15  /tmp/test.c
+-'  19  15  /tmp/test.c
+-'  6  19  /tmp/test.c
+-'  69  3  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  66  40  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  44  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  59  33  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  70  2  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  73  1  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  53  10  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  39  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  76  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  47  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  32  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  108  1  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  120  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  92  1  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  97  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  638  0  /usr/include/stdio.h
+-'  1  0  /usr/include/stdio.h
+-'  69  3  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  66  40  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  44  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  59  33  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  70  2  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  73  1  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  53  10  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  39  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  76  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  47  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  32  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  108  1  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  120  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  92  1  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  97  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  69  3  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  66  40  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  44  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  59  33  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  70  2  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  73  1  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  53  10  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  39  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  76  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  34  4  /tmp/test.c
+-'  23  0  /tmp/test.c
+-'  22  0  /tmp/test.c
+-'  5  0  /tmp/test.c
+-'  21  15  /tmp/test.c
+-'  19  15  /tmp/test.c
+-'  6  19  /tmp/test.c
+-'  69  3  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
 
 # Buffer list:
-%~/Workspace/CI/04_源码/01_接口/src/lib/lib_gen_constellation/src/gen_constellation.c	46	20
+%~/.viminfo	942	1
 
 # History of marks within files (newest to oldest):
 
-> ~/Workspace/CI/04_源码/01_接口/src/lib/lib_gen_constellation/src/gen_constellation.c
-	"	46	20
+> ~/.viminfo
+	"	942	1
 
-> ~/src/log4c-1.2.1-yueyang-1/src/log4c/buffer.h
-	"	38	0
+> ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
+	"	174	0
 
-> ~/src/log4c-1.2.1-yueyang-1/src/log4c/rc.c
-	"	358	1
+> ~/Workspace/CI/01_需求/校园变更.txt
+	"	19	0
 
-> ~/src/log4c-1.2.1-yueyang-1/src/log4c/__Tag_List__
-	"	16	4
-	.	18	0
-	+	45	0
-	+	18	0
+> ~/tmp/test_base64.c
+	"	36	73
+	^	23	78
+	.	23	77
+	+	6	0
+	+	19	0
+	+	26	32
+	+	25	0
+	+	20	8
+	+	25	0
+	+	32	0
+	+	31	0
+	+	21	14
+	+	36	44
+	+	42	13
+	+	43	11
+	+	44	11
+	+	71	21
+	+	37	4
+	+	27	30
+	+	30	23
+	+	28	23
+	+	30	31
+	+	36	36
+	+	30	53
+	+	29	11
+	+	37	0
+	+	23	4
+	+	25	0
+	+	24	0
+	+	23	77
 
-> /tmp/grass-mud-horse-read-only/erlang/grass_mud_horse.erl
-	"	92	1
+> ~/tmp/__Tag_List__
+	"	6	4
+	.	7	0
+	+	7	0
 
-> ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/Makefile
-	"	5	6
-	^	5	7
-	.	5	6
-	+	3	10
-	+	5	6
+> ~/.bashrc
+	"	91	12
+	.	91	0
+	+	91	0
+	+	91	0
+	+	91	0
 
-> ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/inf_employment_info.c
-	"	111	4
-	.	97	0
-	+	79	0
-	+	80	0
-	+	87	0
-	+	88	0
-	+	96	0
-	+	97	0
+> ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/know.cpp
+	"	49	4
 
-> ~/Workspace/CI/04_源码/01_接口/src/community_sync/inf_employment_info.c
-	"	6	20
-	^	6	24
-	.	6	20
-	+	6	20
+> ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/__Tag_List__
+	"	5	4
+	.	6	0
+	+	6	0
 
-> ~/src/log4c-1.2.1-yueyang-1/src/log4c/category.c
-	"	111	0
-
-> ~/src/log4c-1.2.1-yueyang-1/src/log4c/version.c
+> /etc/yaourtrc
 	"	1	0
+
+> ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+	"	224	0
+	.	168	0
+	+	168	0
+	a	229	4
+	n	98	4

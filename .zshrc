@@ -82,6 +82,7 @@ alias ls='ls -F --color=auto'
 alias grep='grep --color=auto'
 alias ee='emacsclient -t'
 alias e='emacs -nw'
+alias free='free -m'
 
 alias ll='ls -AhlF'
 alias lt='ls -Arlth'
