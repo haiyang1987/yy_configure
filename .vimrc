@@ -166,7 +166,7 @@ map <c-space> ?
 
 "Actually, the tab does not switch buffers, but my arrows
 "Bclose function ca be found in "Buffer related" section
-"map <leader>bd :Bclose<cr>
+map <leader>bd :close<cr>
 map <up> :set encoding<cr>
 map <down> <leader>bd
 "Use the arrows to something usefull
@@ -572,7 +572,7 @@ inoremap <c-j> <esc>:call JumpToNextPlaceholder()<cr>a</cr></esc></c-j></cr></c-
      execute ":!python " . src . " > " . dst
      execute ":pedit! " . dst
    endfunction
-   au FileType python vmap <F7> :call Python_Eval_VSplit()<cr>
+   "au FileType python vmap <F7> :call Python_Eval_VSplit()<cr>
 
    """""""""""""""""""""""""""""""
    " Vim section
@@ -696,7 +696,9 @@ inoremap <c-j> <esc>:call JumpToNextPlaceholder()<cr>a</cr></esc></c-j></cr></c-
    """"""""""""""""""""""""""""""
    " SVN section
    """""""""""""""""""""""""""""""
-   map <F8> :new<CR>:read !svn diff<CR>:set syntax=diff buftype=nofile<CR>gg
+   "map <F8> :new<CR>:read !svn diff<CR>:set syntax=diff buftype=nofile<CR>gg
+   map <F8> <Plug>D 
+   map <F7> :set nodiff<CR>
 
 """"""""""""""""""""""""""""""
 " Snippets

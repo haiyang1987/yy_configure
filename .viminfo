@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~H
 # Last Search Pattern:
-~Msle0~/\<dst_len\>
+~MSle0~/F8
 
 # Last Substitute Search Pattern:
 ~MSle0&flag
@@ -17,15 +17,19 @@
 $
 
 # Command Line History (newest to oldest):
-:qa
-:w
-:e
 :x
+:w
+:qa
+:q
+:set nodiff
+:D
+:D h
+:qa!
+:e
 :e ciconnection.cpp
 :q!
 :w !sudo tee %
 :set tags=tags
-:q
 :A
 :e school.pb.h
 :grep 
@@ -33,12 +37,13 @@ $
 :e ../conf/configure.cfg
 :e receiver.c
 :e community.pb-c.h
-:e inf_basic_info.c
-:wa
-:qa!
-:bn
 
 # Search String History (newest to oldest):
+?/F8
+?/F8jnN
+?/F7
+?/UP
+?/F9
 ? \<dst_len\>
 ? \<s\>
 ? \<len\>
@@ -300,7 +305,6 @@ $
 ? \<initialized\>
 ? \<curl_easy_send\>
 ? \<include\>
-?/F9
 ?/sdfsdf
 ? \<curl_easy_setopt\>
 ? \<headerlist\>
@@ -635,10 +639,6 @@ $
 ?/pop
 ?/receiver
 ? \<temp\>
-? \<inf_download_server_info\>
-? \<download_server_info\>
-?/education
-?/ifno
 
 # Expression History (newest to oldest):
 
@@ -675,18 +675,19 @@ $
 
 # Registers:
 "0	LINE	0
-	void
-	ngx_encode_base64(char *dst, size_t *dst_len, char *src, size_t src_len) {
+	   map <F8> <Plug>D 
 "1	LINE	0
+	   #map <F8> :new<CR>:read !svn diff<CR>:set syntax=diff buftype=nofile<CR>gg
+"2	LINE	0
 	/* 
 	 * ===  FUNCTION  ======================================================================
 	 *         Name:  main
 	 *  Description:  
 	 * =====================================================================================
 	 */
-"2	LINE	0
-	alias editpdf='xournal'
 "3	LINE	0
+	alias editpdf='xournal'
+"4	LINE	0
 	int main(int argc, char *argv[]) { 
 	    int flag = 0; 
 	    char passwd[10]; 
@@ -707,27 +708,16 @@ $
 	
 	    return 0; 
 	} 
-"4	LINE	0
-	    flag = 0; 
 "5	LINE	0
-	    char passwd[10]; 
+	    flag = 0; 
 "6	LINE	0
-	    int flag = 0; 
+	    char passwd[10]; 
 "7	LINE	0
-	
+	    int flag = 0; 
 "8	LINE	0
 	
 "9	LINE	0
-	int main(void) { 
-	    char buff[10]; 
-	    memset(buff,0,sizeof(buff)); 
 	
-	    fgets(buff, 10, stdin); 
-	
-	    printf("\n The buffer entered is [%s]\n",buff); 
-	
-	    return 0; 
-	} 
 "a@	CHAR	0
 	j$x
 "b	CHAR	0
@@ -735,26 +725,42 @@ $
 "k	CHAR	0
 	jk
 ""-	CHAR	0
-	 {
+	<Plug>D 
 
 # File marks:
-'0  942  1  ~/.viminfo
-'1  174  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
-'2  19  0  ~/Workspace/CI/01_需求/校园变更.txt
-'3  36  73  ~/tmp/test_base64.c
-'4  91  12  ~/.bashrc
-'5  49  4  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/know.cpp
-'6  1  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
-'7  1  0  /etc/yaourtrc
-'8  83  4  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
-'9  64  0  /etc/pacman.d/mirrorlist
+'0  701  25  ~/.vimrc
+'1  9  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
+'2  6  0  /tmp/vCSYABT/2
+'3  1  0  /tmp/vnJQpGy/2
+'4  1  0  /tmp/vzVJBsh/2
+'5  942  1  ~/.viminfo
+'6  176  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
+'7  19  0  ~/Workspace/CI/01_需求/校园变更.txt
+'8  36  73  ~/tmp/test_base64.c
+'9  91  12  ~/.bashrc
 
 # Jumplist (newest first):
+-'  701  25  ~/.vimrc
+-'  574  3  ~/.vimrc
+-'  169  16  ~/.vimrc
+-'  170  0  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  778  2  ~/.vimrc
+-'  575  28  ~/.vimrc
+-'  318  5  ~/.vimrc
+-'  700  3  ~/.vimrc
+-'  9  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
+-'  5  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
+-'  6  0  /tmp/vCSYABT/2
+-'  1  0  /tmp/vCSYABT/2
+-'  11  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
+-'  1  0  /tmp/vnJQpGy/2
+-'  1  0  /tmp/vzVJBsh/2
+-'  176  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
 -'  942  1  ~/.viminfo
 -'  1  0  ~/.viminfo
--'  174  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
 -'  2  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
 -'  19  0  ~/Workspace/CI/01_需求/校园变更.txt
 -'  1  0  ~/Workspace/CI/01_需求/校园变更.txt
 -'  36  73  ~/tmp/test_base64.c
@@ -829,97 +835,59 @@ $
 -'  108  1  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
 -'  120  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
 -'  92  1  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  97  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  69  3  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  66  40  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  44  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  59  33  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  70  2  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  73  1  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  53  10  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  39  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  76  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  34  4  /tmp/test.c
--'  23  0  /tmp/test.c
--'  22  0  /tmp/test.c
--'  5  0  /tmp/test.c
--'  21  15  /tmp/test.c
--'  19  15  /tmp/test.c
--'  6  19  /tmp/test.c
--'  69  3  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
+-'  25  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
+-'  30  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
 
 # Buffer list:
-%~/.viminfo	942	1
+%~/.vimrc	701	25
 
 # History of marks within files (newest to oldest):
 
-> ~/.viminfo
-	"	942	1
+> ~/.vimrc
+	"	701	25
+	^	701	26
+	.	701	25
+	+	699	3
+	+	700	0
+	+	699	3
+	+	700	0
+	+	169	16
+	+	575	3
+	+	701	25
 
 > ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
-	"	174	0
+	"	25	0
+	^	27	8
+	.	27	7
+	+	12	3
+	+	10	1
+	+	27	7
 
-> ~/Workspace/CI/01_需求/校园变更.txt
-	"	19	0
+> /tmp/vLl0J7z/2
+	"	24	0
 
-> ~/tmp/test_base64.c
-	"	36	73
-	^	23	78
-	.	23	77
-	+	6	0
-	+	19	0
-	+	26	32
-	+	25	0
-	+	20	8
-	+	25	0
-	+	32	0
-	+	31	0
-	+	21	14
-	+	36	44
-	+	42	13
-	+	43	11
-	+	44	11
-	+	71	21
-	+	37	4
-	+	27	30
-	+	30	23
-	+	28	23
-	+	30	31
-	+	36	36
-	+	30	53
-	+	29	11
-	+	37	0
-	+	23	4
-	+	25	0
-	+	24	0
-	+	23	77
-
-> ~/tmp/__Tag_List__
-	"	6	4
-	.	7	0
-	+	7	0
-
-> ~/.bashrc
-	"	91	12
-	.	91	0
-	+	91	0
-	+	91	0
-	+	91	0
-
-> ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/know.cpp
-	"	49	4
-
-> ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/__Tag_List__
-	"	5	4
-	.	6	0
-	+	6	0
-
-> /etc/yaourtrc
+> /tmp/vR69pCS/2
 	"	1	0
 
-> ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
-	"	224	0
-	.	168	0
-	+	168	0
-	a	229	4
-	n	98	4
+> /tmp/vgm0FlY/2
+	"	8	0
+
+> ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/__Tag_List__
+	"	2	0
+	.	1	0
+	+	2	0
+	+	1	0
+
+> /tmp/vkkXCaY/2
+	"	4	0
+
+> /tmp/vY7BRzE/2
+	"	9	0
+
+> /tmp/vXRsJPX/2
+	"	1	0
+	.	1	0
+	+	1	0
+
+> /tmp/vybRPaj/2
+	"	1	0
