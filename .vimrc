@@ -28,7 +28,7 @@ nmap <leader>f :find<cr>
 "Fast reloading of the .vimrc
 map <leader>s :source ~/.vimrc<cr>
 "Fast editing of .vimrc
-map <leader>e :e! ~/.vimrc<cr>
+"map <leader>e :e! ~/.vimrc<cr>
 "When .vimrc is edited, reload it
 autocmd! bufwritepost .vimrc source ~/.vimrc
 
@@ -167,8 +167,9 @@ map <c-space> ?
 "Actually, the tab does not switch buffers, but my arrows
 "Bclose function ca be found in "Buffer related" section
 map <leader>bd :close<cr>
-map <up> :set encoding<cr>
+map <up> :set tags=/home/yueyang/src/tags<cr>
 map <down> <leader>bd
+
 "Use the arrows to something usefull
 map <right> :bn<cr>
 map <left> :bp<cr>
@@ -825,7 +826,7 @@ let Tlist_Show_One_File = 1
 
 map <leader>P <esc>:Project<cr>
 
-set tags=/home/yueyang/src/tags
+set tags=./tags
 
 let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
 set grepprg=/usr/bin/grep\ -nH

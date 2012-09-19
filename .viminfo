@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~H
 # Last Search Pattern:
-~MSle0~/F8
+~Msle0~/\<ThreadInit\>
 
 # Last Substitute Search Pattern:
 ~MSle0&flag
@@ -20,48 +20,97 @@ $
 :x
 :w
 :qa
-:q
-:set nodiff
-:D
-:D h
-:qa!
-:e
 :e ciconnection.cpp
+:e
+:qa!
 :q!
-:w !sudo tee %
-:set tags=tags
 :A
-:e school.pb.h
-:grep 
-:e config.c
-:e ../conf/configure.cfg
+:set tags=tags
+:q
+:wa
 :e receiver.c
-:e community.pb-c.h
+:e put_whole_interface.py
+:.,.+2qa
+:set encoding
+:set fileencoding
+:set tags=../../tags
+:e ~/tmp/test_base64.c
+:w !sudo tee %
+:e school.pb.h
 
 # Search String History (newest to oldest):
-?/F8
-?/F8jnN
-?/F7
-?/UP
-?/F9
-? \<dst_len\>
-? \<s\>
+? \<ThreadInit\>
+?/new
+?/tag
+? \<threads\>
+? \<pthread_attr_init\>
+?/k
+?/encoding
+?/down
+? \<ThreadCreate\>
+?/thre
+? \<ServerLoop\>
+?/time
+? \<threadManager\>
+? \<start_server\>
+? \<prefork\>
+?/main
+?/mmain
+?/log
+? \<THRIFT_DIR\>
+?/thread
+?/thrift
+? \<InvalidOperation\>
+? \<addressBook\>
+? \<operdata\>
+? \<file_gen_pack\>
+?/file
+? \<read_file_field\>
+?/read_fi
+? \<Percona\>
+? \<mobile_no\>
+? \<insert_proto\>
+?/mobile
+?/bin
+?/local
+?/ 6 
+?/6
+?/ev
+?/lib
+? \<evbuf_length\>
+? \<http_buf\>
+?/QUEUE
+? \<pool\>
+? \<queue\>
+?/queue
+?/push
+?/post
+? \s\+$
+?/jo
+?/ssh
+?/ftp
+?/hist
+?/xargs
 ? \<len\>
-? \<d\>
-? \<src\>
-? \<dst\>
+? \<u\>
+? \<p\>
+?/utf8
+?/tf8
+? \<IF\>
+?/know
+?/base
 ?/^al
 ?/al
 ? \<qc\>
 ?//%
 ?/\%
+? \<s\>
 ? \<where\>
 ? \<true\>
 ?/I
 ?/userext
 ?/user
 ?/uid
-? \s\+$
 ? \<every_line\>
 ? \<_write_result_file\>
 ?/write
@@ -96,7 +145,6 @@ $
 ?/p
 ?/Community__sync
 ? \<post_SPI_cb\>
-?/local
 ? \<dump_base_user_info\>
 ?/basic
 ? \<db_name\>
@@ -136,10 +184,8 @@ $
 ?/child
 ? \<printf\>
 ?/print
-?/log
 ? \<check_child\>
 ? \<mni_fork\>
-? \<evbuf_length\>
 ?/log4c
 ? \<req\>
 ?/less 
@@ -177,7 +223,6 @@ $
 ? \<Ret\>
 ? \<g_MapPids\>
 ?/waitpid
-?/main
 ?/clang
 ?/gcc
 ? \<send\>
@@ -238,8 +283,10 @@ $
 ? \<NGX_MEMCPY_LIMIT\>
 ? \<ngx_decode_base64_internal\>
 ? \<basis64\>
+? \<src\>
+? \<d\>
+? \<dst\>
 ? \<inactive\>
-? \<pool\>
 ?/kj
 ? \<ngx_crc32_init\>
 ?/-syu
@@ -305,6 +352,7 @@ $
 ? \<initialized\>
 ? \<curl_easy_send\>
 ? \<include\>
+?/F9
 ?/sdfsdf
 ? \<curl_easy_setopt\>
 ? \<headerlist\>
@@ -416,8 +464,6 @@ $
 ? \<awesome\>
 ?/awe
 ? \<table_name\>
-?/k
-? ^
 ?/hash
 ?/lua
 ?/cons
@@ -437,7 +483,6 @@ $
 ?/sei
 ? \<mysql_ping\>
 ?/ping
-?/push
 ?/free
 ? \<decoded\>
 ?/clean
@@ -450,12 +495,10 @@ $
 ? \<begin_year\>
 ?/fin
 ?/SMI
-? \<insert_proto\>
 ?/4 ==
 ? \<create_thread\>
 ? \<queue_capacity\>
 ? \<bounds\>
-?/queue
 ? \<CURLOPT_POSTFIELDS\>
 ? \<delete_proto\>
 ?/malloc
@@ -541,7 +584,6 @@ $
 ?/sms
 ? \<merge\>
 ? \<import_mysql\>
-?/base
 ?/import base
 ?/im
 ? \<error\>
@@ -569,7 +611,6 @@ $
 ? \<upload_ftp\>
 ?/up
 ? \<local_name\>
-?/down
 ? \<download\>
 ?/download error
 ?/info
@@ -598,47 +639,6 @@ $
 ? \<PATH_MAX\>
 ? \<fn\>
 ? \<VARRUN\>
-?/tmp
-?/erro
-? \<Butterfly\>
-? \<put_dat_files\>
-?/creat
-?/pth
-? \<rv\>
-? \<create_dump\>
-?/not
-? \<notify_rt\>
-?/encod
-? \<_\>
-? \<_download_ctl\>
-?/code
-?/stat
-?/getopt
-? \<initate\>
-? \<file_info\>
-? \<download_info\>
-? \<_one_piebald\>
-? \<_download_info\>
-? \<code\>
-?/gmtime
-? \<tm\>
-? \<tmp\>
-?/time
-? \<_gen_ctl_file_name\>
-? \<retry\>
-? ):
-? \<def\>
-?/utf
-?/fixme
-?/ass
-?/daemon
-?/8888
-?/curlcode
-?/todo
-?/tido
-?/pop
-?/receiver
-? \<temp\>
 
 # Expression History (newest to oldest):
 
@@ -674,220 +674,229 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	   map <F8> <Plug>D 
+""0	LINE	0
+	
 "1	LINE	0
-	   #map <F8> :new<CR>:read !svn diff<CR>:set syntax=diff buftype=nofile<CR>gg
+	
 "2	LINE	0
-	/* 
-	 * ===  FUNCTION  ======================================================================
-	 *         Name:  main
-	 *  Description:  
+	set tags=/home/yueyang/src/tags
+"3	LINE	0
+	set tags=/home/yueyang/src/tags
+"4	LINE	0
+	map <up> :set tags=./tags<cr>
+"5	LINE	0
+	
+"6	LINE	0
+	
+	 * =====================================================================================
+	 *
+	 *       Filename:  my.c
+	 *
+	 *    Description: f 
+	 *
+	 *        Version:  1.0
+	 *        Created:  09/17/2012 03:28:25 PM
+	 *       Revision:  none
+	 *       Compiler:  gcc
+	 *
+	 *         Author:  YueYang (feinno), yueyang@feinno.com
+	 *        Company:  FCT
+	 *
 	 * =====================================================================================
 	 */
-"3	LINE	0
-	alias editpdf='xournal'
-"4	LINE	0
-	int main(int argc, char *argv[]) { 
-	    int flag = 0; 
-	    char passwd[10]; 
 	
-	    memset(passwd,0,sizeof(passwd)); 
-	
-	    strcpy(passwd, argv[1]); 
-	
-	    if(0 == strcmp("LinuxGeek", passwd)) { 
-	        flag = 1; 
-	    } 
-	
-	    if(flag) {
-	        printf("\n Password cracked \n"); 
-	    } else {
-	        printf("\n Incorrect passwd \n"); 
-	    } 
-	
-	    return 0; 
-	} 
-"5	LINE	0
-	    flag = 0; 
-"6	LINE	0
-	    char passwd[10]; 
 "7	LINE	0
-	    int flag = 0; 
+	
 "8	LINE	0
 	
 "9	LINE	0
-	
+	    //char *birth_day;
 "a@	CHAR	0
 	j$x
 "b	CHAR	0
 	0dwj
 "k	CHAR	0
 	jk
-""-	CHAR	0
-	<Plug>D 
+"-	CHAR	0
+	./tags
 
 # File marks:
-'0  701  25  ~/.vimrc
-'1  9  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
-'2  6  0  /tmp/vCSYABT/2
-'3  1  0  /tmp/vnJQpGy/2
-'4  1  0  /tmp/vzVJBsh/2
-'5  942  1  ~/.viminfo
-'6  176  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
-'7  19  0  ~/Workspace/CI/01_需求/校园变更.txt
-'8  36  73  ~/tmp/test_base64.c
-'9  91  12  ~/.bashrc
+'0  445  0  ~/.rc.lua
+'1  1  0  ~/Downloads/nixnote/install.sh
+'2  1  0  ~/Downloads/aliedit.sh
+'3  120  8  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
+'4  170  0  ~/.vimrc
+'5  221  4  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+'6  46  4  ~/Workspace/CI/04_源码/01_接口/src/cis/__Tag_List__
+'7  207  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+'8  92  12  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
+'9  9  20  /etc/rc.conf
 
 # Jumplist (newest first):
--'  701  25  ~/.vimrc
--'  574  3  ~/.vimrc
--'  169  16  ~/.vimrc
--'  170  0  ~/.vimrc
--'  1  0  ~/.vimrc
--'  778  2  ~/.vimrc
--'  575  28  ~/.vimrc
--'  318  5  ~/.vimrc
--'  700  3  ~/.vimrc
--'  9  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
--'  5  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
--'  6  0  /tmp/vCSYABT/2
--'  1  0  /tmp/vCSYABT/2
--'  11  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
--'  1  0  /tmp/vnJQpGy/2
--'  1  0  /tmp/vzVJBsh/2
--'  176  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
--'  942  1  ~/.viminfo
--'  1  0  ~/.viminfo
--'  2  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
--'  19  0  ~/Workspace/CI/01_需求/校园变更.txt
--'  1  0  ~/Workspace/CI/01_需求/校园变更.txt
--'  36  73  ~/tmp/test_base64.c
--'  71  4  ~/tmp/test_base64.c
--'  72  0  ~/tmp/test_base64.c
--'  43  4  ~/tmp/test_base64.c
--'  47  9  ~/tmp/test_base64.c
--'  44  4  ~/tmp/test_base64.c
--'  42  9  ~/tmp/test_base64.c
--'  1  0  ~/tmp/test_base64.c
--'  21  14  ~/tmp/test_base64.c
--'  6  19  ~/tmp/test_base64.c
--'  18  0  ~/tmp/test_base64.c
--'  91  12  ~/.bashrc
--'  1  0  ~/.bashrc
--'  90  0  ~/.bashrc
--'  23  14  ~/.bashrc
--'  27  30  ~/.bashrc
--'  2  0  ~/.bashrc
--'  49  4  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/know.cpp
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/know.cpp
--'  1  0  /etc/yaourtrc
--'  50  0  /etc/yaourtrc
--'  83  4  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
--'  164  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
+-'  445  0  ~/.rc.lua
+-'  1  0  ~/.rc.lua
+-'  89  0  ~/.rc.lua
+-'  1  0  ~/Downloads/nixnote/install.sh
+-'  1  0  ~/Downloads/aliedit.sh
+-'  837  0  ~/Downloads/aliedit.sh
+-'  2  0  ~/Downloads/aliedit.sh
+-'  120  8  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
+-'  100  54  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
+-'  84  4  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
+-'  103  8  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
+-'  92  12  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
 -'  1  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
--'  224  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
--'  237  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
--'  202  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
--'  220  4  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  206  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  193  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  164  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  161  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  146  8  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  225  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  205  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  217  44  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  218  40  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  219  24  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  195  6  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  221  4  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  200  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  215  38  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  214  4  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
 -'  1  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
--'  64  0  /etc/pacman.d/mirrorlist
--'  59  0  /etc/pacman.d/mirrorlist
--'  1  0  /etc/pacman.d/mirrorlist
--'  3  0  ~/src/tengine-1.4.0/README
--'  1  0  ~/src/tengine-1.4.0/README
--'  34  4  /tmp/test.c
--'  23  0  /tmp/test.c
--'  22  0  /tmp/test.c
--'  5  0  /tmp/test.c
--'  21  15  /tmp/test.c
--'  19  15  /tmp/test.c
--'  6  19  /tmp/test.c
--'  69  3  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  66  40  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  44  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  59  33  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  70  2  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  73  1  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  53  10  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  39  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  76  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  47  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  32  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  108  1  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  120  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  92  1  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  97  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  638  0  /usr/include/stdio.h
--'  1  0  /usr/include/stdio.h
--'  69  3  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  66  40  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  44  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  59  33  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  70  2  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  73  1  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  53  10  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  39  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  76  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  47  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  32  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  108  1  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  120  0  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  92  1  ~/kernel/linux-2.6.39.4/lib/ts_kmp.c
--'  25  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
--'  30  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
+-'  21  0  ~/Workspace/CI/04_源码/01_接口/src/cis/config.h
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/cis/config.h
+-'  170  0  ~/.vimrc
+-'  830  0  ~/.vimrc
+-'  829  14  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  736  50  ~/.vimrc
+-'  735  50  ~/.vimrc
+-'  491  5  ~/.vimrc
+-'  46  4  ~/Workspace/CI/04_源码/01_接口/src/cis/__Tag_List__
+-'  49  0  ~/Workspace/CI/04_源码/01_接口/src/cis/__Tag_List__
+-'  32  0  ~/Workspace/CI/04_源码/01_接口/src/cis/__Tag_List__
+-'  207  4  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  821  8  ~/.vimrc
+-'  820  8  ~/.vimrc
+-'  819  4  ~/.vimrc
+-'  171  5  ~/.vimrc
+-'  458  26  ~/.vimrc
+-'  823  6  ~/.vimrc
+-'  493  5  ~/.vimrc
+-'  120  8  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
+-'  100  54  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
+-'  84  4  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
+-'  103  8  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
+-'  92  12  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
+-'  206  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  193  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  164  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  161  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  146  8  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  225  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  205  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  217  44  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  218  40  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  219  24  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  195  6  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  221  4  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  200  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  215  38  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  214  4  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  21  0  ~/Workspace/CI/04_源码/01_接口/src/cis/config.h
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/cis/config.h
+-'  170  0  ~/.vimrc
+-'  830  0  ~/.vimrc
+-'  829  14  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  736  50  ~/.vimrc
+-'  735  50  ~/.vimrc
+-'  491  5  ~/.vimrc
+-'  46  4  ~/Workspace/CI/04_源码/01_接口/src/cis/__Tag_List__
+-'  49  0  ~/Workspace/CI/04_源码/01_接口/src/cis/__Tag_List__
+-'  32  0  ~/Workspace/CI/04_源码/01_接口/src/cis/__Tag_List__
+-'  207  4  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  821  8  ~/.vimrc
+-'  820  8  ~/.vimrc
+-'  819  4  ~/.vimrc
+-'  171  5  ~/.vimrc
+-'  458  26  ~/.vimrc
+-'  823  6  ~/.vimrc
+-'  493  5  ~/.vimrc
+-'  1  0  ~/Downloads/aliedit.sh
+-'  837  0  ~/Downloads/aliedit.sh
+-'  2  0  ~/Downloads/aliedit.sh
+-'  120  8  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
 
 # Buffer list:
-%~/.vimrc	701	25
+%~/.rc.lua	445	0
 
 # History of marks within files (newest to oldest):
 
+> ~/.rc.lua
+	"	445	0
+
+> ~/Downloads/nixnote/install.sh
+	"	1	0
+
+> ~/Downloads/aliedit.sh
+	"	1	0
+
+> ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+	"	206	0
+	.	215	0
+	+	221	0
+	+	1	0
+	+	221	0
+	+	215	0
+	n	178	4
+
+> ~/Workspace/CI/04_源码/01_接口/src/cis/config.h
+	"	21	0
+
+> ~/Workspace/CI/04_源码/01_接口/src/cis/__Tag_List__
+	"	13	4
+	.	14	0
+	+	78	0
+	+	61	0
+	+	49	0
+	+	49	0
+	+	49	0
+	+	49	0
+	+	49	0
+	+	49	0
+	+	48	0
+	+	31	0
+	+	15	0
+	+	14	0
+
+> ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
+	"	120	8
+
 > ~/.vimrc
-	"	701	25
-	^	701	26
-	.	701	25
-	+	699	3
-	+	700	0
-	+	699	3
-	+	700	0
-	+	169	16
-	+	575	3
-	+	701	25
+	"	231	0
+	^	31	1
+	.	31	0
+	+	170	20
+	+	830	0
+	+	829	0
+	+	830	0
+	+	830	0
+	+	829	14
+	+	830	0
+	+	171	0
+	+	170	41
+	+	171	0
+	+	171	0
+	+	172	0
+	+	31	0
+	a	170	14
+	b	829	6
+	n	50	2
 
-> ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/ciin.thrift
-	"	25	0
-	^	27	8
-	.	27	7
-	+	12	3
-	+	10	1
-	+	27	7
-
-> /tmp/vLl0J7z/2
-	"	24	0
-
-> /tmp/vR69pCS/2
+> /tmp/vhRheii/4
 	"	1	0
 
-> /tmp/vgm0FlY/2
-	"	8	0
-
-> ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/__Tag_List__
-	"	2	0
-	.	1	0
-	+	2	0
-	+	1	0
-
-> /tmp/vkkXCaY/2
-	"	4	0
-
-> /tmp/vY7BRzE/2
-	"	9	0
-
-> /tmp/vXRsJPX/2
-	"	1	0
-	.	1	0
-	+	1	0
-
-> /tmp/vybRPaj/2
-	"	1	0
+> ~/.vim/plugin/indent_guides.vim
+	"	52	0
