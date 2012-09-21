@@ -82,6 +82,7 @@ alias ls='ls -F --color=auto'
 alias grep='grep --color=auto'
 alias ee='emacsclient -t'
 alias e='emacs -nw'
+alias vi='vim'
 alias free='free -m'
 
 alias ll='ls -AhlF'
@@ -268,8 +269,6 @@ setprompt
 
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/bin/virtualenvwrapper.sh
-
-alias Emacs="emacs -nw"
 
 #uncompuress
 uncmp () {

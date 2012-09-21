@@ -826,7 +826,7 @@ let Tlist_Show_One_File = 1
 
 map <leader>P <esc>:Project<cr>
 
-set tags=./tags
+set tags=tags
 
 let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
 set grepprg=/usr/bin/grep\ -nH
