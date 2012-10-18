@@ -434,6 +434,10 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
                               autorun = true
                               autorunApps =
                               {
+                                  "batti",
+                                  "dropbox",
+                                  "yunio",
+                                  "/home/yueyang/bin/nutstore-pydaemon",
                                   "firefox",
                                   "chromium"
                               }

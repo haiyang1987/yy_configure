@@ -8,637 +8,61 @@
 # hlsearch on (H) or off (h):
 ~H
 # Last Search Pattern:
-~Msle0~/\<close\>
+~Msle0~/\<chromium\>
 
 # Last Substitute Search Pattern:
-~MSle0&flag
+~MSle0&\s*$
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :x
-:qa
 :w
-:e
+:qa
 :q
-:make
-:e ../TODO
-:set tags=tags
-:set tags=./tags
-:set tags
-:e cithread.cpp
-:e ciconnection.cpp
-:qa!
 :q!
+:w !sudo tee %
+:.qa
+:Projectk
 :A
-:wa
-:e receiver.c
-:e put_whole_interface.py
-:.,.+2qa
-:set encoding
+:a
+:qa!
+:e main.cpp
+:e addressbook.proto
+:'<,'>qa!
+:e school.proto
+:set nonu
+:set nu
+:'<,'>qa
+:s
+:w test
 
 # Search String History (newest to oldest):
-? \<close\>
-?/m
-? \<check_child\>
-? \<mni_fork\>
-? \<example_1\>
-? \<example_2\>
-?/   
-?/tags
-?/tag
-? \s\+$
-?/ass
-?/ASS
-? \<ThreadInit\>
-?/new
-? \<threads\>
-? \<pthread_attr_init\>
-?/k
-?/encoding
-?/down
-? \<ThreadCreate\>
-?/thre
-? \<ServerLoop\>
-?/time
-? \<threadManager\>
-? \<start_server\>
-? \<prefork\>
-?/main
-?/mmain
-?/log
-? \<THRIFT_DIR\>
-?/thread
-?/thrift
-? \<InvalidOperation\>
-? \<addressBook\>
-? \<operdata\>
-? \<file_gen_pack\>
-?/file
-? \<read_file_field\>
-?/read_fi
-? \<Percona\>
-? \<mobile_no\>
-? \<insert_proto\>
-?/mobile
-?/bin
-?/local
-?/ 6 
-?/6
-?/ev
-?/lib
-? \<evbuf_length\>
-? \<http_buf\>
-?/QUEUE
-? \<pool\>
-? \<queue\>
-?/queue
-?/push
-?/post
-?/jo
-?/ssh
-?/ftp
-?/hist
-?/xargs
-? \<len\>
-? \<u\>
-? \<p\>
-?/utf8
-?/tf8
-? \<IF\>
-?/know
-?/base
-?/^al
-?/al
-? \<qc\>
-?//%
-?/\%
-? \<s\>
-? \<where\>
-? \<true\>
-?/I
-?/userext
-?/user
+? \<chromium\>
+? \<firefox\>
+?/fir
 ?/uid
-? \<every_line\>
-? \<_write_result_file\>
-?/write
-? \<line\>
-?/while
-?/whiel
-? \<do_url_query\>
-?/search
-?/micr
-? \<query_same_school_praise\>
-?/pr
-?/praise
-?/query
-?/ciquer
-? \<query_same_city_praise\>
-? \<affect\>
-?/tuid
-? \<mysql_query_rc\>
-? \<update_proto\>
-? \<syncpraise\>
-? \<syncemploymentinfo\>
-? \<tuid\>
-? \<user\>
-?/3 ==
-?/free_unpacked
-?/get_pac
-?/get_size
-?/unpack
-?/community__sync_
-?/community__sync_pra
-?/praise__unp
-?/p
-?/Community__sync
-? \<post_SPI_cb\>
-? \<dump_base_user_info\>
-?/basic
-? \<db_name\>
-? \<file_name\>
-?/admin
-? \<dump_mobile_rang\>
-? \<dump_mysql_basic_tables\>
-? \<CLEANUP\>
-?/C
-?/1024
-?/128
-? \<_data\>
-? \<char\>
-? \<output\>
-? \<parser_xml\>
-? \<stream\>
-? \<get_mobile\>
-? \<request\>
-? \<send_str\>
-? \<input\>
-?/jjk
-?/1 ==
-?/affect
-? \<REQUEST_XML_BASE\>
-?/check
-? \<raw_string\>
-? \<raw_len\>
-? \<malloc_size\>
-? \<UID_LEN\>
-? \<die\>
-? \<check\>
-? \<snprintf\>
-?/sdfdsf
-? \<log4c_category_log\>
-?/ech
-?/F5
-?/child
-? \<printf\>
-?/print
-?/log4c
-? \<req\>
-?/less 
-?/http
-?/0
-?/flag
-?/aaaa
-?/A
-?/maxn
-?/gc
-? \<ngx_str_t\>
-?/ngx_str_
-?/st
-?/string
-? \<ptr\>
-? \<_ptr\>
-?/pt
-? \<sleep\>
-?/slee
-?/getpid
-?/par
-? \<pid\>
-?/-1
-?/example
-?/ex
-? \<rt\>
-? flag
-? \<flag\>
-?/fla
-?/option
-? \<ForkWork\>
-? \<DetectPids\>
-?/i
-? \<Ret\>
-? \<g_MapPids\>
-?/waitpid
-?/clang
-?/gcc
-? \<send\>
-? \<_line\>
-? \<resule\>
-? \<removeoldfile\>
-? \<value\>
-?/feiliao
-? \<config\>
-? \<configfeiliao\>
-? \<feiliao\>
-? \<delete\>
-?/delet
-? \<full_filename\>
-? \<full_filenamehh\>
-?/30
-? \<days\>
-? \<_generate_filename\>
-? \<ftp_handle\>
-? \<exit\>
-? \<ftplib\>
-?/sdf
-? \<for_yesterday\>
-? \<saveptr\>
-? \<delim\>
-?/kkkkk
-? # *Last modified: 
-? \<src_fd\>
-? \<build\>
-?/buf
-? \<FLAGS\>
-? \<SRC\>
-? \<123456786\>
-? \<123456785\>
-?/\%32v
-? \<123456780\>
-?/\%21v
-?/\%11v
-?/\%12v
-? \<intptr_t\>
-? \<buf\>
-? \<max\>
-? \<ngx_vslprintf\>
-? \<IF_SHARD_OBJS\>
-? \<PROTO_SRC_DIR\>
-? \<PB_SOURCES\>
-? \<test\>
-? \<CORE_OBJS\>
-?/log.cpp
-? \<port\>
-? \<m_fd\>
-?/event
-? \<url\>
-? \<CURLOPT_URL\>
-? \<curl\>
-?/url_
-?/memc
-? \<NGX_MEMCPY_LIMIT\>
-? \<ngx_decode_base64_internal\>
-? \<basis64\>
-? \<src\>
-? \<d\>
-? \<dst\>
-? \<inactive\>
-?/kj
-? \<ngx_crc32_init\>
-?/-syu
-?/thri
-? \<read_callback\>
-? \<x\>
-?/pa
-? \<ngx_alloc\>
-? \<log\>
-? \<mobile_value\>
-? \<base\>
-? \<t_base\>
-? \<doc\>
-?/yes
-?/for
-?/repl
-?/re
-? \<sql_handle\>
-? \<ci_db\>
-?/ci_db
-? \<iterate_info\>
-? \<ImportBaseUserInfo\>
-? \<200628038\>
-? \<200464343\>
-? \<200438538\>
-? \<200344575\>
-? \<200082013\>
-? \<200007415\>
-? \<200007026\>
-? \<200004750\>
-? \<200004245\>
-?/cmp
-?/cm
-? \<cv\>
-? \<uid\>
-? \<child\>
-? \<nstr\>
-? \<tid\>
-? \<next\>
-? \<node\>
-? \<PEND\>
-? \<parse\>
-?/xml
-? \<xmlKeepBlanksDefault\>
-? \<work\>
-? );
-?/exec
-?/23xc
-?/\\t
-?/\t
-? \<write_response\>
-? \<str_content\>
-? \<size\>
-?/34gg
-?/wait
-? \<ftpfile\>
-? \<my_fwrite\>
-? \<buffer\>
-? \<contents\>
-? \<WriteMemoryCallback\>
-? \<CURLOPT_WRITEFUNCTION\>
-?/writefu
-? \<initialized\>
-? \<curl_easy_send\>
-? \<include\>
-?/F9
-?/sdfsdf
-? \<curl_easy_setopt\>
-? \<headerlist\>
-? \<_send\>
-?/reque
-? \<CURL\>
-? \<str_str\>
-? \<iolen\>
-?/}>
-? \<content\>
-? \<res\>
-?/len
-?/kk
-? \<13911397154\>
-? \<params\>
-?/v6
-?/uti
-?/if
-??if
-? \<if\>
-? \,
-? \<constellation\>
-? \<INC\>
-? \<test_gen_constellation\>
-? \<test_gen__constellation\>
-? \<gen_constellation\>
-?/\?
-?/home
-? \<blood_types\>
-? \<split\>
-? \<_changed_friend_list_2\>
-? \<_changed_list_0\>
-? \<row\>
-?/split
-? \<_changed_friend_list\>
-? \<logger\>
-? \<rc\>
-?/iot
-?/bus
-?/rat
-? \<post\>
-? \<path\>
-?/logg
-?/fact_
-?/fact_buddy
-?/fact
-? )):
-? \<new_friend_dict\>
-? \<sql_query\>
-? old_friedn_dict
-? \<old_friedn_dict\>
-? \<old_friend_dict\>
-? \<update_db\>
-? \<str_cut\>
-? \<items\>
-?/dict
-? \<changed_friend_list\>
-? \<changed_friend\>
-? \<friend_list\>
-? \<db_friend_dict\>
-? \<pass\>
-? \<item\>
-?/appen
-?/line
-? \<bits\>
-? \<changed_list\>
-? \<add_friend\>
-? \<i\>
-? \<lines\>
-? \<import_path\>
-? \<src_filename\>
-? \<cur\>
-? \<iterate_education\>
-? \<_perpare_filename\>
-? \<import_dest_file\>
-? \<import_command\>
-? \<os\>
-? \<dest_files_name_list\>
-? \<file_flag\>
-? \<dest_path\>
-? |CURSOR|
-?/insert
-?/send
-?/application//
-?/cu
-?/loc
-? \<ngx_addon_dir\>
-?/ma
-?/hello
-?/he
-?/server
-?/lib e
-?/name
-? \<phone_no\>
-? \<sms_gateway\>
-? \<send_sms\>
-? \<trace\>
-? \<0\>
-?/,
-? \<now\>
-? \<timedelta\>
-? \<date\>
-? \<datetime\>
-? \<theme_path\>
-?/back
-? \<count\>
-? \<avg\>
-? \<sum\>
-? \<awesome\>
-?/awe
-? \<table_name\>
-?/hash
-?/lua
-?/cons
-? \<url_table\>
-?/svn ci
-?/ci
-? \<string\>
-? \<body_buff\>
-? \<_sync_education_info\>
-? \<department\>
-? \<educations\>
-?/svn
-? \<gr\>
-? \<ci_web\>
-?/fire
-?/size
-?/sei
-? \<mysql_ping\>
-?/ping
-?/free
-? \<decoded\>
-?/clean
-?/fir	
-?/awesome
-?/can
-?/canda
-?/ja
-?/usa
-? \<begin_year\>
-?/fin
-?/SMI
-?/4 ==
-? \<create_thread\>
-? \<queue_capacity\>
-? \<bounds\>
-? \<CURLOPT_POSTFIELDS\>
-? \<delete_proto\>
-?/malloc
-?/alloc
-?/printf
-? \<return\>
-? \<http\>
-? \<may_know_school\>
-? \<schoolmate\>
-? \<classmate\>
-? \<hometown\>
-? \<_2d_friend\>
-? \<other_cb\>
-? \<workpath\>
-?/ding
-?/lin
-? \<ftp_command\>
-? \<create_filelist\>
-?/call
-?/auto
-?/put
-?/remote_p	
-? \<remote_path\>
-?/date
-?/autorun
-? \<log_handler\>
-?/path
-? \<HTTP_BADMETHOD\>
-?/badmo
-? \<xmalloc\>
-?/war
-?/xmalloc
-? \<_get_upload_url\>
-? \<upload\>
-?/upload
-? \<swap_table\>
-? \<swap_tables\>
-? \<mysql_sp\>
-? \<callproc\>
-? \<mysql_ip\>
-? \<host\>
-?/li
-? \<deat_path\>
-? \<_open_dest_files\>
-? \<_get_dest_file_name\>
-? \<dest_file_name\>
-? \<judge\>
+? \<person\>
 ?/get
-? \<time\>
-? \<open_dest_files\>
-? \<open_src_file\>
-? \<dest_fp_list\>
-? \<fp\>
-? \<open_dest_file\>
-?/e
-? \<local_file\>
-? \<remote_file_name\>
-? \<get_file\>
-? \<get_ftp\>
-? e
-? g
-? gc
-? \<tmp_base_user_education_load\>
-? \<e\>
-?/xm
-? \<home_nation\>
-?/0 ==
-?/download
-?/open file
-?/open
-?/open f
-?/set_day
-? \<mysql_pwd\>
-? \<interface_list\>
-? \<upload_info\>
-?/user-info
-? \<take_off\>
-?/ct
-?/user info error
-? \<except\>
-?/mysql_ip
-? \<ctl_lien\>
-?/sms
-? \<merge\>
-? \<import_mysql\>
-?/import base
-?/im
-? \<error\>
-? \<import\>
-? \<mv\>
-? \<tmp_base_user_info_load\>
-? \<reset\>
-? \<perpare\>
-? \<import_base_user_info\>
-? \<merger_base_user_education\>
-? \<mydql_db\>
-?/error
-?/\\
-?/c
-?/retry
-? \<ngx_parse_size\>
-? \<cursor\>
-? \<load_complete_mysql_info\>
-? \<load_complete_mysql\>
-?/ls
-?/inf
-? \<mysql_server_info\>
-? \<dump_mysql_edu_uid_tables\>
-? \<inf_local_file\>
-? \<upload_ftp\>
-?/up
-? \<local_name\>
-? \<download\>
-?/download error
-?/info
-? \<dump_base_user_edu_uid\>
-? \<dump_base_user_edu\>
-? \<edu_uid_upload_server_info\>
-? \<edu_upload_server_info\>
-? \<edu_uid_local_file\>
-? \<edu_local_file\>
-?/inf_local_file
-? \<_get_file_list\>
-? \<file_list\>
-?/del
-?/n
-?/host
-? \<load_configure\>
-? \<load_community_complete\>
-? \<a\>
-?/get_con
-?/conf
-? \<conf_file\>
+?/get_
+?/set_
+? \<phone_number\>
+?/pack
+? \<addressbook\>
+? \<distinct\>
+?/store
+? \<mysql_query\>
+? \<mysql_query_rc\>
+?/query
+? \<count\>
+?/count
+?/qc
+?/modu
+?/hard
+? \<rre\>
+?/use
+?/path
 
 # Expression History (newest to oldest):
 
@@ -663,430 +87,232 @@ $
 @j
 @read_line
 @recovery_process
-@run_task
-@rece
-@~/Workspace/C/sync-userinfo/
-@sync_userinfo
-@thread
-@generate_constellation
-@send_sms
 
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	"TlistToggle
-""1	LINE	0
-	
+"0	CHAR	0
+	/home/yueyang/bin/bb0"
+"1	LINE	0
+	  return rc;
 "2	LINE	0
-	"TlistToggle
+	
 "3	LINE	0
-	:Tlist
+	      std::map<long long, short> buddy_list;
+	      bool blss = false;
+	      ReturnResultExt rre;
+	      if(qc.has_uid())
+	        blss = query_buddy_list_from_ss(qc.uid(), buddy_list, gcis->config);
+	      my_ulonglong all = mysql_num_rows(result);
+	      int id = 1;
+	      int count = 0;
+	      while((row = mysql_fetch_row(result)) != NULL) {
+	        long long uid = strtoll(row[0], NULL, 10);
+	        if(blss && buddy_list.find(uid)!=buddy_list.end()) {
+	          all--;
+	          continue;
+	        }
+	        if(qc.has_begin() && id < qc.begin()) {
+	          id++;
+	          continue;
+	        }
+	        if(qc.has_count() && count < qc.count()) {
+	          UserExt *ue = rre.add_user();
+	          ue->set_uid(uid);
+	          ue->set_sex(strtol(row[1], NULL, 10));
+	          ue->set_age(strtol(row[2], NULL, 10));
+	          ue->set_constellation(strtol(row[3], NULL, 10));
+	          ue->set_count(strtol(row[4], NULL, 10));
+	          if(strtol(row[5], NULL, 10) != 0)
+	            ue->set_praised(true);
+	          else
+	            ue->set_praised(false);
+	          count++;
+	        } else {
+	          break;
+	        }
+	      }
+	
+	      rre.set_all(all);
+	      rre.set_count(rre.user_size());
+	      mysql_free_result(result);
+	      if(rre.SerializeToString(&out))
+	        rc = true;
 "4	LINE	0
-	        printf("%d\n",WUNTRACED);
+	      qc.province().c_str(),
 "5	LINE	0
-	     */
+	      qc.uid(),
 "6	LINE	0
-	     *TODO: judgment function or executed
+	      "limit 1000",
 "7	LINE	0
-	    /*
+	      "order by v.header desc, (praise_values+det_active_day+det_content_day) desc "
 "8	LINE	0
-	549347365,15028537354,816820698,1,19000101,0,0,0,0
-	549350058,13903228007,816822539,ѶϢ,19000101,0,0,0,0
-	549361430,15130818809,816829659,8809,19000101,0,0,0,0
-	236013688,15031746535,816834161,0,19000101,0,0,0,0
-	549368882,15031040716,816834797,n,19000101,0,0,0,0
-	549372190,15100939934,816836949,??????,19870606,0,0,6,0
-	549372814,13701882083,816837338,??ӡ,19830118,255,0,0,0
-	490581654,13831926946,816838052,???ԵĽ???,19000101,255,0,0,0
-	549380910,15031622750,816845214,0,19000101,0,0,0,0
-	528594111,15033505868,816847424,³??Ԫ,20121120,0,1,11,0
-	549390834,15233272279,816848488,ˮ????007,20120101,0,0,1,0
-	488532472,15803255168,816850163,????,19740529,255,0,6,0
-	549397637,15081421937,816852686,0,19930415,0,0,0,0
-	549401267,15931643836,816854980,?ѱ?*^o^*,19921103,255,0,0,0
-	544015528,15175746808,816855349,͵͵ϲ????,19860101,0,0,0,0
-	549405429,15012442571,816857548,???,19000101,0,0,0,0
-	549413654,13613327803,816862883,l,19000101,0,0,0,0
-	549413835,15128000152,816862984,????,20000927,255,0,0,0
-	549413969,15133476630,816863081,??,19840905,0,0,0,0
-	234807087,15833535759,816863575,No1sun,19830808,255,4,0,0
-	549416491,13832681168,816864756,0,19000101,0,0,0,0
-	549416880,13463670781,816865011,??,19880726,0,0,1,0
-	547490697,13816599817,816865280,??????,19000101,0,0,0,0
-	222643794,13603225767,816866771,0,19000101,0,0,0,0
-	549423880,15831917344,816869539,123,19000101,0,0,0,0
-	549426759,15133609455,816871392,15133609455,19000101,0,0,0,0
-	543795190,13575031974,816871640,ƽ??,19000101,0,0,0,0
-	549429076,15233272309,816872893,0,19000101,0,0,0,0
-	548820439,13931756403,816873260,ʹ??????,19861125,0,0,0,0
-	549435036,15175190205,816876688,0,19000101,0,0,0,0
-	549437847,15033329119,816878448,0,19000101,0,0,0,0
-	549438866,13641753129,816879107,????,19890202,0,0,0,0
-	549435864,15028889753,816881082,?ɿ?????,19890101,0,0,0,0
-	543652093,13472909979,816884055,0,19000101,0,0,0,0
-	549447068,15230538971,816884500,?ش???,19910628,255,0,7,0
-	549450593,13722214174,816886770,1,19000101,0,0,0,0
-	549457637,15133015116,816892116,????,19910705,0,4,7,0
-	1191141972,15028811262,816892228,0,19000101,0,0,0,CN.he.318.
-	531871745,15121135237,816893219,nancy,19670101,255,0,0,0
-	427502177,15103117580,816893394,??ɫ????ɳ,19901231,0,0,0,0
-	237069902,15081199020,816893841,??ΰ,19000101,0,0,0,0
-	549460944,15133760424,816894393,??ֻ????,19910912,255,0,0,0
-	549462062,15231032306,816895092,1,19000101,0,0,0,0
-	549464022,15030516301,816896313,0,19000101,0,0,0,0
-	227714484,13784776844,816898384,??ϼ,19000101,0,0,0,0
-	549468184,13754471076,816899017,0,19000101,0,0,0,0
-	549474771,15097950768,816903021,,l,19000101,0,0,0,0
-	229348176,13817332538,816903519,˧??,19731107,255,3,0,0
-	549478068,15075131541,816905191,???ĺ???,19920417,255,0,0,0
-	549479212,15230436227,816905943,0,19000101,0,0,0,0
-	549485701,15232723455,816910109,0,19000101,0,0,0,0
-	549490005,13785038710,816912913,8710,19900724,0,0,0,0
-	549490737,13730460408,816913293,ҹ??????????,19921207,255,0,0,0
-	516090179,13932790504,816913306,????û??Ҳ????,19891212,255,0,0,0
-	549498576,15833748702,816918093,0,19000101,0,0,0,0
-	568102540,15128528467,816922446,0,20000101,0,0,0,0
-	228920977,13816528127,816923859,ڤ????ҹ,19930418,255,0,4,CN.sh.21.
-	549517280,15133144460,816929721,0,19000101,0,0,0,0
-	549529594,15233273335,816937325,0,19000101,0,0,0,0
-	549532968,13513414702,816940584,??����????,19870303,255,0,0,0
-	549539194,15097530368,816943172,??,19820101,0,0,0,0
-	549328358,15081017616,816946319,?Ҹ???С椶?,19911029,0,0,11,0
-	549545933,15033532422,816947397,0,19000101,0,0,0,0
-	229349199,13817522201,816947897,Candy,19000101,0,0,0,0
-	549545581,15102606268,816948522,????,19920101,0,0,0,0
-	513625362,13661687188,816949193,????ӱ,19810803,255,4,8,0
-	549552497,15031410321,816951624,0,19000101,0,0,0,0
-	549556414,15831925595,816954060,JOJO,19820101,0,0,0,0
-	219915751,13463522990,816954535,????÷,19710704,255,2,7,0
-	432882625,15175439025,816957119,0,19000101,0,0,0,0
-	549565306,15930154144,816959708,Ԭ?޺?,19921129,0,1,12,0
-	549574768,15133142636,816965578,??��*????,19900101,0,0,0,0
-	549580122,15232704598,816968983,snower,19880305,255,4,3,0
-	230209952,13831533980,816969335,??????,19800412,255,0,0,0
-	549585689,13630827166,816972261,0,19000101,0,0,0,0
-	549587016,13754422099,816973143,0,19000101,0,0,0,0
-	549588090,15233272138,816973791,0,19000101,0,0,0,0
-	549593133,13613125331,816976960,????????,19000101,0,0,0,0
-	1191148491,18226499394,816977654,0,19000101,0,0,0,CN.ah.564.
-	549595176,15176794875,816978285,~_~,19880322,0,0,4,0
-	549601098,15097968736,816981989,????Ĭĭ,19910727,255,0,0,0
-	549607911,13739692785,816986112,00,19000101,0,0,0,0
-	549610655,13832046673,816987936,11,19890914,0,0,0,0
-	237787388,15131110644,816990107,??dingһ??,19801103,255,0,0,0
-	549615864,13833852478,816991710,????????,19930101,0,0,0,0
-	549609261,15011757017,816993612,?϶?,19880711,255,0,7,0
-	549623601,15128740945,816995842,0,19000101,0,0,0,0
-	1191151283,13582199035,816999468,0,19000101,0,0,0,CN.he.311.
-	549631477,15011746812,817002869,????&&christine,19880906,0,0,0,0
-	549632307,13903381302,817003326,0,19000101,0,0,0,0
-	237519401,15130318432,817007267,8432,19900222,0,0,0,0
-	549038224,13400455290,817007377,?Ժ?,19820112,255,0,0,0
-	549639010,15232039561,817007552,0,19000101,0,0,0,0
-	499739666,13701725371,817011208,??ΰ,19831130,0,0,12,0
-	549647559,15232758799,817012935,0,19000101,0,0,0,0
-	229398918,13817615143,817014177,???̴?,19910419,0,0,4,0
-	549651904,13833972727,817015733,Ԑ?K?Ӂ??։?,19891206,255,0,0,0
-	548131738,13701608031,817016706,????ʦ,20120101,0,0,11,0
-	549654414,15132881417,817017208,0,19000101,0,0,0,0
-	549656874,15033388864,817018617,a,19000101,0,0,0,0
+	      "where v.pid='%s' %s "
 "9	LINE	0
-	219900128,13463510928,0,0,20000101,0,0,0,0
-	220004333,13463914605,0,0,20000101,0,0,0,0
-	230608114,13832729056,0,0,20000101,0,0,0,0
-	231565197,13931657668,0,0,20000101,0,0,0,0
-	233727875,15803370475,0,0,20000101,0,0,0,0
-	235109730,15833968278,0,0,20000101,0,0,0,0
-	236696358,15075788803,0,0,20000101,0,0,0,0
-	429182104,15133751688,0,0,20000101,0,0,0,0
-	484469769,13803205332,0,0,20000101,0,0,0,0
-	492671643,13931777906,0,0,20000101,0,0,0,0
-	526480408,15932337700,0,0,20000101,0,0,0,0
-	532713149,13831024473,0,0,20000101,0,0,0,0
-	535484813,13803150202,0,0,20000101,0,0,0,0
-	598245784,13933354166,0,0,20000101,0,0,0,0
-	618334694,13463473516,0,0,20000101,0,0,0,0
-	622114862,13931849837,0,0,20000101,0,0,0,0
-	636898221,13785772166,0,0,20000101,0,0,0,0
-	639905757,13908920726,0,0,20000101,0,0,0,0
-	639978236,13731021655,0,0,20000101,0,0,0,0
-	640212044,13989098959,0,0,20000101,0,0,0,0
-	643922668,13731082541,0,0,20000101,0,0,0,0
-	644087868,15028346665,0,0,20000101,0,0,0,0
-	648219895,15831900627,0,0,20000101,0,0,0,0
-	648616821,13889051673,0,0,20000101,0,0,0,0
-	648966440,13648902222,0,0,20000101,0,0,0,0
-	649393228,13658981657,0,0,20000101,0,0,0,0
-	652152660,15132777815,0,0,20000101,0,0,0,0
-	653043814,13908957913,0,0,20000101,0,0,0,0
-	653984202,13549069686,0,0,20000101,0,0,0,0
-	655977702,13889099979,0,0,20000101,0,0,0,0
-	657136310,13628948399,0,0,20000101,0,0,0,0
-	658391796,15132971086,0,0,20000101,0,0,0,0
-	660744555,13618950888,0,0,20000101,0,0,0,0
-	660811492,13518968203,0,0,20000101,0,0,0,0
-	661062648,13784067653,0,0,20000101,0,0,0,0
-	663347149,13618962292,0,0,20000101,0,0,0,0
-	663502081,15089041086,0,0,20000101,0,0,0,0
-	664595361,15030540408,0,0,20000101,0,0,0,0
-	665193691,13731766666,0,0,20000101,0,0,0,0
-	665198192,15889042251,0,0,20000101,0,0,0,0
-	665969744,13833933385,0,0,20000101,0,0,0,0
-	666043901,15232201435,0,0,20000101,0,0,0,0
-	666584059,13784563179,0,0,20000101,0,0,0,0
-	667662140,13889053356,0,0,20000101,0,0,0,0
-	667971923,15130873120,0,0,20000101,0,0,0,0
-	669097063,15932017100,0,0,20000101,0,0,0,0
-	669656051,15175147872,0,0,20000101,0,0,0,0
-	669847703,13889032010,0,0,20000101,0,0,0,0
-	670209294,13989025385,0,0,20000101,0,0,0,0
-	670454601,15930575591,0,0,20000101,0,0,0,0
-	670532695,13549075003,0,0,20000101,0,0,0,0
-	670837236,13628978700,0,0,20000101,0,0,0,0
-	671021814,15075984918,0,0,20000101,0,0,0,0
-	671945042,15028069396,0,0,20000101,0,0,0,0
-	672345139,15889059046,0,0,20000101,0,0,0,0
-	673166797,15889050649,0,0,20000101,0,0,0,0
-	673343202,15889008836,0,0,20000101,0,0,0,0
-	673748482,15889074919,0,0,20000101,0,0,0,0
-	673748940,15889008825,0,0,20000101,0,0,0,0
-	673817302,15081023097,0,0,20000101,0,0,0,0
-	673820140,15128109443,0,0,20000101,0,0,0,0
-	673878281,13518947104,0,0,20000101,0,0,0,0
-	674333490,13989084149,0,0,20000101,0,0,0,0
-	675977911,13989956718,0,0,20000101,0,0,0,0
-	676540921,13889059120,0,0,20000101,0,0,0,0
-	677250457,13658913630,0,0,20000101,0,0,0,0
-	678017862,13628981212,0,0,20000101,0,0,0,0
-	678432449,15889017157,0,0,20000101,0,0,0,0
-	678882612,13889039539,0,0,20000101,0,0,0,0
-	678882873,13889039599,0,0,20000101,0,0,0,0
-	678988866,13659559116,0,0,20000101,0,0,0,0
-	679078820,13618947913,0,0,20000101,0,0,0,0
-	679238764,15930941232,0,0,20000101,0,0,0,0
-	679422996,15931351220,0,0,20000101,0,0,0,0
-	680025030,15830691067,0,0,20000101,0,0,0,0
-	680446581,13908978671,0,0,20000101,0,0,0,0
-	681704613,15128566450,0,0,20000101,0,0,0,0
-	682904181,15132931780,0,0,20000101,0,0,0,0
-	684416515,13989977234,0,0,20000101,0,0,0,0
-	684883002,13648996159,0,0,20000101,0,0,0,0
-	685148024,13730326707,0,0,20000101,0,0,0,0
-	685203180,13549062944,0,0,20000101,0,0,0,0
-	685670632,15089086202,0,0,20000101,0,0,0,0
-	685680785,13582879011,0,0,20000101,0,0,0,0
-	686277474,15931951694,0,0,20000101,0,0,0,0
-	686459251,13832753359,0,0,20000101,0,0,0,0
-	687052589,15230949189,0,0,20000101,0,0,0,0
-	687141319,13889042972,0,0,20000101,0,0,0,0
-	688722893,15075923968,0,0,20000101,0,0,0,0
-	689006772,13989024280,0,0,20000101,0,0,0,0
-	689520292,13989015425,0,0,20000101,0,0,0,0
-	689874366,15889079994,0,0,20000101,0,0,0,0
-	689941134,13908968200,0,0,20000101,0,0,0,0
-	690353069,13908972004,0,0,20000101,0,0,0,0
-	691669968,13989038809,0,0,20000101,0,0,0,0
-	692396600,15133528888,0,0,20000101,0,0,0,0
-	692462372,15133389066,0,0,20000101,0,0,0,0
-	692619419,13658952515,0,0,20000101,0,0,0,0
-	692912343,13648960000,0,0,20000101,0,0,0,0
-	693011380,15033414580,0,0,20000101,0,0,0,0
+	      "left join log_praise b ON v.uid = b.user and b.uid=%ld "
 "a@	CHAR	0
 	j$x
 "b	CHAR	0
 	0dwj
 "k	CHAR	0
 	jk
-"-	CHAR	0
-	Toggle
+""-	CHAR	0
+	/home/yueyang/bin/bb0"
 
 # File marks:
-'0  35  0  ~/.vimrc
-'1  9  4  ~/__Tag_List__
-'2  1  0  ~/src/thrift-0.8.0/tutorial/cpp/CppClient.cpp
-'3  139  8  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
-'4  5  0  /etc/passwd
-'5  87  8  /tmp/thinkpad.vim
-'6  42  4  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
-'7  92  8  ~/Workspace/C/process_monit/lib/monitor.c
-'8  12  0  ~/Workspace/C/process_monit/lib/__Tag_List__
-'9  3  5  ~/Workspace/C/process_monit/lib/Makefile
+'G  1399  2  ~/Workspace/CI/04_源码/01_接口/src/community_query/ciquery.cpp
+'0  371  54  ~/.rc.lua
+'1  40  0  /etc/rc.conf
+'2  5  0  /etc/rc.d/cloud
+'3  3  0  /etc/rc.d/cloud
+'4  1  0  /etc/rc.d/ppp
+'5  1  0  /usr/local/bin/dropbox
+'6  1  0  /usr/bin/yunio
+'7  1  0  ~/bin/nutstore-pydaemon
+'8  1  0  ~/NERD_tree_2
+'9  29  10  ~/bin/test.c
 
 # Jumplist (newest first):
--'  35  0  ~/.vimrc
--'  1  0  ~/.vimrc
--'  9  4  ~/__Tag_List__
--'  2  0  ~/__Tag_List__
--'  1  0  ~/src/thrift-0.8.0/tutorial/cpp/CppClient.cpp
--'  139  8  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
--'  42  4  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
--'  5  0  /etc/passwd
+-'  371  54  ~/.rc.lua
+-'  246  102  ~/.rc.lua
+-'  442  35  ~/.rc.lua
+-'  257  105  ~/.rc.lua
+-'  360  41  ~/.rc.lua
+-'  361  57  ~/.rc.lua
+-'  369  54  ~/.rc.lua
+-'  441  35  ~/.rc.lua
+-'  245  102  ~/.rc.lua
+-'  438  34  ~/.rc.lua
+-'  92  30  ~/.rc.lua
+-'  1  0  ~/.rc.lua
+-'  40  0  /etc/rc.conf
+-'  1  0  /etc/rc.conf
+-'  5  0  /etc/rc.d/cloud
+-'  3  0  /etc/rc.d/cloud
+-'  1  0  /etc/rc.d/cloud
+-'  1  0  /etc/rc.d/ppp
+-'  1  0  /usr/local/bin/dropbox
+-'  1  0  /usr/bin/yunio
+-'  1  0  ~/bin/nutstore-pydaemon
+-'  1  0  ~/NERD_tree_2
+-'  5  0  ~/NERD_tree_2
+-'  5  0  ~/NERD_tree_1
+-'  1  0  ~/NERD_tree_1
+-'  29  10  ~/bin/test.c
+-'  28  32  ~/bin/test.c
+-'  1  0  ~/bin/test.c
+-'  2  0  ~/.nutstore/dist/bin/runtime_bootstrap
+-'  1  0  ~/.nutstore/dist/bin/runtime_bootstrap
+-'  24  0  ~/Downloads/nutstore_linux_src_installer/runtime_bootstrap
+-'  1  0  ~/Downloads/nutstore_linux_src_installer/runtime_bootstrap
+-'  121  4  ~/Workspace/CI/04_源码/01_接口/src/community_complete_sync/src/wing_daily.py
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/community_complete_sync/src/wing_daily.py
+-'  16  0  ~/Workspace/CI/04_源码/01_接口/src/community_complete_sync/conf/config.cfg
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/community_complete_sync/conf/config.cfg
+-'  30  0  /etc/rc.conf
+-'  92  0  ~/Workspace/CI/04_源码/01_接口/src/clean_boss/clean_boss.py
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/clean_boss/clean_boss.py
 -'  1  0  /etc/passwd
--'  87  8  /tmp/thinkpad.vim
--'  1  1  /tmp/thinkpad.vim
--'  41  17  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
--'  92  8  ~/Workspace/C/process_monit/lib/monitor.c
--'  97  8  ~/Workspace/C/process_monit/lib/monitor.c
--'  29  4  ~/Workspace/C/process_monit/lib/monitor.c
--'  88  4  ~/Workspace/C/process_monit/lib/monitor.c
--'  62  4  ~/Workspace/C/process_monit/lib/monitor.c
--'  1  0  ~/Workspace/C/process_monit/lib/monitor.c
--'  12  0  ~/Workspace/C/process_monit/lib/__Tag_List__
--'  20  4  ~/Workspace/C/process_monit/lib/__Tag_List__
--'  11  0  ~/Workspace/C/process_monit/lib/__Tag_List__
--'  3  5  ~/Workspace/C/process_monit/lib/Makefile
--'  5  1  ~/Workspace/C/process_monit/lib/Makefile
--'  1  0  ~/Workspace/C/process_monit/lib/Makefile
--'  1  0  ~/Workspace/C/process_monit/TODO
--'  42  2  ~/src/thrift-0.8.0/tutorial/cpp/CppClient.cpp
--'  84  0  ~/src/thrift-0.8.0/tutorial/cpp/CppClient.cpp
--'  35  0  ~/src/thrift-0.8.0/tutorial/cpp/CppClient.cpp
--'  50  4  ~/src/thrift-0.8.0/tutorial/cpp/CppClient.cpp
--'  829  9  ~/.vimrc
--'  735  50  ~/.vimrc
--'  491  5  ~/.vimrc
--'  170  37  ~/.vimrc
--'  31  0  ~/src/tengine-1.4.0/src/core/ngx_list.h
--'  1  0  ~/src/tengine-1.4.0/src/core/ngx_list.h
--'  15  4  ~/src/tengine-1.4.0/src/core/ngx_list.c
--'  39  0  ~/src/tengine-1.4.0/src/core/ngx_list.c
--'  1  0  ~/src/tengine-1.4.0/src/core/ngx_list.c
--'  17  4  ~/src/tengine-1.4.0/src/core/ngx_list.c
--'  20  4  ~/src/tengine-1.4.0/src/core/ngx_list.c
--'  18  22  ~/src/tengine-1.4.0/src/core/ngx_list.c
--'  71  0  ~/src/tengine-1.4.0/src/core/ngx_list.c
--'  19  0  /tmp/oss/oss_cmd.py
--'  407  12  /tmp/oss/oss_cmd.py
--'  1  0  /tmp/oss/oss_cmd.py
--'  34  0  /tmp/oss/oss_fs.py
--'  42  12  /tmp/oss/oss_fs.py
--'  36  12  /tmp/oss/oss_fs.py
--'  35  8  /tmp/oss/oss_fs.py
--'  38  12  /tmp/oss/oss_fs.py
--'  39  8  /tmp/oss/oss_fs.py
--'  28  64  /tmp/oss/oss_fs.py
--'  131  0  /tmp/oss/oss_fs.py
--'  20  0  /tmp/oss/oss_fs.py
--'  172  4  /tmp/oss/oss_fs.py
--'  1  0  /tmp/oss/oss_fs.py
--'  7  13  /tmp/oss/oss_sample.py
--'  13  4  /tmp/oss/oss_sample.py
--'  1  0  /tmp/oss/oss_sample.py
--'  215  0  /tmp/oss/oss_sample.py
--'  133  8  /tmp/oss/oss_api.py
--'  707  8  /tmp/oss/oss_api.py
--'  1  0  /tmp/oss/oss_api.py
--'  1  0  ~/src/tengine-1.4.0/CHANGES
--'  118  0  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/clean_data.py
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/data_handing/src/clean_data.py
--'  100  0  /tmp/a_0101_P03_20120919_001.dat
--'  101  0  /tmp/a_0101_P03_20120919_001.dat
--'  1  0  /tmp/a_0101_P03_20120919_001.dat
--'  147  8  ~/Workspace/CI/04_源码/01_接口/src/cis/cithread.cpp
--'  146  4  ~/Workspace/CI/04_源码/01_接口/src/cis/cithread.cpp
--'  134  12  ~/Workspace/CI/04_源码/01_接口/src/cis/cithread.cpp
--'  143  17  ~/Workspace/CI/04_源码/01_接口/src/cis/cithread.cpp
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/cis/cithread.cpp
--'  138  8  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
--'  162  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
--'  137  8  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
--'  123  8  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
--'  106  8  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
--'  120  57  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
--'  206  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
--'  100  54  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
--'  84  4  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
--'  103  8  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
--'  92  12  ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
--'  193  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
--'  164  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
--'  161  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
--'  146  8  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
--'  225  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
--'  205  0  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
--'  217  44  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
--'  218  40  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
--'  219  24  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
--'  195  6  ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
+-'  14  0  /etc/passwd
+-'  1504  0  ~/Workspace/CI/04_源码/01_接口/src/community_query/ciquery.cpp
+-'  1474  6  ~/Workspace/CI/04_源码/01_接口/src/community_query/ciquery.cpp
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/community_query/ciquery.cpp
+-'  531  21  ~/src/lua-5.2.1/src/liolib.c
+-'  526  9  ~/src/lua-5.2.1/src/liolib.c
+-'  1  0  ~/src/lua-5.2.1/src/liolib.c
+-'  147  4  ~/src/lua-5.2.1/src/__Tag_List__
+-'  80  0  ~/src/lua-5.2.1/src/__Tag_List__
+-'  395  0  ~/src/lua-5.2.1/src/ldblib.c
+-'  1  0  ~/src/lua-5.2.1/src/ldblib.c
+-'  1  0  ~/src/lua-5.2.1/src/lzio.c
+-'  76  0  ~/src/lua-5.2.1/src/lzio.c
+-'  5  56  ~/.vimperatorrc
+-'  1  0  ~/.vimperatorrc
+-'  1314  6  ~/Workspace/CI/04_源码/01_接口/src/community_query/ciquery.cpp
+-'  1326  6  ~/Workspace/CI/04_源码/01_接口/src/community_query/ciquery.cpp
+-'  710  20  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/mysql_connector.c
+-'  727  12  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/mysql_connector.c
+-'  794  0  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/mysql_connector.c
+-'  25  10  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/mysql_connector.c
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/mysql_connector.c
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/receiver.c
+-'  152  4  ~/src/libmicrohttpd-0.9.22/src/examples/https_fileserver_example.c
+-'  1  0  ~/src/libmicrohttpd-0.9.22/src/examples/https_fileserver_example.c
+-'  173  2  ~/src/libmicrohttpd-0.9.22/src/examples/post_example.c
+-'  1  0  ~/src/libmicrohttpd-0.9.22/src/examples/post_example.c
+-'  36  0  ~/src/protobuf-2.4.0a/examples/add_person.cc
+-'  54  8  ~/src/protobuf-2.4.0a/examples/addressbook.pb.cc
+-'  50  6  ~/src/protobuf-2.4.0a/examples/addressbook.pb.cc
+-'  45  51  ~/src/protobuf-2.4.0a/examples/addressbook.pb.cc
+-'  44  51  ~/src/protobuf-2.4.0a/examples/addressbook.pb.cc
+-'  43  51  ~/src/protobuf-2.4.0a/examples/addressbook.pb.cc
+-'  1  0  ~/src/protobuf-2.4.0a/examples/addressbook.pb.cc
+-'  17  38  ~/src/protobuf-2.4.0a/examples/list_people.cc
+-'  16  8  ~/src/protobuf-2.4.0a/examples/list_people.cc
+-'  1  0  ~/src/protobuf-2.4.0a/examples/list_people.cc
+-'  46  20  ~/src/protobuf-2.4.0a/examples/add_person.cc
+-'  95  0  ~/src/protobuf-2.4.0a/examples/add_person.cc
+-'  14  10  ~/src/protobuf-2.4.0a/examples/add_person.cc
+-'  1  0  ~/src/protobuf-2.4.0a/examples/add_person.cc
+-'  92  2  ~/src/protobuf-2.4.0a/examples/add_person.cc
+-'  28  35  ~/src/protobuf-2.4.0a/examples/add_person.cc
+-'  44  6  ~/src/protobuf-2.4.0a/examples/add_person.cc
+-'  42  6  ~/src/protobuf-2.4.0a/examples/add_person.cc
+-'  35  35  ~/src/protobuf-2.4.0a/examples/add_person.cc
+-'  6  10  ~/src/protobuf-2.4.0a/examples/add_person.cc
+-'  74  4  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/know.proto
+-'  4  18  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/know.proto
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/know.proto
+-'  14  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/know.proto
 
 # Buffer list:
-%~/.vimrc	35	0
+%~/.rc.lua	371	54
 
 # History of marks within files (newest to oldest):
 
-> ~/.vimrc
-	"	35	0
-	.	35	0
-	+	35	11
-	+	35	0
+> ~/.rc.lua
+	"	371	54
+	^	440	71
+	.	440	70
+	+	437	41
+	+	438	43
+	+	439	39
+	+	440	70
 
-> ~/__Tag_List__
-	"	9	4
-	.	62	0
-	+	306	0
-	+	245	0
-	+	184	0
-	+	123	0
-	+	62	0
+> /etc/rc.conf
+	"	40	0
+	^	40	45
+	.	40	44
+	+	40	44
 
-> ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.cpp
-	"	47	4
-	n	47	4
-
-> ~/Workspace/CI/04_源码/01_接口/src/cis/__Tag_List__
-	"	7	4
-	.	14	0
-	+	92	0
-	+	79	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	67	0
-	+	66	0
-	+	53	0
-	+	40	0
-	+	27	0
-	+	14	0
-
-> ~/Workspace/CI/04_源码/01_接口/src/cis/ciconnection.h
-	"	62	0
-
-> ~/Workspace/CI/04_源码/01_接口/src/cis/ciserver.cpp
-	"	145	8
-	.	140	0
-	+	140	0
-	+	140	0
-	+	140	0
-	+	140	0
-	+	140	0
-	+	140	0
-	+	140	0
-	+	140	0
-	+	140	0
-	+	140	0
-	+	140	0
-
-> ~/src/thrift-0.8.0/tutorial/cpp/CppClient.cpp
-	"	1	0
-
-> ~/.vim/plugin/thinkpad.vim
-	"	1	0
-	.	2	0
-	+	1	0
-	+	2	0
-
-> /etc/passwd
+> /etc/rc.d/cloud
 	"	5	0
+	^	3	13
+	.	3	0
+	+	4	0
+	+	3	0
 
-> /tmp/thinkpad.vim
-	"	87	8
+> /etc/rc.d/ppp
+	"	1	0
+
+> /usr/local/bin/dropbox
+	"	1	0
+
+> /usr/bin/yunio
+	"	1	0
+
+> ~/bin/nutstore-pydaemon
+	"	1	0
+
+> ~/NERD_tree_1
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/NERD_tree_2
+	"	1	0
+	.	1	0
+	+	1	0
+
+> /etc/rc.d/hwclock
+	"	14	0

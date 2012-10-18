@@ -363,8 +363,8 @@ set shiftwidth=2
 
 map <leader>t2 :set shiftwidth=2<cr>
 map <leader>t4 :set shiftwidth=4<cr>
-au FileType html,vim,javascript,actionscript,sh,scala,xsw setl shiftwidth=2
-au FileType html,vim,javascript,actionscript,sh,scala,xsw setl tabstop=2
+au FileType cpp,html,vim,javascript,actionscript,sh,scala,xsw setl shiftwidth=2
+au FileType cpp,html,vim,javascript,actionscript,sh,scala,xsw setl tabstop=2
 au FileType java,python setl shiftwidth=4
 au FileType java,python setl tabstop=4
 

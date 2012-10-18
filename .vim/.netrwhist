@@ -1,11 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/yueyang/Workspace/Python/fairy'
-let g:netrw_dirhist_2='/home/yueyang/Workspace/Python/feiliao_VGOP'
-let g:netrw_dirhist_3='/home/yueyang/Workspace/CI/04_源码/01_接口/src/active_user_30/tests'
-let g:netrw_dirhist_4='/home/yueyang/tmp/dea-read-only/info'
-let g:netrw_dirhist_5='/home/yueyang/.vimperator'
-let g:netrw_dirhist_6='/home/yueyang/src/log4c-1.2.1-yueyang-1/src/log4c'
-let g:netrw_dirhist_7='/home/yueyang/.config/chromium/Default'
-let g:netrw_dirhist_8='/etc/rc.d'
-let g:netrw_dirhist_9='/etc/nginx'
+let g:netrw_dirhist_cnt =0

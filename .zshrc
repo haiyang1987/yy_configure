@@ -82,7 +82,6 @@ alias ls='ls -F --color=auto'
 alias grep='grep --color=auto'
 alias ee='emacsclient -t'
 alias e='emacs -nw'
-alias vi='vim'
 alias free='free -m'
 
 alias ll='ls -AhlF'
@@ -296,3 +295,7 @@ uncmp () {
 setopt autocd
 
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# Add ~/bin/ to PATH
+PATH="$PATH:/home/yueyang/bin"
+export PATH
