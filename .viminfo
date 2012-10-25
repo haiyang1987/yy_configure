@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~H
 # Last Search Pattern:
-~Msle0~/\<chromium\>
+~Msle0~/\<pass\>
 
 # Last Substitute Search Pattern:
 ~MSle0&\s*$
@@ -17,29 +17,45 @@
 $
 
 # Command Line History (newest to oldest):
+:qa
+:A
+:'<,'>qa
+:qa:q
 :x
 :w
-:qa
+:jk
+:qa!
+:QA
 :q
 :q!
+:qa:qa
 :w !sudo tee %
 :.qa
 :Projectk
-:A
 :a
-:qa!
 :e main.cpp
 :e addressbook.proto
 :'<,'>qa!
 :e school.proto
-:set nonu
-:set nu
-:'<,'>qa
-:s
-:w test
 
 # Search String History (newest to oldest):
+? \<pass\>
+? \<user\>
+? \<answer_to_connection\>
+? \<print_out_key\>
+? \<connection\>
+? \<MHD_get_connection_values\>
+? \<ret\>
+? \<response\>
+? \<page\>
 ? \<chromium\>
+?/chrom
+? \<MHD_start_daemon\>
+? \<daemon\>
+?/update
+?/yea
+?/fact_tc
+?/5 ==
 ? \<firefox\>
 ?/fir
 ?/uid
@@ -63,6 +79,9 @@ $
 ? \<rre\>
 ?/use
 ?/path
+?/sdfsfsdf
+? \<map\>
+?/n
 
 # Expression History (newest to oldest):
 
@@ -91,13 +110,30 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	/home/yueyang/bin/bb0"
+""0	LINE	0
+	                                  --"firefox",
+	                                  --"chromium"
 "1	LINE	0
-	  return rc;
+	                                  --"firefox",
+	                                  --"chromium"
 "2	LINE	0
 	
 "3	LINE	0
+	
+"4	LINE	0
+	
+"5	LINE	0
+	帮我看一下我写的这个if有问题吗 怎么总报错啊
+	if[x"$VGOP_VERF_COUNT" !=  x"$STG_VERF_COUNT"];then
+	echo count no equl!
+	else
+	echo $STG_VERF_COUNT>>stg.log
+	fi
+"6	LINE	0
+	  return rc;
+"7	LINE	0
+	
+"8	LINE	0
 	      std::map<long long, short> buddy_list;
 	      bool blss = false;
 	      ReturnResultExt rre;
@@ -138,181 +174,169 @@ $
 	      mysql_free_result(result);
 	      if(rre.SerializeToString(&out))
 	        rc = true;
-"4	LINE	0
-	      qc.province().c_str(),
-"5	LINE	0
-	      qc.uid(),
-"6	LINE	0
-	      "limit 1000",
-"7	LINE	0
-	      "order by v.header desc, (praise_values+det_active_day+det_content_day) desc "
-"8	LINE	0
-	      "where v.pid='%s' %s "
 "9	LINE	0
-	      "left join log_praise b ON v.uid = b.user and b.uid=%ld "
+	      qc.province().c_str(),
 "a@	CHAR	0
 	j$x
 "b	CHAR	0
 	0dwj
 "k	CHAR	0
 	jk
-""-	CHAR	0
-	/home/yueyang/bin/bb0"
+"-	CHAR	0
+	,
 
 # File marks:
 'G  1399  2  ~/Workspace/CI/04_源码/01_接口/src/community_query/ciquery.cpp
-'0  371  54  ~/.rc.lua
-'1  40  0  /etc/rc.conf
-'2  5  0  /etc/rc.d/cloud
-'3  3  0  /etc/rc.d/cloud
-'4  1  0  /etc/rc.d/ppp
-'5  1  0  /usr/local/bin/dropbox
-'6  1  0  /usr/bin/yunio
-'7  1  0  ~/bin/nutstore-pydaemon
-'8  1  0  ~/NERD_tree_2
-'9  29  10  ~/bin/test.c
+'0  24  0  ~/src/redis-2.6.0/Changelog
+'1  16  0  ~/src/redis-2.6.0/README
+'2  2  0  ~/fonts.note
+'3  105  0  ~/Downloads/libevent-thread/workqueue.c
+'4  1  0  ~/Downloads/libevent-thread/workqueue.c
+'5  2  0  ~/Downloads/libevent-thread/echoserver_threaded.c
+'6  22  0  ~/Downloads/libevent-thread/README
+'7  1  0  ~/Downloads/libevent-thread/RE
+'8  65  0  ~/src/libmicrohttpd-0.9.22/doc/examples/basicauthentication.c
+'9  9  0  ~/src/libmicrohttpd-0.9.22/doc/examples/basicauthentication.c
 
 # Jumplist (newest first):
+-'  24  0  ~/src/redis-2.6.0/Changelog
+-'  1032  0  ~/src/redis-2.6.0/Changelog
+-'  21  0  ~/src/redis-2.6.0/Changelog
+-'  1  0  ~/src/redis-2.6.0/Changelog
+-'  16  0  ~/src/redis-2.6.0/README
+-'  1  0  ~/src/redis-2.6.0/README
+-'  2  0  ~/fonts.note
+-'  1  0  ~/fonts.note
+-'  105  0  ~/Downloads/libevent-thread/workqueue.c
+-'  68  2  ~/Downloads/libevent-thread/workqueue.c
+-'  17  1  ~/Downloads/libevent-thread/workqueue.h
+-'  1  0  ~/Downloads/libevent-thread/workqueue.h
+-'  58  1  ~/Downloads/libevent-thread/workqueue.c
+-'  56  59  ~/Downloads/libevent-thread/workqueue.c
+-'  42  2  ~/Downloads/libevent-thread/workqueue.c
+-'  83  0  ~/Downloads/libevent-thread/workqueue.c
+-'  107  1  ~/Downloads/libevent-thread/workqueue.c
+-'  1  0  ~/Downloads/libevent-thread/workqueue.c
+-'  108  0  ~/Downloads/libevent-thread/workqueue.c
+-'  2  0  ~/Downloads/libevent-thread/echoserver_threaded.c
+-'  368  0  ~/Downloads/libevent-thread/echoserver_threaded.c
+-'  1  0  ~/Downloads/libevent-thread/echoserver_threaded.c
+-'  22  0  ~/Downloads/libevent-thread/README
+-'  1  0  ~/Downloads/libevent-thread/README
+-'  1  0  ~/Downloads/libevent-thread/RE
+-'  65  0  ~/src/libmicrohttpd-0.9.22/doc/examples/basicauthentication.c
+-'  39  18  ~/src/libmicrohttpd-0.9.22/doc/examples/basicauthentication.c
+-'  40  6  ~/src/libmicrohttpd-0.9.22/doc/examples/basicauthentication.c
+-'  38  18  ~/src/libmicrohttpd-0.9.22/doc/examples/basicauthentication.c
+-'  11  0  ~/src/libmicrohttpd-0.9.22/doc/examples/basicauthentication.c
+-'  9  0  ~/src/libmicrohttpd-0.9.22/doc/examples/basicauthentication.c
+-'  1  0  ~/src/libmicrohttpd-0.9.22/doc/examples/basicauthentication.c
+-'  124  6  ~/src/libmicrohttpd-0.9.22/doc/examples/simplepost.c
+-'  146  4  ~/src/libmicrohttpd-0.9.22/doc/examples/simplepost.c
+-'  117  2  ~/src/libmicrohttpd-0.9.22/doc/examples/simplepost.c
+-'  118  4  ~/src/libmicrohttpd-0.9.22/doc/examples/simplepost.c
+-'  102  6  ~/src/libmicrohttpd-0.9.22/doc/examples/simplepost.c
+-'  170  0  ~/src/libmicrohttpd-0.9.22/doc/examples/simplepost.c
+-'  153  2  ~/src/libmicrohttpd-0.9.22/doc/examples/simplepost.c
+-'  116  0  ~/src/libmicrohttpd-0.9.22/doc/examples/simplepost.c
+-'  98  0  ~/src/libmicrohttpd-0.9.22/doc/examples/simplepost.c
+-'  43  0  ~/src/libmicrohttpd-0.9.22/doc/examples/simplepost.c
+-'  104  4  ~/src/libmicrohttpd-0.9.22/doc/examples/simplepost.c
+-'  178  30  ~/src/libmicrohttpd-0.9.22/doc/examples/simplepost.c
+-'  20  0  ~/src/libmicrohttpd-0.9.22/doc/examples/simplepost.c
+-'  1  0  ~/src/libmicrohttpd-0.9.22/doc/examples/simplepost.c
+-'  727  0  ~/src/libmicrohttpd-0.9.22/doc/examples/sessions.c
+-'  1  0  ~/src/libmicrohttpd-0.9.22/doc/examples/sessions.c
+-'  14  0  ~/src/libmicrohttpd-0.9.22/doc/examples/logging.c
+-'  29  69  ~/src/libmicrohttpd-0.9.22/doc/examples/logging.c
+-'  41  30  ~/src/libmicrohttpd-0.9.22/doc/examples/logging.c
+-'  48  2  ~/src/libmicrohttpd-0.9.22/doc/examples/logging.c
+-'  37  0  ~/src/libmicrohttpd-0.9.22/doc/examples/logging.c
+-'  13  0  ~/src/libmicrohttpd-0.9.22/doc/examples/logging.c
+-'  49  0  ~/src/libmicrohttpd-0.9.22/doc/examples/logging.c
+-'  1  0  ~/src/libmicrohttpd-0.9.22/doc/examples/logging.c
+-'  31  0  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
+-'  46  0  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
+-'  10  0  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
+-'  34  0  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
+-'  9  0  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
+-'  18  0  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
+-'  30  0  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
+-'  29  2  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
+-'  1  0  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
+-'  26  2  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
+-'  27  24  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
+-'  23  4  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
+-'  19  14  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
+-'  28  0  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
+-'  5  128  ~/Workspace/CI/04_源码/01_接口/src/community_query/Makefile
+-'  48  0  ~/Workspace/CI/04_源码/01_接口/src/community_query/Makefile
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/community_query/Makefile
+-'  4  0  ~/Workspace/CI/04_源码/01_接口/src/community_query/Makefile
+-'  835  0  ~/src/libmicrohttpd-0.9.22/doc/Makefile
+-'  1  0  ~/src/libmicrohttpd-0.9.22/doc/Makefile
+-'  6  0  ~/Workspace/fetion_interface/src/sub_projects/feiliao_interface/src/get_ftp.py
+-'  1  0  ~/Workspace/fetion_interface/src/sub_projects/feiliao_interface/src/get_ftp.py
+-'  438  46  ~/.rc.lua
+-'  443  33  ~/.rc.lua
 -'  371  54  ~/.rc.lua
--'  246  102  ~/.rc.lua
--'  442  35  ~/.rc.lua
--'  257  105  ~/.rc.lua
--'  360  41  ~/.rc.lua
--'  361  57  ~/.rc.lua
 -'  369  54  ~/.rc.lua
--'  441  35  ~/.rc.lua
--'  245  102  ~/.rc.lua
--'  438  34  ~/.rc.lua
--'  92  30  ~/.rc.lua
+-'  246  102  ~/.rc.lua
 -'  1  0  ~/.rc.lua
--'  40  0  /etc/rc.conf
--'  1  0  /etc/rc.conf
--'  5  0  /etc/rc.d/cloud
--'  3  0  /etc/rc.d/cloud
--'  1  0  /etc/rc.d/cloud
--'  1  0  /etc/rc.d/ppp
--'  1  0  /usr/local/bin/dropbox
--'  1  0  /usr/bin/yunio
--'  1  0  ~/bin/nutstore-pydaemon
--'  1  0  ~/NERD_tree_2
--'  5  0  ~/NERD_tree_2
--'  5  0  ~/NERD_tree_1
--'  1  0  ~/NERD_tree_1
--'  29  10  ~/bin/test.c
--'  28  32  ~/bin/test.c
--'  1  0  ~/bin/test.c
--'  2  0  ~/.nutstore/dist/bin/runtime_bootstrap
--'  1  0  ~/.nutstore/dist/bin/runtime_bootstrap
--'  24  0  ~/Downloads/nutstore_linux_src_installer/runtime_bootstrap
--'  1  0  ~/Downloads/nutstore_linux_src_installer/runtime_bootstrap
--'  121  4  ~/Workspace/CI/04_源码/01_接口/src/community_complete_sync/src/wing_daily.py
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/community_complete_sync/src/wing_daily.py
--'  16  0  ~/Workspace/CI/04_源码/01_接口/src/community_complete_sync/conf/config.cfg
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/community_complete_sync/conf/config.cfg
--'  30  0  /etc/rc.conf
--'  92  0  ~/Workspace/CI/04_源码/01_接口/src/clean_boss/clean_boss.py
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/clean_boss/clean_boss.py
--'  1  0  /etc/passwd
--'  14  0  /etc/passwd
--'  1504  0  ~/Workspace/CI/04_源码/01_接口/src/community_query/ciquery.cpp
--'  1474  6  ~/Workspace/CI/04_源码/01_接口/src/community_query/ciquery.cpp
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/community_query/ciquery.cpp
--'  531  21  ~/src/lua-5.2.1/src/liolib.c
--'  526  9  ~/src/lua-5.2.1/src/liolib.c
--'  1  0  ~/src/lua-5.2.1/src/liolib.c
--'  147  4  ~/src/lua-5.2.1/src/__Tag_List__
--'  80  0  ~/src/lua-5.2.1/src/__Tag_List__
--'  395  0  ~/src/lua-5.2.1/src/ldblib.c
--'  1  0  ~/src/lua-5.2.1/src/ldblib.c
--'  1  0  ~/src/lua-5.2.1/src/lzio.c
--'  76  0  ~/src/lua-5.2.1/src/lzio.c
--'  5  56  ~/.vimperatorrc
--'  1  0  ~/.vimperatorrc
--'  1314  6  ~/Workspace/CI/04_源码/01_接口/src/community_query/ciquery.cpp
--'  1326  6  ~/Workspace/CI/04_源码/01_接口/src/community_query/ciquery.cpp
--'  710  20  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/mysql_connector.c
--'  727  12  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/mysql_connector.c
--'  794  0  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/mysql_connector.c
--'  25  10  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/mysql_connector.c
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/mysql_connector.c
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/receiver.c
--'  152  4  ~/src/libmicrohttpd-0.9.22/src/examples/https_fileserver_example.c
--'  1  0  ~/src/libmicrohttpd-0.9.22/src/examples/https_fileserver_example.c
--'  173  2  ~/src/libmicrohttpd-0.9.22/src/examples/post_example.c
--'  1  0  ~/src/libmicrohttpd-0.9.22/src/examples/post_example.c
--'  36  0  ~/src/protobuf-2.4.0a/examples/add_person.cc
--'  54  8  ~/src/protobuf-2.4.0a/examples/addressbook.pb.cc
--'  50  6  ~/src/protobuf-2.4.0a/examples/addressbook.pb.cc
--'  45  51  ~/src/protobuf-2.4.0a/examples/addressbook.pb.cc
--'  44  51  ~/src/protobuf-2.4.0a/examples/addressbook.pb.cc
--'  43  51  ~/src/protobuf-2.4.0a/examples/addressbook.pb.cc
--'  1  0  ~/src/protobuf-2.4.0a/examples/addressbook.pb.cc
--'  17  38  ~/src/protobuf-2.4.0a/examples/list_people.cc
--'  16  8  ~/src/protobuf-2.4.0a/examples/list_people.cc
--'  1  0  ~/src/protobuf-2.4.0a/examples/list_people.cc
--'  46  20  ~/src/protobuf-2.4.0a/examples/add_person.cc
--'  95  0  ~/src/protobuf-2.4.0a/examples/add_person.cc
--'  14  10  ~/src/protobuf-2.4.0a/examples/add_person.cc
--'  1  0  ~/src/protobuf-2.4.0a/examples/add_person.cc
--'  92  2  ~/src/protobuf-2.4.0a/examples/add_person.cc
--'  28  35  ~/src/protobuf-2.4.0a/examples/add_person.cc
--'  44  6  ~/src/protobuf-2.4.0a/examples/add_person.cc
--'  42  6  ~/src/protobuf-2.4.0a/examples/add_person.cc
--'  35  35  ~/src/protobuf-2.4.0a/examples/add_person.cc
--'  6  10  ~/src/protobuf-2.4.0a/examples/add_person.cc
--'  74  4  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/know.proto
--'  4  18  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/know.proto
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/know.proto
--'  14  0  ~/Workspace/CI/04_源码/01_接口/src/cis/interfaces/know.proto
+-'  38  30  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
+-'  37  11  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
+-'  578  1  ~/Downloads/vim73/Makefile
+-'  1  0  ~/Downloads/vim73/Makefile
+-'  156  0  ~/src/libhttpd-1.4/test/test_httpd.c
+-'  155  0  ~/src/libhttpd-1.4/test/test_httpd.c
+-'  152  0  ~/src/libhttpd-1.4/test/test_httpd.c
+-'  153  0  ~/src/libhttpd-1.4/test/test_httpd.c
+-'  1  0  ~/src/libhttpd-1.4/test/test_httpd.c
+-'  151  0  ~/src/libhttpd-1.4/test/test_httpd.c
+-'  267  0  ~/src/libhttpd-1.4/test/test_httpd.c
+-'  2  0  ~/src/libhttpd-1.4/test/test_httpd.c
+-'  154  0  ~/src/libhttpd-1.4/test/test_httpd.c
+-'  15  0  ~/src/libhttpd-1.4/test/test_httpd.c
+-'  53  0  ~/src/libhttpd-1.4/src/api.c
 
 # Buffer list:
-%~/.rc.lua	371	54
+%~/src/redis-2.6.0/Changelog	24	0
 
 # History of marks within files (newest to oldest):
 
-> ~/.rc.lua
-	"	371	54
-	^	440	71
-	.	440	70
-	+	437	41
-	+	438	43
-	+	439	39
-	+	440	70
+> ~/src/redis-2.6.0/Changelog
+	"	24	0
+	n	21	0
 
-> /etc/rc.conf
-	"	40	0
-	^	40	45
-	.	40	44
-	+	40	44
+> ~/src/redis-2.6.0/README
+	"	16	0
 
-> /etc/rc.d/cloud
-	"	5	0
-	^	3	13
-	.	3	0
-	+	4	0
-	+	3	0
+> ~/fonts.note
+	"	2	0
 
-> /etc/rc.d/ppp
+> ~/Downloads/libevent-thread/workqueue.c
+	"	105	0
+
+> ~/Downloads/libevent-thread/__Tag_List__
+	"	12	4
+	.	13	0
+	+	57	0
+	+	25	0
+	+	14	0
+	+	14	0
+	+	13	0
+
+> ~/Downloads/libevent-thread/workqueue.h
+	"	17	1
+
+> ~/Downloads/libevent-thread/echoserver_threaded.c
+	"	2	0
+
+> ~/Downloads/libevent-thread/README
+	"	22	0
+
+> ~/Downloads/libevent-thread/RE
 	"	1	0
 
-> /usr/local/bin/dropbox
-	"	1	0
-
-> /usr/bin/yunio
-	"	1	0
-
-> ~/bin/nutstore-pydaemon
-	"	1	0
-
-> ~/NERD_tree_1
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/NERD_tree_2
-	"	1	0
-	.	1	0
-	+	1	0
-
-> /etc/rc.d/hwclock
-	"	14	0
+> ~/src/libmicrohttpd-0.9.22/doc/examples/basicauthentication.c
+	"	65	0
