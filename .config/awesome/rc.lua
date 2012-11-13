@@ -73,7 +73,7 @@ for s = 1, screen.count() do
     -- Each screen has its own tag table.
     --tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 }, s)
     tags[s] = awful.tag({ "1.Manager", "2.Browsers", "3.Main_Code", "4.Slave_Code", "5.SSH",
-    "6.Swap", "7.Files", "8.Misc", "9.Virtual-Box", "10.Other" }, s, awful.layout.suit.tile)
+    "6.Swap", "7.Files", "8.Misc", "9.Virtual-Box", "10.Other", "11.Ext" }, s, awful.layout.suit.tile)
 end
 -- }}}
 
@@ -252,18 +252,6 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
                               awful.key({ modkey,           }, "F10",   function () awful.util.spawn("gnome-screenshot") end),
                               awful.key({ modkey,           }, "F11",   function () awful.util.spawn("filezilla") end),
                               awful.key({ modkey,           }, "F12",   function () awful.util.spawn("xscreensaver-command -l") end),
-
-                              -- awful.key({ modkey,           }, "F2",    function () awful.util.spawn("gnome-terminal") end),
-                              -- awful.key({ modkey,           }, "F3",    function () awful.util.spawn("firefox") end),
-                              -- awful.key({ modkey,           }, "F4",    function () awful.util.spawn("google-chrome") end),
-                              -- awful.key({ modkey,           }, "F5",    function () awful.util.spawn("nautilus --no-desktop") end),
-                              -- awful.key({ modkey,           }, "F6",    function () awful.util.spawn("gnome-screensaver-command -l") end),
-                              -- awful.key({ modkey,           }, "F7",    function () awful.util.spawn("xchat") end),
-                              -- awful.key({ modkey,           }, "F8",    function () awful.util.spawn("thunar") end),
-                              -- awful.key({ modkey,           }, "F9",    function () awful.util.spawn("audacious") end),
-                              -- awful.key({ modkey,           }, "F10",   function () awful.util.spawn("meld") end),
-                              -- awful.key({ modkey,           }, "F11",   function () awful.util.spawn("gnome-volume-control") end),
-                              -- awful.key({ modkey,           }, "F12",   function () awful.util.spawn("gnome-screenshot") end),
 
                               -- Prompt
                               awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end),

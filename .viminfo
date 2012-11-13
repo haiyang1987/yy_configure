@@ -8,37 +8,95 @@
 # hlsearch on (H) or off (h):
 ~H
 # Last Search Pattern:
-~Msle0~/\<pass\>
+~MSle0~/sx
 
 # Last Substitute Search Pattern:
-~MSle0&\s*$
+~MSle0&\%9c.
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
-:qa
-:A
-:'<,'>qa
-:qa:q
 :x
-:w
-:jk
-:qa!
-:QA
 :q
-:q!
-:qa:qa
-:w !sudo tee %
-:.qa
-:Projectk
-:a
+:qa
+:qa!
+:A
+:w
+:set fileencoding
+:e ci.h
+:e buddy.proto
+:e community.proto
 :e main.cpp
-:e addressbook.proto
-:'<,'>qa!
-:e school.proto
+:e uid
+:q!
+:'<,'>IYMD
+:IYMD
+:I + 1
+:I - 2
+:'<,'>I + 1
+:%s/\%9c./\=line(".")/g
+:e profile
 
 # Search String History (newest to oldest):
+?/sx
+?/tj
+?/yn
+?/zj
+?/sd
+?/sn
+?/sh
+?/s
+?/sd/sh
+?/sc
+?/nx
+?/jx
+?/js
+?/jl
+?/hl
+?/hi
+?/he
+?/hb
+?/gx
+?/ah
+?/tag
+?/wget
+? \<Colors\>
+?/colo
+? \<sleep_mode\>
+? \<ioinit\>
+? \<Test1\>
+? \<ue\>
+? \<row\>
+? \<result\>
+? \<mps\>
+?/from
+? \<it\>
+? \<qs\>
+? \<QuerySchool\>
+? \<SchoolSearch\>
+? \<do_url_search_school\>
+?/info
+? \s\+$
+? \<_split_userinfo\>
+? \<print\>
+? \<userinfo_lines\>
+? \<f\>
+? \<fu\>
+?/pyth
+?/del
+?/php
+?/coc
+?/ruby
+?/\%10v
+?/\%8v
+?/\%9v
+?/sdf
+? \%9c.
+?/alias
+?/alas
+? \<nelts\>
+? \<queue\>
 ? \<pass\>
 ? \<user\>
 ? \<answer_to_connection\>
@@ -82,6 +140,49 @@ $
 ?/sdfsfsdf
 ? \<map\>
 ?/n
+?/bug
+?/bugs
+?/bus
+?/lost
+?/issue
+?/ext4
+? \<pthread_tryjoin_np\>
+?/np
+? \<request_rc\>
+?/sleep
+?/thread_c
+? \<request_tid\>
+? \<receiver\>
+? \<rc\>
+? \<receiver_tid\>
+? \<create_thread\>
+?/thread
+? \<ptr\>
+? \<mni_fork\>
+? \<create_pthread\>
+?/pool
+?/poll
+?/push
+? \<usleep\>
+? \<thread_queue_deal\>
+? \<query_size\>
+? \<printf\>
+?/print
+?/pthread
+? \<push_pop\>
+? \<thread_query\>
+? # *Last modified: 
+?/int
+?/128
+?/q
+?/writ
+?/praise
+?/unzip
+? \<parser_xml\>
+? \<REQUEST_XML_BASE\>
+? \<request\>
+? \<send_str\>
+? \<input\>
 
 # Expression History (newest to oldest):
 
@@ -106,76 +207,55 @@ $
 @j
 @read_line
 @recovery_process
+@query_size
+@push_pop
+@init
 
 # Input Line History (newest to oldest):
 
 # Registers:
-""0	LINE	0
-	                                  --"firefox",
-	                                  --"chromium"
-"1	LINE	0
-	                                  --"firefox",
-	                                  --"chromium"
-"2	LINE	0
+"0	LINE	0
+	                              -- awful.key({ modkey,           }, "F2",    function () awful.util.spawn("gnome-terminal") end),
+	                              -- awful.key({ modkey,           }, "F3",    function () awful.util.spawn("firefox") end),
+	                              -- awful.key({ modkey,           }, "F4",    function () awful.util.spawn("google-chrome") end),
+	                              -- awful.key({ modkey,           }, "F5",    function () awful.util.spawn("nautilus --no-desktop") end),
+	                              -- awful.key({ modkey,           }, "F6",    function () awful.util.spawn("gnome-screensaver-command -l") end),
+	                              -- awful.key({ modkey,           }, "F7",    function () awful.util.spawn("xchat") end),
+	                              -- awful.key({ modkey,           }, "F8",    function () awful.util.spawn("thunar") end),
+	                              -- awful.key({ modkey,           }, "F9",    function () awful.util.spawn("audacious") end),
+	                              -- awful.key({ modkey,           }, "F10",   function () awful.util.spawn("meld") end),
+	                              -- awful.key({ modkey,           }, "F11",   function () awful.util.spawn("gnome-volume-control") end),
+	                              -- awful.key({ modkey,           }, "F12",   function () awful.util.spawn("gnome-screenshot") end),
+""1	LINE	0
 	
+"2	LINE	0
+	                              -- awful.key({ modkey,           }, "F2",    function () awful.util.spawn("gnome-terminal") end),
+	                              -- awful.key({ modkey,           }, "F3",    function () awful.util.spawn("firefox") end),
+	                              -- awful.key({ modkey,           }, "F4",    function () awful.util.spawn("google-chrome") end),
+	                              -- awful.key({ modkey,           }, "F5",    function () awful.util.spawn("nautilus --no-desktop") end),
+	                              -- awful.key({ modkey,           }, "F6",    function () awful.util.spawn("gnome-screensaver-command -l") end),
+	                              -- awful.key({ modkey,           }, "F7",    function () awful.util.spawn("xchat") end),
+	                              -- awful.key({ modkey,           }, "F8",    function () awful.util.spawn("thunar") end),
+	                              -- awful.key({ modkey,           }, "F9",    function () awful.util.spawn("audacious") end),
+	                              -- awful.key({ modkey,           }, "F10",   function () awful.util.spawn("meld") end),
+	                              -- awful.key({ modkey,           }, "F11",   function () awful.util.spawn("gnome-volume-control") end),
+	                              -- awful.key({ modkey,           }, "F12",   function () awful.util.spawn("gnome-screenshot") end),
 "3	LINE	0
 	
 "4	LINE	0
-	
+	建立目录25,分别是：
+	安徽
 "5	LINE	0
-	帮我看一下我写的这个if有问题吗 怎么总报错啊
-	if[x"$VGOP_VERF_COUNT" !=  x"$STG_VERF_COUNT"];then
-	echo count no equl!
-	else
-	echo $STG_VERF_COUNT>>stg.log
-	fi
+	BOSS 话单
 "6	LINE	0
-	  return rc;
+	i_1001_YN_20120801.dat.clean
 "7	LINE	0
-	
+	i_1001_sn_20120901.dat.clean
 "8	LINE	0
-	      std::map<long long, short> buddy_list;
-	      bool blss = false;
-	      ReturnResultExt rre;
-	      if(qc.has_uid())
-	        blss = query_buddy_list_from_ss(qc.uid(), buddy_list, gcis->config);
-	      my_ulonglong all = mysql_num_rows(result);
-	      int id = 1;
-	      int count = 0;
-	      while((row = mysql_fetch_row(result)) != NULL) {
-	        long long uid = strtoll(row[0], NULL, 10);
-	        if(blss && buddy_list.find(uid)!=buddy_list.end()) {
-	          all--;
-	          continue;
-	        }
-	        if(qc.has_begin() && id < qc.begin()) {
-	          id++;
-	          continue;
-	        }
-	        if(qc.has_count() && count < qc.count()) {
-	          UserExt *ue = rre.add_user();
-	          ue->set_uid(uid);
-	          ue->set_sex(strtol(row[1], NULL, 10));
-	          ue->set_age(strtol(row[2], NULL, 10));
-	          ue->set_constellation(strtol(row[3], NULL, 10));
-	          ue->set_count(strtol(row[4], NULL, 10));
-	          if(strtol(row[5], NULL, 10) != 0)
-	            ue->set_praised(true);
-	          else
-	            ue->set_praised(false);
-	          count++;
-	        } else {
-	          break;
-	        }
-	      }
-	
-	      rre.set_all(all);
-	      rre.set_count(rre.user_size());
-	      mysql_free_result(result);
-	      if(rre.SerializeToString(&out))
-	        rc = true;
-"9	LINE	0
-	      qc.province().c_str(),
+	i_1001_sn_20120801.dat.clean
+"9	CHAR	0
+	ments
+	wget -c ftp://ftp.software.ibm.com/ps/products/db2/info/vr97/pdf/zh_CN/DB2_V972_books_zh_CN.zip
 "a@	CHAR	0
 	j$x
 "b	CHAR	0
@@ -183,160 +263,167 @@ $
 "k	CHAR	0
 	jk
 "-	CHAR	0
-	,
+	、
 
 # File marks:
 'G  1399  2  ~/Workspace/CI/04_源码/01_接口/src/community_query/ciquery.cpp
-'0  24  0  ~/src/redis-2.6.0/Changelog
-'1  16  0  ~/src/redis-2.6.0/README
-'2  2  0  ~/fonts.note
-'3  105  0  ~/Downloads/libevent-thread/workqueue.c
-'4  1  0  ~/Downloads/libevent-thread/workqueue.c
-'5  2  0  ~/Downloads/libevent-thread/echoserver_threaded.c
-'6  22  0  ~/Downloads/libevent-thread/README
-'7  1  0  ~/Downloads/libevent-thread/RE
-'8  65  0  ~/src/libmicrohttpd-0.9.22/doc/examples/basicauthentication.c
-'9  9  0  ~/src/libmicrohttpd-0.9.22/doc/examples/basicauthentication.c
+'0  37  0  ~/.config/awesome/rc.lua
+'1  55  0  ~/.config/mirage/miragerc
+'2  144  0  ~/src/memcached-1.4.15/util.c
+'3  431  0  ~/src/memcached-1.4.15/hash.c
+'4  1  0  ~/src/memcached-1.4.15/t/issue_104.t
+'5  1  2  /tmp/ibus.log
+'6  92  4  ~/src/Micrium/Software/uCOS-III/Source/os_q.c
+'7  1  0  ~/.~lock.boss.odt#
+'8  28  0  ~/tmp/boss
+'9  1  0  ~/boss
 
 # Jumplist (newest first):
--'  24  0  ~/src/redis-2.6.0/Changelog
--'  1032  0  ~/src/redis-2.6.0/Changelog
--'  21  0  ~/src/redis-2.6.0/Changelog
--'  1  0  ~/src/redis-2.6.0/Changelog
--'  16  0  ~/src/redis-2.6.0/README
--'  1  0  ~/src/redis-2.6.0/README
--'  2  0  ~/fonts.note
--'  1  0  ~/fonts.note
--'  105  0  ~/Downloads/libevent-thread/workqueue.c
--'  68  2  ~/Downloads/libevent-thread/workqueue.c
--'  17  1  ~/Downloads/libevent-thread/workqueue.h
--'  1  0  ~/Downloads/libevent-thread/workqueue.h
--'  58  1  ~/Downloads/libevent-thread/workqueue.c
--'  56  59  ~/Downloads/libevent-thread/workqueue.c
--'  42  2  ~/Downloads/libevent-thread/workqueue.c
--'  83  0  ~/Downloads/libevent-thread/workqueue.c
--'  107  1  ~/Downloads/libevent-thread/workqueue.c
--'  1  0  ~/Downloads/libevent-thread/workqueue.c
--'  108  0  ~/Downloads/libevent-thread/workqueue.c
--'  2  0  ~/Downloads/libevent-thread/echoserver_threaded.c
--'  368  0  ~/Downloads/libevent-thread/echoserver_threaded.c
--'  1  0  ~/Downloads/libevent-thread/echoserver_threaded.c
--'  22  0  ~/Downloads/libevent-thread/README
--'  1  0  ~/Downloads/libevent-thread/README
--'  1  0  ~/Downloads/libevent-thread/RE
--'  65  0  ~/src/libmicrohttpd-0.9.22/doc/examples/basicauthentication.c
--'  39  18  ~/src/libmicrohttpd-0.9.22/doc/examples/basicauthentication.c
--'  40  6  ~/src/libmicrohttpd-0.9.22/doc/examples/basicauthentication.c
--'  38  18  ~/src/libmicrohttpd-0.9.22/doc/examples/basicauthentication.c
--'  11  0  ~/src/libmicrohttpd-0.9.22/doc/examples/basicauthentication.c
--'  9  0  ~/src/libmicrohttpd-0.9.22/doc/examples/basicauthentication.c
--'  1  0  ~/src/libmicrohttpd-0.9.22/doc/examples/basicauthentication.c
--'  124  6  ~/src/libmicrohttpd-0.9.22/doc/examples/simplepost.c
--'  146  4  ~/src/libmicrohttpd-0.9.22/doc/examples/simplepost.c
--'  117  2  ~/src/libmicrohttpd-0.9.22/doc/examples/simplepost.c
--'  118  4  ~/src/libmicrohttpd-0.9.22/doc/examples/simplepost.c
--'  102  6  ~/src/libmicrohttpd-0.9.22/doc/examples/simplepost.c
--'  170  0  ~/src/libmicrohttpd-0.9.22/doc/examples/simplepost.c
--'  153  2  ~/src/libmicrohttpd-0.9.22/doc/examples/simplepost.c
--'  116  0  ~/src/libmicrohttpd-0.9.22/doc/examples/simplepost.c
--'  98  0  ~/src/libmicrohttpd-0.9.22/doc/examples/simplepost.c
--'  43  0  ~/src/libmicrohttpd-0.9.22/doc/examples/simplepost.c
--'  104  4  ~/src/libmicrohttpd-0.9.22/doc/examples/simplepost.c
--'  178  30  ~/src/libmicrohttpd-0.9.22/doc/examples/simplepost.c
--'  20  0  ~/src/libmicrohttpd-0.9.22/doc/examples/simplepost.c
--'  1  0  ~/src/libmicrohttpd-0.9.22/doc/examples/simplepost.c
--'  727  0  ~/src/libmicrohttpd-0.9.22/doc/examples/sessions.c
--'  1  0  ~/src/libmicrohttpd-0.9.22/doc/examples/sessions.c
--'  14  0  ~/src/libmicrohttpd-0.9.22/doc/examples/logging.c
--'  29  69  ~/src/libmicrohttpd-0.9.22/doc/examples/logging.c
--'  41  30  ~/src/libmicrohttpd-0.9.22/doc/examples/logging.c
--'  48  2  ~/src/libmicrohttpd-0.9.22/doc/examples/logging.c
--'  37  0  ~/src/libmicrohttpd-0.9.22/doc/examples/logging.c
--'  13  0  ~/src/libmicrohttpd-0.9.22/doc/examples/logging.c
--'  49  0  ~/src/libmicrohttpd-0.9.22/doc/examples/logging.c
--'  1  0  ~/src/libmicrohttpd-0.9.22/doc/examples/logging.c
--'  31  0  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
--'  46  0  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
--'  10  0  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
--'  34  0  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
--'  9  0  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
--'  18  0  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
--'  30  0  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
--'  29  2  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
--'  1  0  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
--'  26  2  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
--'  27  24  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
--'  23  4  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
--'  19  14  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
--'  28  0  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
--'  5  128  ~/Workspace/CI/04_源码/01_接口/src/community_query/Makefile
--'  48  0  ~/Workspace/CI/04_源码/01_接口/src/community_query/Makefile
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/community_query/Makefile
--'  4  0  ~/Workspace/CI/04_源码/01_接口/src/community_query/Makefile
--'  835  0  ~/src/libmicrohttpd-0.9.22/doc/Makefile
--'  1  0  ~/src/libmicrohttpd-0.9.22/doc/Makefile
--'  6  0  ~/Workspace/fetion_interface/src/sub_projects/feiliao_interface/src/get_ftp.py
--'  1  0  ~/Workspace/fetion_interface/src/sub_projects/feiliao_interface/src/get_ftp.py
--'  438  46  ~/.rc.lua
--'  443  33  ~/.rc.lua
--'  371  54  ~/.rc.lua
--'  369  54  ~/.rc.lua
--'  246  102  ~/.rc.lua
+-'  37  0  ~/.config/awesome/rc.lua
+-'  437  0  ~/.config/awesome/rc.lua
+-'  1  0  ~/.config/awesome/rc.lua
+-'  55  0  ~/.config/mirage/miragerc
+-'  1  0  ~/.config/mirage/miragerc
+-'  21  0  ~/NERD_tree_2
+-'  26  0  ~/NERD_tree_2
+-'  1  0  ~/NERD_tree_2
+-'  21  0  ~/NERD_tree_1
+-'  1  0  ~/NERD_tree_1
+-'  144  0  ~/src/memcached-1.4.15/util.c
+-'  1  0  ~/src/memcached-1.4.15/util.c
+-'  431  0  ~/src/memcached-1.4.15/hash.c
+-'  1  0  ~/src/memcached-1.4.15/hash.c
+-'  1  0  ~/src/memcached-1.4.15/t/issue_104.t
+-'  1  2  /tmp/ibus.log
+-'  92  4  ~/src/Micrium/Software/uCOS-III/Source/os_q.c
+-'  127  0  ~/src/Micrium/Software/uCOS-III/Source/os_q.c
+-'  113  4  ~/src/Micrium/Software/uCOS-III/Source/os_q.c
+-'  76  0  ~/src/Micrium/Software/uCOS-III/Source/os_q.c
+-'  62  0  ~/src/Micrium/Software/uCOS-III/Source/os_q.c
+-'  57  0  ~/src/Micrium/Software/uCOS-III/Source/os_q.c
+-'  9  0  ~/src/Micrium/Software/uCOS-III/Source/os_q.c
+-'  981  0  ~/src/Micrium/Software/uCOS-III/Source/os_q.c
+-'  1  0  ~/src/Micrium/Software/uCOS-III/Source/os_q.c
+-'  6  19  ~/src/Micrium/Software/uCOS-III/Source/os_q.h
+-'  18  0  ~/src/Micrium/Software/uCOS-III/Source/os_q.h
+-'  1  0  ~/.~lock.boss.odt#
+-'  28  0  ~/tmp/boss
+-'  12  0  ~/tmp/boss
+-'  27  7  ~/tmp/boss
+-'  11  7  ~/tmp/boss
+-'  10  7  ~/tmp/boss
+-'  7  7  ~/tmp/boss
+-'  23  7  ~/tmp/boss
+-'  22  7  ~/tmp/boss
+-'  21  7  ~/tmp/boss
+-'  20  7  ~/tmp/boss
+-'  19  7  ~/tmp/boss
+-'  18  7  ~/tmp/boss
+-'  16  7  ~/tmp/boss
+-'  15  7  ~/tmp/boss
+-'  3  7  ~/tmp/boss
+-'  1  7  ~/tmp/boss
+-'  29  0  ~/tmp/boss
+-'  1  0  ~/boss
+-'  1  0  /etc/pacman.conf
+-'  69  7  ~/.rc.lua
 -'  1  0  ~/.rc.lua
--'  38  30  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
--'  37  11  ~/src/libmicrohttpd-0.9.22/doc/examples/hellobrowser.c
--'  578  1  ~/Downloads/vim73/Makefile
--'  1  0  ~/Downloads/vim73/Makefile
--'  156  0  ~/src/libhttpd-1.4/test/test_httpd.c
--'  155  0  ~/src/libhttpd-1.4/test/test_httpd.c
--'  152  0  ~/src/libhttpd-1.4/test/test_httpd.c
--'  153  0  ~/src/libhttpd-1.4/test/test_httpd.c
--'  1  0  ~/src/libhttpd-1.4/test/test_httpd.c
--'  151  0  ~/src/libhttpd-1.4/test/test_httpd.c
--'  267  0  ~/src/libhttpd-1.4/test/test_httpd.c
--'  2  0  ~/src/libhttpd-1.4/test/test_httpd.c
--'  154  0  ~/src/libhttpd-1.4/test/test_httpd.c
--'  15  0  ~/src/libhttpd-1.4/test/test_httpd.c
--'  53  0  ~/src/libhttpd-1.4/src/api.c
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/ciin/ciin_server.cpp
+-'  12  0  ~/Workspace/CI/04_源码/01_接口/src/NERD_tree_2
+-'  4  0  ~/Workspace/CI/04_源码/01_接口/src/NERD_tree_2
+-'  16  0  ~/Workspace/CI/04_源码/01_接口/src/NERD_tree_2
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/NERD_tree_2
+-'  16  0  ~/Workspace/CI/04_源码/01_接口/src/NERD_tree_1
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/NERD_tree_1
+-'  28  6  ~/hive-0.7.0/conf/hive-site.xml
+-'  66  0  ~/hive-0.7.0/conf/hive-site.xml
+-'  18  4  ~/hive-0.7.0/conf/hive-site.xml
+-'  1  0  ~/hive-0.7.0/conf/hive-site.xml
+-'  2  0  ~/.zshrc
+-'  175  0  ~/.zshrc
+-'  174  4  ~/.zshrc
+-'  1  0  ~/.zshrc
+-'  16  0  ~/Workspace/CI/04_源码/01_接口/src/hadoop_mysql/src/import_mysql_2d_friend.py
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/hadoop_mysql/src/import_mysql_2d_friend.py
+-'  4154  2  /tmp/part-r-00004
+-'  4140  0  /tmp/part-r-00004
+-'  1  0  /tmp/part-r-00004
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/mysql_connector.h
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/mysql_connector.c
+-'  512  0  /tmp/part-r-00004
+-'  19465  7  ~/.zhistory
+-'  19473  0  ~/.zhistory
+-'  19744  0  ~/.zhistory
+-'  19756  14  ~/.zhistory
+-'  19758  0  ~/.zhistory
+-'  4  0  ~/.zhistory
+-'  1  0  ~/.zhistory
+-'  1  0  ~/Downloads/zsh-5.0.0/Src/lex.c
+-'  1955  0  ~/Downloads/zsh-5.0.0/Src/lex.c
+-'  1  0  /etc/zsh/zprofile
+-'  53  5  ~/.zshrc
+-'  178  4  ~/.zshrc
+-'  177  21  ~/.zshrc
+-'  176  24  ~/.zshrc
+-'  58  5  ~/.zshrc
+-'  29  29  /tmp/test.c
+-'  19  18  /tmp/test.c
+-'  31  24  /tmp/test.c
+-'  28  0  /tmp/test.c
+-'  27  2  /tmp/test.c
+-'  55  0  ~/.config/mirage/miragerc
+-'  1  0  ~/.config/mirage/miragerc
+-'  21  0  ~/NERD_tree_2
+-'  26  0  ~/NERD_tree_2
+-'  1  0  ~/NERD_tree_2
+-'  21  0  ~/NERD_tree_1
 
 # Buffer list:
-%~/src/redis-2.6.0/Changelog	24	0
+%~/.config/awesome/rc.lua	37	0
 
 # History of marks within files (newest to oldest):
 
-> ~/src/redis-2.6.0/Changelog
-	"	24	0
-	n	21	0
+> ~/.config/awesome/rc.lua
+	"	37	0
+	.	255	0
+	+	255	0
 
-> ~/src/redis-2.6.0/README
-	"	16	0
+> ~/NERD_tree_1
+	"	1	0
+	.	1	0
+	+	1	0
 
-> ~/fonts.note
-	"	2	0
+> ~/NERD_tree_2
+	"	21	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
 
-> ~/Downloads/libevent-thread/workqueue.c
-	"	105	0
+> ~/.config/mirage/miragerc
+	"	55	0
 
-> ~/Downloads/libevent-thread/__Tag_List__
-	"	12	4
-	.	13	0
-	+	57	0
-	+	25	0
-	+	14	0
-	+	14	0
-	+	13	0
+> ~/src/memcached-1.4.15/util.c
+	"	144	0
 
-> ~/Downloads/libevent-thread/workqueue.h
-	"	17	1
+> ~/src/memcached-1.4.15/hash.c
+	"	431	0
 
-> ~/Downloads/libevent-thread/echoserver_threaded.c
-	"	2	0
-
-> ~/Downloads/libevent-thread/README
-	"	22	0
-
-> ~/Downloads/libevent-thread/RE
+> ~/src/memcached-1.4.15/t/issue_104.t
 	"	1	0
 
-> ~/src/libmicrohttpd-0.9.22/doc/examples/basicauthentication.c
-	"	65	0
+> /tmp/ibus.log
+	"	1	2
+	^	1	3
+	.	1	2
+	+	1	2
+
+> ~/src/Micrium/Software/uCOS-III/Source/os_q.c
+	"	92	4
+
+> ~/src/Micrium/Software/uCOS-III/Source/os_q.h
+	"	6	19
+	^	6	20
+	.	6	0
+	+	6	0
