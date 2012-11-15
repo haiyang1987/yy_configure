@@ -822,7 +822,7 @@ set fileencodings=ucs-bom,utf-8,chinese
 
 " set taglist rigth
 let Tlist_Use_Right_Window = 1
-let Tlist_Show_One_File = 1     
+let Tlist_Show_One_File = 1
 
 map <leader>P <esc>:Project<cr>
 

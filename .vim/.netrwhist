@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/home/yueyang/Workspace/CI/04_源码/01_接口/src/ciin'
 let g:netrw_dirhist_2='/home/yueyang/.config'
+let g:netrw_dirhist_3='ftp://hadooper@192.168.132.253/'

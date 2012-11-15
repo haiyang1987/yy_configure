@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~H
 # Last Search Pattern:
-~MSle0~/tag
+~MSle0~/var
 
 # Last Substitute Search Pattern:
 ~MSle0&\%9c.
@@ -18,27 +18,32 @@ $
 
 # Command Line History (newest to oldest):
 :qa
+:Matrix
 :x
 :qa!
-:set syntax
+:qa~
+:help
+:e ftp://ftpuser@192.168.1998.6:/test
+:e ftp://192.168.1998.6:/test
 :q
-:A
-:w
-:set fileencoding
-:e ci.h
-:e buddy.proto
-:e community.proto
-:e main.cpp
-:e uid
-:q!
-:'<,'>IYMD
-:IYMD
-:I + 1
-:I - 2
-:'<,'>I + 1
-:%s/\%9c./\=line(".")/g
+:e ftp://hadooper@192.168.132.253/test/0103_out_P02.dat
+:e ftp://hadooper@192.168.132.253/
+:e ftp://hadooper@192.168.132.253
+:e ftp://192.168.132.253
+:NetUserPass
+:help netrw-browse
+:h object-select
+:set tabpagemax
+:Project redis-2.6
+:Project
+:Project redis
 
 # Search String History (newest to oldest):
+?/var
+?/Window
+?/N
+?/cc
+?/zip
 ?/tag
 ?/sx
 ?/tj
@@ -183,12 +188,45 @@ $
 ? \<request\>
 ? \<send_str\>
 ? \<input\>
+?/late
+? \<FlateStream\>
+?/settag
+? \<Plug\>
+?/diff
+?/svndiff
+?/svn
+?/kj<F7><F6>
+?/mp
+?/mps
+?/smart
+?/ignore
+?/wrap
+?/*
+??tag
+?/taglist
+?/fileec
+? \<Tlist_Use_Right_Window\>
+?/tlist_use_r
+?/tlist_user
+?/grep
+?/<F7><F7>
+?/jkkjjjk
+?/<F8>jjk
+?/:q
+?/<F8><F8>
+?/kjjjj
+?/\%18v
+?/ntp
+?/right
+?/leader\>n
 
 # Expression History (newest to oldest):
 
 # Input Line History (newest to oldest):
 @*
 @.
+@/home/yueyang/src/redis-2.6.0/src
+@redis-2.6
 @/home/yueyang/Workspace/CI/04_源码/01_接口/src/community_sync
 @community_sync
 @test
@@ -210,25 +248,27 @@ $
 @query_size
 @push_pop
 @init
+@/home/yueyang/src/redis-2.6.0
 
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	                              -- awful.key({ modkey,           }, "F2",    function () awful.util.spawn("gnome-terminal") end),
-	                              -- awful.key({ modkey,           }, "F3",    function () awful.util.spawn("firefox") end),
-	                              -- awful.key({ modkey,           }, "F4",    function () awful.util.spawn("google-chrome") end),
-	                              -- awful.key({ modkey,           }, "F5",    function () awful.util.spawn("nautilus --no-desktop") end),
-	                              -- awful.key({ modkey,           }, "F6",    function () awful.util.spawn("gnome-screensaver-command -l") end),
-	                              -- awful.key({ modkey,           }, "F7",    function () awful.util.spawn("xchat") end),
-	                              -- awful.key({ modkey,           }, "F8",    function () awful.util.spawn("thunar") end),
-	                              -- awful.key({ modkey,           }, "F9",    function () awful.util.spawn("audacious") end),
-	                              -- awful.key({ modkey,           }, "F10",   function () awful.util.spawn("meld") end),
-	                              -- awful.key({ modkey,           }, "F11",   function () awful.util.spawn("gnome-volume-control") end),
-	                              -- awful.key({ modkey,           }, "F12",   function () awful.util.spawn("gnome-screenshot") end),
-""1	LINE	0
-	
+""0	LINE	0
+	#include <zlib.h>
+"1	LINE	0
+	#include <zlib.h>
 "2	LINE	0
+	
+"3	LINE	0
+	/* 
+	 * ===  FUNCTION  ======================================================================
+	 *         Name:  main
+	 *  Description:  
+	 * =====================================================================================
+	 */
+"4	LINE	0
+	
+"5	LINE	0
 	                              -- awful.key({ modkey,           }, "F2",    function () awful.util.spawn("gnome-terminal") end),
 	                              -- awful.key({ modkey,           }, "F3",    function () awful.util.spawn("firefox") end),
 	                              -- awful.key({ modkey,           }, "F4",    function () awful.util.spawn("google-chrome") end),
@@ -240,191 +280,168 @@ $
 	                              -- awful.key({ modkey,           }, "F10",   function () awful.util.spawn("meld") end),
 	                              -- awful.key({ modkey,           }, "F11",   function () awful.util.spawn("gnome-volume-control") end),
 	                              -- awful.key({ modkey,           }, "F12",   function () awful.util.spawn("gnome-screenshot") end),
-"3	LINE	0
+"6	LINE	0
 	
-"4	LINE	0
+"7	LINE	0
 	建立目录25,分别是：
 	安徽
-"5	LINE	0
-	BOSS 话单
-"6	LINE	0
-	i_1001_YN_20120801.dat.clean
-"7	LINE	0
-	i_1001_sn_20120901.dat.clean
 "8	LINE	0
-	i_1001_sn_20120801.dat.clean
-"9	CHAR	0
-	ments
-	wget -c ftp://ftp.software.ibm.com/ps/products/db2/info/vr97/pdf/zh_CN/DB2_V972_books_zh_CN.zip
+	BOSS 话单
+"9	LINE	0
+	i_1001_YN_20120801.dat.clean
 "a@	CHAR	0
-	j$x
+	A,000
 "b	CHAR	0
 	0dwj
 "k	CHAR	0
 	jk
 "-	CHAR	0
-	、
+		
 
 # File marks:
 'G  1399  2  ~/Workspace/CI/04_源码/01_接口/src/community_query/ciquery.cpp
-'0  8  4  /tmp/test.go
-'1  9  0  ~/Downloads/go.vim
-'2  132  30  ~/.rc.lua
-'3  37  0  ~/.config/awesome/rc.lua
-'4  55  0  ~/.config/mirage/miragerc
-'5  144  0  ~/src/memcached-1.4.15/util.c
-'6  431  0  ~/src/memcached-1.4.15/hash.c
-'7  1  0  ~/src/memcached-1.4.15/t/issue_104.t
-'8  1  2  /tmp/ibus.log
-'9  92  4  ~/src/Micrium/Software/uCOS-III/Source/os_q.c
+'0  3  0  /tmp/test.go
+'1  75  0  /usr/share/vim/vim73/doc/help.txt
+'2  118  0  /etc/nginx/nginx.conf
+'3  770  12  ~/.vimrc
+'4  1  0  /etc/anacrontab
+'5  1  0  ftp://ftpuser@192.168.1998.6:/test
+'6  13236  0  /tmp/netrw.vba
+'7  7  4  /tmp/get_ip
+'8  6  4  /tmp/get_ip
+'9  844  0  ~/.vimrc
 
 # Jumplist (newest first):
--'  8  4  /tmp/test.go
+-'  3  0  /tmp/test.go
 -'  1  0  /tmp/test.go
--'  9  0  ~/Downloads/go.vim
--'  112  0  ~/Downloads/go.vim
--'  1  0  ~/Downloads/go.vim
--'  132  30  ~/.rc.lua
--'  1  0  ~/.rc.lua
--'  113  57  ~/.rc.lua
--'  112  77  ~/.rc.lua
--'  111  57  ~/.rc.lua
--'  110  32  ~/.rc.lua
--'  109  32  ~/.rc.lua
--'  92  30  ~/.rc.lua
--'  37  0  ~/.config/awesome/rc.lua
--'  437  0  ~/.config/awesome/rc.lua
--'  1  0  ~/.config/awesome/rc.lua
--'  55  0  ~/.config/mirage/miragerc
--'  1  0  ~/.config/mirage/miragerc
--'  21  0  ~/NERD_tree_2
--'  26  0  ~/NERD_tree_2
--'  1  0  ~/NERD_tree_2
--'  21  0  ~/NERD_tree_1
--'  1  0  ~/NERD_tree_1
--'  144  0  ~/src/memcached-1.4.15/util.c
--'  1  0  ~/src/memcached-1.4.15/util.c
--'  431  0  ~/src/memcached-1.4.15/hash.c
--'  1  0  ~/src/memcached-1.4.15/hash.c
--'  1  0  ~/src/memcached-1.4.15/t/issue_104.t
--'  1  2  /tmp/ibus.log
--'  92  4  ~/src/Micrium/Software/uCOS-III/Source/os_q.c
--'  127  0  ~/src/Micrium/Software/uCOS-III/Source/os_q.c
--'  113  4  ~/src/Micrium/Software/uCOS-III/Source/os_q.c
--'  76  0  ~/src/Micrium/Software/uCOS-III/Source/os_q.c
--'  62  0  ~/src/Micrium/Software/uCOS-III/Source/os_q.c
--'  57  0  ~/src/Micrium/Software/uCOS-III/Source/os_q.c
--'  9  0  ~/src/Micrium/Software/uCOS-III/Source/os_q.c
--'  981  0  ~/src/Micrium/Software/uCOS-III/Source/os_q.c
--'  1  0  ~/src/Micrium/Software/uCOS-III/Source/os_q.c
--'  6  19  ~/src/Micrium/Software/uCOS-III/Source/os_q.h
--'  18  0  ~/src/Micrium/Software/uCOS-III/Source/os_q.h
--'  1  0  ~/.~lock.boss.odt#
--'  28  0  ~/tmp/boss
--'  12  0  ~/tmp/boss
--'  27  7  ~/tmp/boss
--'  11  7  ~/tmp/boss
--'  10  7  ~/tmp/boss
--'  7  7  ~/tmp/boss
--'  23  7  ~/tmp/boss
--'  22  7  ~/tmp/boss
--'  21  7  ~/tmp/boss
--'  20  7  ~/tmp/boss
--'  19  7  ~/tmp/boss
--'  18  7  ~/tmp/boss
--'  16  7  ~/tmp/boss
--'  15  7  ~/tmp/boss
--'  3  7  ~/tmp/boss
--'  1  7  ~/tmp/boss
--'  29  0  ~/tmp/boss
--'  1  0  ~/boss
--'  1  0  /etc/pacman.conf
--'  69  7  ~/.rc.lua
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/ciin/ciin_server.cpp
--'  12  0  ~/Workspace/CI/04_源码/01_接口/src/NERD_tree_2
--'  4  0  ~/Workspace/CI/04_源码/01_接口/src/NERD_tree_2
--'  16  0  ~/Workspace/CI/04_源码/01_接口/src/NERD_tree_2
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/NERD_tree_2
--'  16  0  ~/Workspace/CI/04_源码/01_接口/src/NERD_tree_1
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/NERD_tree_1
--'  28  6  ~/hive-0.7.0/conf/hive-site.xml
--'  66  0  ~/hive-0.7.0/conf/hive-site.xml
--'  18  4  ~/hive-0.7.0/conf/hive-site.xml
--'  1  0  ~/hive-0.7.0/conf/hive-site.xml
--'  2  0  ~/.zshrc
--'  175  0  ~/.zshrc
--'  174  4  ~/.zshrc
--'  1  0  ~/.zshrc
--'  16  0  ~/Workspace/CI/04_源码/01_接口/src/hadoop_mysql/src/import_mysql_2d_friend.py
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/hadoop_mysql/src/import_mysql_2d_friend.py
--'  4154  2  /tmp/part-r-00004
--'  4140  0  /tmp/part-r-00004
--'  1  0  /tmp/part-r-00004
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/mysql_connector.h
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/mysql_connector.c
--'  512  0  /tmp/part-r-00004
--'  19465  7  ~/.zhistory
--'  19473  0  ~/.zhistory
--'  19744  0  ~/.zhistory
--'  19756  14  ~/.zhistory
--'  19758  0  ~/.zhistory
--'  4  0  ~/.zhistory
--'  1  0  ~/.zhistory
--'  1  0  ~/Downloads/zsh-5.0.0/Src/lex.c
--'  1955  0  ~/Downloads/zsh-5.0.0/Src/lex.c
--'  1  0  /etc/zsh/zprofile
--'  53  5  ~/.zshrc
--'  178  4  ~/.zshrc
--'  177  21  ~/.zshrc
+-'  75  0  /usr/share/vim/vim73/doc/help.txt
+-'  1  0  /usr/share/vim/vim73/doc/usr_41.txt
+-'  79  0  /usr/share/vim/vim73/doc/help.txt
+-'  48  0  /usr/share/vim/vim73/doc/usr_42.txt
+-'  1  0  /usr/share/vim/vim73/doc/usr_42.txt
+-'  80  0  /usr/share/vim/vim73/doc/help.txt
+-'  168  0  /usr/share/vim/vim73/doc/usr_32.txt
+-'  1  0  /usr/share/vim/vim73/doc/usr_32.txt
+-'  109  3  /usr/share/vim/vim73/doc/usr_25.txt
+-'  1  0  /usr/share/vim/vim73/doc/usr_25.txt
+-'  68  0  /usr/share/vim/vim73/doc/help.txt
+-'  144  0  /usr/share/vim/vim73/doc/usr_08.txt
+-'  1  0  /usr/share/vim/vim73/doc/usr_08.txt
+-'  56  0  /usr/share/vim/vim73/doc/help.txt
+-'  1  0  /usr/share/vim/vim73/doc/usr_02.txt
+-'  50  0  /usr/share/vim/vim73/doc/help.txt
+-'  8  29  /usr/share/vim/vim73/doc/sponsor.txt
+-'  1  0  /usr/share/vim/vim73/doc/sponsor.txt
+-'  40  0  /usr/share/vim/vim73/doc/help.txt
+-'  9  8  /usr/share/vim/vim73/doc/uganda.txt
+-'  39  0  /usr/share/vim/vim73/doc/help.txt
+-'  105  5  /usr/share/vim/vim73/doc/uganda.txt
+-'  1  0  /usr/share/vim/vim73/doc/uganda.txt
+-'  52  0  /usr/share/vim/vim73/doc/help.txt
+-'  1  0  /usr/share/vim/vim73/doc/help.txt
+-'  57  8  /etc/nginx/nginx.conf
+-'  53  29  /etc/nginx/nginx.conf
+-'  39  8  /etc/nginx/nginx.conf
+-'  55  8  /etc/nginx/nginx.conf
+-'  38  0  /etc/nginx/nginx.conf
+-'  118  0  /etc/nginx/nginx.conf
+-'  1  0  /etc/nginx/nginx.conf
+-'  117  0  /etc/nginx/nginx.conf
+-'  770  12  ~/.vimrc
+-'  493  23  ~/.vimrc
+-'  458  23  ~/.vimrc
+-'  439  4  ~/.vimrc
+-'  321  14  ~/.vimrc
+-'  824  20  ~/.vimrc
+-'  844  0  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  1  0  /etc/anacrontab
+-'  8  0  /etc/anacrontab
+-'  1  0  ftp://ftpuser@192.168.1998.6:/test
+-'  1  0  ftp://192.168.1998.6:/test
+-'  1  0  ftp://hadooper@192.168.132.253/test/0103_out_P02.dat
+-'  13236  0  /tmp/netrw.vba
+-'  1  0  /tmp/netrw.vba
+-'  11  0  ftp://hadooper@192.168.132.253/
+-'  1  0  ftp://192.168.132.253
+-'  7  4  /tmp/get_ip
+-'  6  4  /tmp/get_ip
+-'  1  0  /tmp/get_ip
+-'  200  0  ~/.vimrc
+-'  122  0  ~/.vimrc
+-'  294  0  ~/.vimrc
+-'  293  0  ~/.vimrc
+-'  1  0  ~/.vim/plugin/indent_guides.vim
+-'  69  0  ~/.vim/plugin/indent_guides.vim
+-'  764  30  ~/.vimrc
+-'  763  18  ~/.vimrc
+-'  686  33  ~/.vimrc
+-'  683  33  ~/.vimrc
+-'  629  43  ~/.vimrc
+-'  425  34  ~/.vimrc
+-'  843  14  ~/.vimrc
+-'  831  31  ~/.vimrc
+-'  747  41  ~/.vimrc
+-'  713  43  ~/.vimrc
+-'  681  60  ~/.vimrc
+-'  3  0  ~/.vim/macros/jcommenter.vim
+-'  1  0  ~/.vim/macros/jcommenter.vim
+-'  1  0  /etc/sudoers
+-'  121  4  ~/src/memcached-1.4.15/thread.c
+-'  1  0  ~/src/memcached-1.4.15/thread.c
+-'  497  0  ~/src/memcached-1.4.15/memcached.h
+-'  470  4  ~/src/memcached-1.4.15/memcached.h
+-'  1  0  ~/src/memcached-1.4.15/memcached.h
+-'  21  15  ~/src/memcached-1.4.15/thread.c
+-'  22  0  ~/src/memcached-1.4.15/thread.c
+-'  35  4  ~/src/memcached-1.4.15/thread.c
+-'  34  4  ~/src/memcached-1.4.15/thread.c
+-'  1  0  ~/src/redis-2.6.0/src/redis-2.6
+-'  75  0  /usr/share/vim/vim73/doc/help.txt
+-'  1  0  /usr/share/vim/vim73/doc/usr_41.txt
+-'  79  0  /usr/share/vim/vim73/doc/help.txt
+-'  48  0  /usr/share/vim/vim73/doc/usr_42.txt
+-'  1  0  /usr/share/vim/vim73/doc/usr_42.txt
+-'  80  0  /usr/share/vim/vim73/doc/help.txt
+-'  168  0  /usr/share/vim/vim73/doc/usr_32.txt
+-'  1  0  /usr/share/vim/vim73/doc/usr_32.txt
+-'  109  3  /usr/share/vim/vim73/doc/usr_25.txt
 
 # Buffer list:
-%/tmp/test.go	8	4
+%/tmp/test.go	3	0
 
 # History of marks within files (newest to oldest):
 
 > /tmp/test.go
-	"	8	4
-	^	8	24
-	.	8	23
-	+	3	10
-	+	2	0
-	+	5	14
-	+	6	16
-	+	7	8
-	+	8	23
+	"	3	0
+	^	3	0
+	.	2	13
+	+	2	13
 
-> ~/Downloads/go.vim
-	"	9	0
+> /etc/nginx/nginx.conf
+	"	81	0
+	n	53	8
 
-> ~/.rc.lua
-	"	132	30
+> /usr/share/vim/vim73/doc/help.txt
+	"	75	0
 
-> ~/.config/awesome/rc.lua
-	"	37	0
-	.	255	0
-	+	255	0
+> /usr/share/vim/vim73/doc/uganda.txt
+	"	9	8
 
-> ~/NERD_tree_1
+> /usr/share/vim/vim73/doc/sponsor.txt
+	"	8	29
+
+> /usr/share/vim/vim73/doc/usr_02.txt
 	"	1	0
-	.	1	0
-	+	1	0
 
-> ~/NERD_tree_2
-	"	21	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/.config/mirage/miragerc
-	"	55	0
-
-> ~/src/memcached-1.4.15/util.c
+> /usr/share/vim/vim73/doc/usr_08.txt
 	"	144	0
 
-> ~/src/memcached-1.4.15/hash.c
-	"	431	0
+> /usr/share/vim/vim73/doc/usr_25.txt
+	"	109	3
 
-> ~/src/memcached-1.4.15/t/issue_104.t
-	"	1	0
+> /usr/share/vim/vim73/doc/usr_32.txt
+	"	168	0
+
+> /usr/share/vim/vim73/doc/usr_42.txt
+	"	48	0
