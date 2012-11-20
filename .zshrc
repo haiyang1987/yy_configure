@@ -11,6 +11,9 @@ export HISTFILE=~/.zhistory
 # # append command to history file once executed
 setopt INC_APPEND_HISTORY
 
+# add timestemp
+setopt EXTENDED_HISTORY
+
 #Disable core dumps
 limit coredumpsize 0
 
@@ -299,3 +302,11 @@ setopt autocd
 # Add ~/bin/ to PATH
 PATH="$PATH:/home/yueyang/bin"
 export PATH
+
+
+
+export PERL_LOCAL_LIB_ROOT="/home/yueyang/perl5";
+export PERL_MB_OPT="--install_base /home/yueyang/perl5";
+export PERL_MM_OPT="INSTALL_BASE=/home/yueyang/perl5";
+export PERL5LIB="/home/yueyang/perl5/lib/perl5/x86_64-linux-thread-multi:/home/yueyang/perl5/lib/perl5";
+export PATH="/home/yueyang/perl5/bin:$PATH";

@@ -818,7 +818,7 @@ map <leader>u <esc>:/# *Last modified: /s@:.*$@\=strftime(": %Y-%m-%d %H:%M")@<c
 
 set encoding=utf-8
 set fileencoding=utf-8
-set fileencodings=ucs-bom,utf-8,chinese
+set fileencodings=utf-8,gb2312,gbk,gb18030,big5
 
 " set taglist rigth
 let Tlist_Use_Right_Window = 1
@@ -842,3 +842,15 @@ set autoindent
 "tencent weibo
 "let g:weibo_access_token = '2412A18EDE68C007B906721C5DDA0BE9'
 
+"-----------------------------------------------------------------------------
+" lookupfile.vim 插件设置
+"-----------------------------------------------------------------------------
+let g:LookupFile_MinPatLength = 2               "最少输入2个字符才开始查找
+let g:LookupFile_PreserveLastPattern = 0        "不保存上次查找的字符串
+let g:LookupFile_PreservePatternHistory = 1     "保存查找历史
+let g:LookupFile_AlwaysAcceptFirst = 1          "回车打开第一个匹配项目
+let g:LookupFile_AllowNewFiles = 0              "不允许创建不存在的文件
+let g:LookupFile_SortMethod = ""                "关闭对搜索结果的字母排序
+if filereadable("/home/ganquan/linux-2.6.34-rc4/filenametags")                "设置tag文件的名字
+let g:LookupFile_TagExpr ='"/home/ganquan/linux-2.6.34-rc4/filenametags"'
+endif
