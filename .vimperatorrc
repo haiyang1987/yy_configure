@@ -3,7 +3,7 @@
 map <F2> :tabopen<Space><Space>~/.mozilla/firefox/tofrs9jj.default/bookmarks.html<Return>
 map <F4> :tabopen<Space><Space>https://duckduckgo.com/<Return>
 map <F5> :tabopen<Space><Space>https://www.google.com/ncr<Return>
-set defsearch=duckduckgo
+set defsearch=google
 set runtimepath=/home/yueyang/.vimperator
 source! /home/yueyang/.vimperatorrc.local
 

@@ -854,3 +854,7 @@ let g:LookupFile_SortMethod = ""                "关闭对搜索结果的字母�
 if filereadable("/home/ganquan/linux-2.6.34-rc4/filenametags")                "设置tag文件的名字
 let g:LookupFile_TagExpr ='"/home/ganquan/linux-2.6.34-rc4/filenametags"'
 endif
+
+highlight WhitespaceEOL ctermbg=red guibg=red
+match WhitespaceEOL /\s\+$/
+

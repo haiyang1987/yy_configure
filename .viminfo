@@ -6,48 +6,224 @@
 
 
 # hlsearch on (H) or off (h):
-~h
+~H
 # Last Search Pattern:
-~MSle0~/c
+~Msle0~/\<getUserinfoFromWPA\>
 
 # Last Substitute Search Pattern:
-~MSle0&\s*$
+~MSle0&base
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :x
-:qa
-:q!
-:noh
-:q
-:LookupFile
-:k
-:LookupFile ngx_buf.c
-:h fenc
-:h fencs
 :w
 :qa!
-:h t
-:h tabnew
-:h tab
-:h buffer
-:unmap F
-:unmap f
-:map f
-:h g
+:qa
+:q
+:split
+:AV
+:AB
+:A
+:e Makefile
+:set list
+:e
+:e ../proto/Makefile
+:e ..pr
+:%s/base/core/g
+:Projectjkk
+:nohlsearch
+:q!
+:e ciconnection.h
+:e ciin_server.cpp
 
 # Search String History (newest to oldest):
-?/c
-?/aaa
-?/noh
-?/a
-? \<autocmd\>
-?/c-sup
-?/colo
-?/j:q
-?/jkj
+? \<getUserinfoFromWPA\>
+? \<callRPC_WithPB\>
+?/call
+?/info
+? \s\+$
+? \<sendheader\>
+? \<PACKET_HEADER_LEN\>
+? \<buff\>
+? \<keeplive_idle\>
+? \<ip\>
+? \<fd_t\>
+?/rpc
+? base
+?/base
+? # *Last modified: 
+? \<wpa_base\>
+?/log
+? \<extern\>
+? \<_WPA_CORE_H_\>
+? \<_CICONNECTION_H_\>
+?/return
+?/  
+? \<port\>
+? \<uid\>
+?/ip
+? \<IP_SIZE\>
+? \<WPA_SERVER_IP\>
+? \<NOTES\>
+? \<logger\>
+? \<PROG_LOG4XX_PATH\>
+? \<RPC_MASK_REQUEST\>
+? \<WPA_RPC\>
+? \<sUserinfo\>
+? \<info\>
+? \<wpa_rpc\>
+?/wpa
+?/e
+? \<epoll_init\>
+?/fault
+? \<portno\>
+? \<protno\>
+? ;
+?/port
+? \<sockfd\>
+?/ctl
+? \<call_epoll\>
+? \<epoll_wait\>
+?/wait
+?/epollet
+? \<ev\>
+? \<ServerLoop\>
+? \<sfd\>
+? \<epollfd\>
+? \<ThreadCreate\>
+? \<SocketInit\>
+? \<epoll_create\>
+?/create
+?/epoll
+? \<buffer\>
+? \<time_now\>
+? );
+? \<time_st\>
+?/m
+?/new
+?/print
+?/mess
+?/got
+?/please
+?/int
+?/\,
+? \<fgets\>
+?/get
+? \<newsockfd\>
+? \<cln_size\>
+?/acc
+? \<srv_addr\>
+? \<SOCK_STREAM\>
+? \<bzero\>
+? clilen
+? \<clilen\>
+?/cln
+? cli_addr
+? serv_addr
+? \<n\>
+? \<keySpeaor\>
+? \<_norm_heartbeat_info\>
+?/heart
+? \<GetFTP\>
+?/getftp
+?/get_ftp
+?/sms
+?/cat
+?/161
+? \<method\>
+? \<RpcRequestHeader\>
+? \<rpcRequestHeader\>
+? \<make_send_request_string\>
+? \<rpc_send_request\>
+? \<rpc\>
+? \<WPA\>
+? \<ogu\>
+? \<servaddr\>
+? \<tv\>
+? \<tv_usec\>
+? \<blocking\>
+? \<set_block_mode\>
+? \<argument_config\>
+? \<main\>
+? \<uids\>
+? \<line_count\>
+?/ok
+? \<ftp_put_ip\>
+? \<ftp_get_ip\>
+? \<ftp_ip\>
+? \<line\>
+? \<get_live_user\>
+? \<put_ftp\>
+? \<check\>
+? \<create_filelist\>
+? \<local_name\>
+? \<download_all_partfile\>
+?/	
+? \<200034814\>
+? \<200034811\>
+? \<200034810\>
+? \<200307710\>
+? \<200035016\>
+? \<200034939\>
+? \<200034921\>
+? \<200034903\>
+? \<200034882\>
+? \<200034881\>
+? \<200034828\>
+? \<200034822\>
+? \<200034818\>
+? \<200034759\>
+? \<200034758\>
+? \<200034755\>
+? \<200034752\>
+? \<200034747\>
+? \<200034742\>
+? \<200034741\>
+? \<200034740\>
+? \<200034739\>
+? \<200034738\>
+? \<200034737\>
+? \<200034736\>
+? \<200034735\>
+? \<200034734\>
+? \<200034732\>
+? \<200034729\>
+? \<200002767\>
+? \<427185849\>
+?  
+?/:
+? \<103\>
+? \<18945678911\>
+? \<15950006591\>
+? \<18945678909\>
+? \<18945678908\>
+? \<18945678906\>
+? \<15950006575\>
+? \<15950006574\>
+? \<15950006573\>
+? \<15950006572\>
+? \<15950006571\>
+? \<15950006570\>
+? \<15950006569\>
+? \<15950006568\>
+? \<15950006567\>
+? \<18945678904\>
+? \<18945678903\>
+? \<18946142293\>
+?   
+?/\%16v
+?/}>
+?/j<F7>:
+?/jjjk
+? NULL
+? \<NGX_MAIN_CONF\>
+?/ngx_strin
+? \<ngx_string\>
+? \<0\>
+? \<ngx_contf_set_flag_slot\>
+?/def
 ? \<AddHeadMsg\>
 ?/find
 ?/left
@@ -100,6 +276,7 @@ $
 ?/ah
 ?/wget
 ? \<Colors\>
+?/colo
 ? \<sleep_mode\>
 ? \<ioinit\>
 ? \<Test1\>
@@ -113,8 +290,6 @@ $
 ? \<QuerySchool\>
 ? \<SchoolSearch\>
 ? \<do_url_search_school\>
-?/info
-? \s\+$
 ? \<_split_userinfo\>
 ? \<print\>
 ? \<userinfo_lines\>
@@ -155,7 +330,6 @@ $
 ?/fir
 ?/uid
 ? \<person\>
-?/get
 ?/get_
 ?/set_
 ? \<phone_number\>
@@ -204,12 +378,9 @@ $
 ? \<thread_queue_deal\>
 ? \<query_size\>
 ? \<printf\>
-?/print
 ?/pthread
 ? \<push_pop\>
 ? \<thread_query\>
-? # *Last modified: 
-?/int
 ?/128
 ?/q
 ?/writ
@@ -251,7 +422,6 @@ $
 ?/ntp
 ?/right
 ?/leader\>n
-?/\%16v
 ?/cur
 ?/ kjk
 ?/swap
@@ -272,13 +442,102 @@ $
 ?/map 
 ?/F
 ?/encoding
+?/lookup
+?/c
+?/aaa
+?/noh
+?/a
+? \<autocmd\>
+?/c-sup
+?/j:q
+?/jkj
+?/jjk
+? \<LookupUsing\>
+?/lookupus
+?/openwindow
+?/openwins
+?/leader
+?/set
+?/shift
+?/t
+? \<trace\>
+?/looger
+? \<handle\>
+?/readline
+?/12
+?/join
+?/ssh
+?/xml
+?/pro
+?/thrift
+?/ph
+? \<send_sms\>
+? \<wheel\>
+?/whell
+? \<HeartbeatInfo\>
+?/time
+? \<timep\>
+?/epoll_ctl
+? \<epfd\>
+?/fd
+? \<ThreadInit\>
+? \<events\>
+?/ein
+?/srv_
+?/die
+? \<res\>
+?/ctl_del\>
+?/ctl_del
+?/epoll_ctl\>
+? \<epollop\>
+?/epoll_create
+?/epoll_wait
+?/string
+? \<call_rpc\>
+? \<igu\>
+? \<in\>
+? \<SerializeToString\>
+?/in
+? \<InGetUser\>
+? \<pop_connection\>
+? \<make_connection\>
+?/<leader>cc^M
+?/leader>cc
+?/rpto
+? \<EXEC\>
+? \<userinfo\>
+? \<sync\>
+? \<all\>
+? \<my_ulonglong\>
+? \<sql\>
+?/cicon
+?/rep
+?/protobu
+?/inc
+?/cp
+? \<gen_proto\>
+?/prot
+?/getuserinfofrom
+? \<oau\>
+? \<OutAddUser\>
+? \<wpa\>
+? \<test_6\>
+? \<worker\>
+?/cic
+?/ciconn
+?/China
+?/scp
 
 # Expression History (newest to oldest):
 
 # Input Line History (newest to oldest):
-@test_fun
-@*
+@call_epoll
+@*.c
 @.
+@/home/yueyang/src/nginx-1.2.5/src
+@nginx
+@/home/yueyang/src/nginx-1.2.5/src/core
+@*
 @/home/yueyang/src/redis-2.6.0/src
 @redis-2.6
 @/home/yueyang/Workspace/CI/04_源码/01_接口/src/community_sync
@@ -303,263 +562,206 @@ $
 @push_pop
 @init
 @/home/yueyang/src/redis-2.6.0
+@test_fun
+@socket_init
 
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	printf ( "<CURSOR>\n" );
+"0	LINE	0
+	
 "1	LINE	0
-	int 
+	
 "2	LINE	0
-	map <leader>s :source ~/.vimrc<cr>
-	"Fast editing of .vimrc
+	
+	
 "3	LINE	0
-	: 1353033369:0;rm -f log/**/
+	
 "4	LINE	0
-	setopt EXTENDED_HISTORY
+	          <-IF PART->
 "5	LINE	0
-	
+	        <-IF PART->
 "6	LINE	0
-	export HISTTIMEFORMAT="%F %T `whoami` "
+	
 "7	LINE	0
-	
+	      <-IF PART->
 "8	LINE	0
-	            new = ngx_palloc(p, 2 * size);
-	            if (new == NULL) {
-	                return NULL;
-	            }
 	
-	            ngx_memcpy(new, a->elts, size);
-	            a->elts = new;
-	            a->nalloc *= 2;
-	        }
-	    }
-	
-	    elt = (u_char *) a->elts + a->size * a->nelts;
-	    a->nelts++;
-	
-	    return elt;
-	}
-	
-	
-	void *
-	ngx_array_push_n(ngx_array_t *a, ngx_uint_t n)
-	{
-	    void        *elt, *new;
-	    size_t       size;
-	    ngx_uint_t   nalloc;
-	    ngx_pool_t  *p;
-	
-	    size = n * a->size;
-	
-	    if (a->nelts + n > a->nalloc) {
-	
-	        /* the array is full */
-	
-	        p = a->pool;
-	
-	        if ((u_char *) a->elts + a->size * a->nalloc == p->d.last
-	            && p->d.last + size <= p->d.end)
-	        {
-	            /*
-	             * the array allocation is the last in the pool
-	             * and there is space for new allocation
-	             */
-	
-	            p->d.last += size;
-	            a->nalloc += n;
-	
-	        } else {
-	            /* allocate a new array */
-	
-	            nalloc = 2 * ((n >= a->nalloc) ? n : a->nalloc);
-	
-	            new = ngx_palloc(p, nalloc * a->size);
-	            if (new == NULL) {
-	                return NULL;
-	            }
-	
-	            ngx_memcpy(new, a->elts, a->nelts * a->size);
-	            a->elts = new;
-	            a->nalloc = nalloc;
-	        }
-	    }
-	
-	    elt = (u_char *) a->elts + a->size * a->nelts;
-	    a->nelts += n;
-	
-	    return elt;
-	}
 "9	LINE	0
-	#include <zlib.h>
+	    <-IF PART->
 "a@	CHAR	0
-	A,000
+	A,0,0,0,0,0,0,0,0j
 "b	CHAR	0
 	0dwj
+"j	CHAR	0
+	4093
+<kjjk,wkjjjjj,wjjkkkkkkkjjjjjjjjjkzzllllllllllllvlllllllllllllllllllxxtihitmp0jzz,wjjjjjjk0,wGkkllll2,ccjocheck()hhh*,wggnzzjjjjjjjjjjjjjjkkkkkkoprint ''ierror,w0,wkkkkkk0,wjkjjkko_line = ''.join(line.split())hhhhhh0x,wzz,wjk*k0j,wjjj35ggwwwjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkkkkkkki""�kb�kb'' % hhhi/tmp/%,w:wj0k0,wlwwwwwhhis,wjjjjoelse:print ''iok %sla % line,wkjukj,wkkkkA % linehhhhhhhi %s,wk0,wj,wjj,wkj,wjkkkkkkkkkjjjjjjjjjjjjjjjk0zzjwjk,kj,wjk,wkj,wk,wjjjjjjjjjjjjjjjjjjklllliget yyjpllwwdwicheck ,wk,cc,wjoput_	(�kb_	�kb�kb�kb�kbli	()kyyjpwwwdwiput ,w65gg,w$i''i/tmp/live_user.ctl,wkkkkkkkkkkkkkkkkkkk,wbbggjjjjjjjjjjjjoimport put_ftpkddp,wGkNk47ggfwwwi[24;2~uli[24;2~uiput_ftp.ulr,r.hhbi ,wjjkk$hhhhdb,w0,wjluuuuuj0,wwwdwx,wuu,wk*,w47ggkjdwiput_handle jbdwiP�kbpu_h	 �kl	�kbh	�kb�kbt_h	lxjjndwiput_h	,wkkkkkkkoprint fi	,w0dwifp = open('A', 'r'),wkkkkkkkkkkkkkkkkkjVjjjjyjjjjjjjjjjjjjjjjjkpjjjjjdd,wkkk*k0dwi_ jnNdwi_ ndwuuukuujdwi_ ddjp,wkk,wjj46gg,wllllllllllxlelx,wjjjjjjjjjk0wveeeeeeexitmp,wk0,wwwwkwwwwveeeeeeexi192.168.132.253wwwwwl5xxj0jlkwwwwwwveeeeeeexitmp/tet_�kb�kb�kb�kbtest_live_f�kbup,wjjkk0,wk,wkjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkjjjjjjwwwwwllllldwdwxi132.253llveeeeeexitest_j0llveeeeeeexitmp,wkk$hhhhvbbbbbihlxihao�kb�kb�kbhadooper:1110,wj0,w,wGkkkkkkwxjxjxjxjjx,wjkkkkkk*jjjjjjj,wjjjjjjjjjjjjjjjjwjjjjjjjjjjjjjkjjjjjjjjjjjjjnnjjjjjjjkkjkkkkw:e 		�klkw�kr�kl�kr�klwwwjwwwwwwwwwwwli/tmp�kb�kb�kb�kbtmp/,wkjjk0jjjjjjjjjjjjjjjjjjzzkjkjosystem()i''irm -f /tmp/%sla % live�kb�kb�kb�kbline,w0,wkjios.ggjjjjjjjjjjjoimport os,wkj0,wjkjjjjjjwjjwjjjzz,wj,wjjjwjk$h*jkkkkk0,w,wj,wk$0,wjjkj,wjjjjkjj0jw,wjjkzzkkkkkkkkwjjjjjjggjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkkkkkjjjjjwwkkkkkouogo�kblobal local_p�kbpathglobal ftp_get_path,woglobal ftp_put_path,wkka = ''i/tmp/ja = ''ijjjjj0wve$hhhhykkkkk$hp,wja = '',wjjjjjjjjjjkkkjjkjjjkwwwwwwwhveeeehhlyggj20ggj$hpkkoblo�kb�kb�kbglobal ftp_ip = ''i192.168.132.253j,whhhhhhhhhhhhhhmnkkkkkkkkkkkkkkkkkjlllllllllllllllllllllvlllllllllllllllhxi%s,wuuhhhhhhvllllkjhhhhveeeeeeeeex,w,wjjjjjhhhhveeeeeeexi%slllhdkjjkvlllllllllllllhxi%skkkkk$hhxj$hxkx,wuuuljjjjjhhi % ()iftp_i	, ftp_g	0,wkj,wjllhhvllllllxilo	ll,w0jjj,wjjjjjkj,wlllllxhxxi%^�kb�kb%s$hhhhhi % ()ilo		0,wkjkkkkkkkkkkkkkkkkoblo�kb�kbg�kb�kbglobal lo�kb�kblocal_ctl = ''ilive_user.ctlvbbbjjjjjjjljlllv$hhhlxilo		0jjjjjjjjjjzz,wjjjjjkkkkkkkwwwwdwdwdwilo		,w0jjjwjjjjwwwwhhhxxxi%slllllllli(lo	, lllla)0jjjwwwwwwwwwxxxi%slllllllli*�kb(lo		, llA)0j,wjjjzzjjjjjjjjjjwwwwwwhveeeeeeexxil�kbftp		jhhhhhhvllllllllllllllllxi%sjklllllllllift				 �kb, j0llxxxi%slllllllllilo		, 0,wjjjjjjjjjjjjj:w1019ggwwwhhhhhhhhhhhhhy$puyypdwkwelDjjyypdwkwwwhhhDjjyyypyypw0dwwkwwhhhDjjyypdwkweehDjjyypdwkwwwhhhD,w41ggkljlllllllllllllldwi%swwwwea, lo			,w,wkkkkkkkkkkkjjjjjjjjjjjjjjjjjjjjkkj0jkk0jkk,wkkkkkkkkkkkkkkkkkkkkkkkhhhhhhhh*kNNillllligetuiget_jbbbhhhhhi_get�kb�kb�kb�kbget_nlllaget_,wjnlllliput_,wggjjjjjjjjjjjjjjjjjjjjjjjk2yyjplllllllllllxxxiputj0wwbbhlllllxxxiput,w:wkk*nnnnnjj*nnn,wjkkkkk0kk0kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkjjjjjjjjjjjjjjjjjjjjjjjjjkkjjjwjjjzzjkkkkkkkkkkkkkkkkkkkkkkkkkkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkmmnkjk47ggkjjjmnljjjkjw`nzzkkkkkkkkkkkkkkkkkjjjjjjjjjjjjOfor _count in range():i2,wj,ccjjjjkojddjjjjwj2yykkkkkkkpjjdd,w:w:wk0kk0,w:w,wjw,wyykkkkkkkkkkkjp<<<<,wyyGkkkkkkkkkkkkkkkkkkkkkkkkkwjjjjjjjjjo�kbelse:kpjk>>kopass,wjjdd,wkggjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkwzz,wyyGkkkkkkkkkkkkkkkkkkp>>>>jddkww$hhdbdbiput error,wggjjjj/okyyGkkkkkkkkkkkkkkkkkkkkp>>@$hkjjk$bbdbiput 0,w,wddp,wkkkkkk0,w$0,wkkkkkk0jjjjjjjjjjjjjkjjj>>,woreturn 1,wkkkkkkkkkkkkkkkkkkkkkkzzlhxr2,w80gg$r3,wggjjjkkkzz0,wkjj,wjjjjjjjkkyykkkkpwwwwwwdwdwdwdwidat �kbs�kba files not eng�kbgou�kb�kb�kbough,w,w0,w,w,wjj0,wkkkw,wggjjjjjjjjjjjjjjjjjjzz,wkkjjjjjjjjjjjjjjjjwzzkjkjzzjzzkzzjkkj
 "k	CHAR	0
 	j:q:h tabjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj:q:h tabnewjkjkkkk:qjjkkj�k4jkkzzjjjjjjkkkw0jjjzzjj/findnnNn0nNggnjk0knjjj$Fskj: �kbh t:qjjkk$Tv$Fvcjuuuuuuuujjj
 ""-	CHAR	0
-	2
+	duckduckgo
 
 # File marks:
 'G  1399  2  ~/Workspace/CI/04_源码/01_接口/src/community_query/ciquery.cpp
-'0  8  17  ~/.zshrc
-'1  20095  0  ~/.zhistory
-'2  1  0  ~/.vim/test.c
-'3  92  4  ~/.vim/indent/erlang
-'4  81  0  ~/.vim/colors/vo_light.vim
-'5  764  5  ~/.vimrc
-'6  7  0  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/notify.c
-'7  1  0  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/notify.c
-'8  48  0  ~/src/nginx-1.2.5/src/core/ngx_array.c
-'9  5  0  ~/src/nginx-1.2.5/src/core/[Lookup File]
+'0  6  19  ~/.vimperatorrc
+'1  7  0  ~/Workspace/CI/04_源码/01_接口/src/feinno_rpc_client/ciconnection.cpp
+'2  121  4  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/receiver.c
+'3  6  22  ~/Workspace/CI/04_源码/01_接口/src/ciin/Client.h
+'4  250  30  ~/.rc.lua
+'5  16  0  ~/.zshrc
+'6  460  10  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+'7  346  12  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+'8  49  2  ~/src/gtest-1.6.0/samples/sample1.cc
+'9  1  999  /tmp/a
 
 # Jumplist (newest first):
--'  8  17  ~/.zshrc
+-'  6  19  ~/.vimperatorrc
+-'  1  0  ~/.vimperatorrc
+-'  7  0  ~/Workspace/CI/04_源码/01_接口/src/feinno_rpc_client/ciconnection.cpp
+-'  378  2  ~/Workspace/CI/04_源码/01_接口/src/feinno_rpc_client/ciconnection.cpp
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/feinno_rpc_client/ciconnection.cpp
+-'  374  0  ~/Workspace/CI/04_源码/01_接口/src/feinno_rpc_client/ciconnection.cpp
+-'  368  9  ~/Workspace/CI/04_源码/01_接口/src/feinno_rpc_client/ciconnection.cpp
+-'  121  4  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/receiver.c
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/receiver.c
+-'  6  22  ~/Workspace/CI/04_源码/01_接口/src/ciin/Client.h
+-'  18  0  ~/Workspace/CI/04_源码/01_接口/src/ciin/Client.h
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/ciin/Client.cpp
+-'  250  30  ~/.rc.lua
+-'  1  0  ~/.rc.lua
+-'  16  0  ~/.zshrc
 -'  1  0  ~/.zshrc
--'  20095  0  ~/.zhistory
--'  1  0  ~/.zhistory
--'  1  0  ~/.vim/test.c
--'  2  0  ~/.vim/test.c
--'  92  4  ~/.vim/indent/erlang
--'  1  0  ~/.vim/indent/erlang
--'  81  0  ~/.vim/colors/vo_light.vim
--'  1  0  ~/.vim/colors/vo_light.vim
--'  1  0  ~/.vim/colors/vo_dark.vim
--'  764  5  ~/.vimrc
--'  256  4  ~/.vimrc
--'  254  24  ~/.vimrc
--'  60  2  ~/.vimrc
--'  1  0  ~/.vimrc
--'  7  0  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/notify.c
--'  25  0  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/notify.c
--'  1  0  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/notify.c
--'  48  0  ~/src/nginx-1.2.5/src/core/ngx_array.c
--'  46  0  ~/src/nginx-1.2.5/src/core/ngx_array.c
--'  1  0  ~/src/nginx-1.2.5/src/core/ngx_array.c
--'  5  0  ~/src/nginx-1.2.5/src/core/[Lookup File]
--'  47  0  ~/src/nginx-1.2.5/src/core/ngx_array.c
--'  2757  10  /usr/share/vim/vim73/doc/options.txt
--'  2795  8  /usr/share/vim/vim73/doc/options.txt
--'  2741  0  /usr/share/vim/vim73/doc/options.txt
--'  1  0  /usr/share/vim/vim73/doc/options.txt
--'  246  0  ~/.vimrc
--'  497  13  ~/.vimrc
--'  816  25  ~/.vimrc
--'  810  10  ~/.vimrc
--'  843  0  ~/.vimrc
--'  346  0  ~/.vimrc
--'  180  0  ~/.vimrc
--'  178  0  ~/.vimrc
--'  183  5  ~/.vimrc
--'  30  22  ~/.vimrc
--'  29  0  ~/.vimrc
--'  25  0  ~/.vimrc
--'  426  19  ~/.vimrc
--'  26  16  ~/.vimrc
--'  354  19  ~/.vimrc
--'  442  18  ~/.vimrc
--'  776  0  ~/.vimrc
--'  773  0  ~/.vimrc
--'  2  0  ~/xrandr
--'  1  0  ~/xrandr
--'  22  10  ~/src/nginx-1.2.5/src/core/ngx_array.c
--'  17  4  ~/src/nginx-1.2.5/src/core/ngx_array.c
--'  15  4  ~/src/nginx-1.2.5/src/core/ngx_array.c
--'  13  48  ~/src/nginx-1.2.5/src/core/ngx_array.c
--'  12  0  ~/src/nginx-1.2.5/src/core/ngx_array.c
--'  4  0  ~/src/nginx-1.2.5/src/core/ngx_array.c
--'  145  0  ~/src/nginx-1.2.5/src/core/ngx_array.c
--'  146  0  ~/src/nginx-1.2.5/src/core/ngx_array.c
--'  147  0  ~/src/nginx-1.2.5/src/core/ngx_array.c
--'  74  13  ~/src/nginx-1.2.5/src/core/ngx_array.c
--'  20  4  ~/src/nginx-1.2.5/src/core/ngx_array.c
--'  33  0  ~/src/nginx-1.2.5/src/core/ngx_array.c
--'  14  0  ~/src/nginx-1.2.5/src/core/ngx_array.c
--'  198  8  ~/src/nginx-1.2.5/src/core/ngx_md5.c
--'  1  0  ~/src/nginx-1.2.5/src/core/ngx_md5.c
--'  84  2  /usr/share/vim/vim73/syntax/java.vim
--'  352  0  /usr/share/vim/vim73/syntax/java.vim
--'  1  0  /usr/share/vim/vim73/syntax/java.vim
--'  427  0  /usr/share/vim/vim73/syntax/c.vim
--'  1  0  /usr/share/vim/vim73/syntax/c.vim
--'  20  0  /etc/pacman.d/mirrorlist
--'  59  0  /etc/pacman.d/mirrorlist
--'  58  0  /etc/pacman.d/mirrorlist
--'  1  0  /etc/pacman.d/mirrorlist
--'  79  0  /etc/pacman.d/mirrorlist
--'  316  0  /etc/pacman.d/mirrorlist
--'  3  0  /etc/pacman.d/mirrorlist
--'  421  0  ~/src/nginx-1.2.5/src/core/nginx.c
--'  409  0  ~/src/nginx-1.2.5/src/core/nginx.c
--'  408  0  ~/src/nginx-1.2.5/src/core/nginx.c
--'  215  8  ~/src/nginx-1.2.5/src/core/nginx.c
--'  1  0  /usr/share/vim/vim73/doc/if_cscop.txt
--'  62  4  ~/src/nginx-1.2.5/src/core/ngx_times.c
--'  74  0  ~/src/nginx-1.2.5/src/core/ngx_regex.c
--'  299  0  ~/src/nginx-1.2.5/src/core/ngx_log.c
--'  279  8  /usr/share/vim/vim73/doc/if_cscop.txt
--'  406  4  ~/src/nginx-1.2.5/src/core/nginx.c
--'  328  4  ~/src/nginx-1.2.5/src/core/nginx.c
--'  362  23  ~/src/nginx-1.2.5/src/core/nginx.c
--'  308  8  ~/src/nginx-1.2.5/src/core/nginx.c
--'  300  4  ~/src/nginx-1.2.5/src/core/nginx.c
--'  296  0  ~/src/nginx-1.2.5/src/core/nginx.c
--'  287  4  ~/src/nginx-1.2.5/src/core/nginx.c
--'  267  0  ~/src/nginx-1.2.5/src/core/ngx_log.c
--'  238  4  ~/src/nginx-1.2.5/src/core/ngx_log.c
--'  237  0  ~/src/nginx-1.2.5/src/core/ngx_log.c
--'  262  0  ~/src/nginx-1.2.5/src/core/ngx_log.c
--'  255  4  ~/src/nginx-1.2.5/src/core/ngx_log.c
--'  1  0  ~/.vim/test.c
--'  2  0  ~/.vim/test.c
--'  92  4  ~/.vim/indent/erlang
+-'  460  10  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  456  8  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  425  9  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  457  8  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  470  0  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  467  4  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  444  0  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  458  6  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  113  0  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.h
+-'  4  0  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/Makefile
+-'  120  0  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.h
+-'  410  9  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  451  12  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.h
+-'  449  0  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/Makefile
+-'  452  0  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  446  4  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  18  0  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  469  7  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  356  0  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  346  2  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  347  0  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  202  26  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  184  2  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  221  0  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  196  2  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  49  2  ~/src/gtest-1.6.0/samples/sample1.cc
+-'  1  0  ~/src/gtest-1.6.0/samples/sample1.cc
+-'  1  999  /tmp/a
+-'  393  0  ~/Workspace/CI/04_源码/01_接口/src/feinno_rpc_client/ciconnection.cpp
+-'  25  106  ~/tmp/test_time.py
+-'  28  0  ~/tmp/test_time.py
+-'  1  0  ~/tmp/test_time.py
+-'  26  4  ~/tmp/test_time.py
+-'  31  131  ~/tmp/test_time.py
+-'  181  12  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  176  8  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  180  6  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  182  6  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  342  2  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  284  8  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  244  8  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  441  2  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  1944  8  ~/Workspace/CI/04_源码/01_接口/src/ciin/ciin_server.cpp
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/ciin/ciin_server.cpp
+-'  113  0  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.h
+-'  4  0  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/Makefile
+-'  120  0  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.h
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.h
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/Makefile
+-'  49  2  ~/src/gtest-1.6.0/samples/sample1.cc
+-'  1  0  ~/src/gtest-1.6.0/samples/sample1.cc
+-'  1  999  /tmp/a
+-'  25  106  ~/tmp/test_time.py
+-'  28  0  ~/tmp/test_time.py
+-'  1  0  ~/tmp/test_time.py
+-'  26  4  ~/tmp/test_time.py
+-'  31  131  ~/tmp/test_time.py
+-'  14  10  /tmp/test.py
+-'  13  3  /tmp/test.py
+-'  1  0  /tmp/test.py
+-'  460  10  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  456  8  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  425  9  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  457  8  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  470  0  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  467  4  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  444  0  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  458  6  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  113  0  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.h
+-'  4  0  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/Makefile
+-'  120  0  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.h
+-'  410  9  ~/Workspace/CI/04_源码/01_接口/src/wpa_base/src/wpa_core.cc
+-'  7  0  ~/Workspace/CI/04_源码/01_接口/src/feinno_rpc_client/ciconnection.cpp
+-'  378  2  ~/Workspace/CI/04_源码/01_接口/src/feinno_rpc_client/ciconnection.cpp
+-'  1  0  ~/Workspace/CI/04_源码/01_接口/src/feinno_rpc_client/ciconnection.cpp
+-'  374  0  ~/Workspace/CI/04_源码/01_接口/src/feinno_rpc_client/ciconnection.cpp
+-'  368  9  ~/Workspace/CI/04_源码/01_接口/src/feinno_rpc_client/ciconnection.cpp
+-'  121  4  ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/receiver.c
 
 # Buffer list:
-%~/.zshrc	8	17
+%~/.vimperatorrc	6	19
 
 # History of marks within files (newest to oldest):
 
-> ~/.zshrc
-	"	8	17
-	^	8	18
-	.	8	17
-	+	6	17
-	+	8	17
+> ~/.vimperatorrc
+	"	6	19
+	^	6	20
+	.	6	19
+	+	6	19
 
-> ~/.zhistory
-	"	20095	0
-
-> ~/.vim/test.c
-	"	1	0
-	.	1	0
-	+	1	0
-	+	2	31
-	+	2	0
-	+	2	0
-	+	1	0
-
-> ~/.vim/indent/erlang
-	"	92	4
-
-> ~/.vim/colors/vo_dark.vim
-	"	1	0
-
-> ~/.vim/colors/vo_light.vim
-	"	81	0
-
-> ~/.vimrc
-	"	764	5
-
-> ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/notify.c
+> ~/Workspace/CI/04_源码/01_接口/src/feinno_rpc_client/ciconnection.cpp
 	"	7	0
+	.	7	0
+	+	7	0
+
+> ~/Workspace/CI/04_源码/01_接口/src/feinno_rpc_client/__Tag_List__
+	"	23	0
 	.	24	0
-	+	25	0
 	+	24	0
 
-> /tmp/v1XWvbW/2
-	"	24	0
+> ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/receiver.c
+	"	121	4
 
-> /tmp/v1XWvbW/10
+> ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/receiver.h
+	"	1	0
+
+> ~/Workspace/CI/04_源码/01_接口/src/community_sync/src/__Tag_List__
 	"	3	0
+	.	7	0
+	+	14	0
+	+	14	0
+	+	14	0
+	+	14	0
+	+	13	0
+	+	7	0
+
+> ~/Workspace/CI/04_源码/01_接口/src/ciin/Client.cpp
+	"	1	0
+
+> ~/Workspace/CI/04_源码/01_接口/src/ciin/Client.h
+	"	6	22
+	^	6	23
+	.	6	22
+	+	6	22
+
+> ~/.rc.lua
+	"	250	30
+
+> ~/.zshrc
+	"	16	0

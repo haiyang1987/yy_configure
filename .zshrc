@@ -303,8 +303,6 @@ setopt autocd
 PATH="$PATH:/home/yueyang/bin"
 export PATH
 
-
-
 export PERL_LOCAL_LIB_ROOT="/home/yueyang/perl5";
 export PERL_MB_OPT="--install_base /home/yueyang/perl5";
 export PERL_MM_OPT="INSTALL_BASE=/home/yueyang/perl5";
