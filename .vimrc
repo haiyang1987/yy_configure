@@ -28,7 +28,7 @@ nmap <leader>f :find<cr>
 "Fast reloading of the .vimrc
 map <leader>s :source ~/.vimrc<cr>
 "Fast editing of .vimrc
-"map <leader>e :e! ~/.vimrc<cr>
+map <leader>e :e! ~/.vimrc<cr>
 "When .vimrc is edited, reload it
 autocmd! bufwritepost .vimrc source ~/.vimrc
 

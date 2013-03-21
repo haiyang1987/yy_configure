@@ -33,12 +33,13 @@ require("naughty")
 theme_path = "/usr/share/awesome/themes/zenburn/theme.lua"
 
 -- Actually load theme
+beautiful = require("beautiful")
 beautiful.init(theme_path)
 
 -- This is used later as the default terminal and editor to run.
 terminal = "gnome-terminal"
 -- terminal = "xterm"
-editor = os.getenv("EDITOR") or "nano"
+editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
 -- Default modkey.
@@ -49,6 +50,7 @@ editor_cmd = terminal .. " -e " .. editor
 modkey = "Mod4"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
+awful = require("awful")
 layouts =
 {
     awful.layout.suit.max,
@@ -71,9 +73,8 @@ layouts =
 tags = {}
 for s = 1, screen.count() do
     -- Each screen has its own tag table.
-    --tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 }, s)
-    tags[s] = awful.tag({ "1.Manager", "2.Browsers", "3.Main_Code", "4.Slave_Code", "5.SSH",
-    "6.Swap", "7.Files", "8.Misc", "9.Virtual-Box", "10.Other", "11.Ext" }, s, awful.layout.suit.tile)
+    -- tags[s] = awful.tag({ "1.Manager", "2.Browsers", "3.Main_Code", "4.Slave_Code", "5.SSH",
+    -- "6.Swap", "7.Files", "8.Misc", "9.Virtual-Box", "10.Other", "11.Ext" }, s, awful.layout.suit.tile)
 end
 -- }}}
 
@@ -86,21 +87,24 @@ myawesomemenu = {
     { "quit", awesome.quit }
 }
 
-mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
-{ "open terminal", terminal }
+mymainmenu = awful.menu({ items = {
+                                    { "awesome", myawesomemenu, beautiful.awesome_icon },
+                                    { "open terminal", terminal }
                                   }
-                              })
+                        })
 
-                              mylauncher = awful.widget.launcher({ image = image(beautiful.awesome_icon),
-                              menu = mymainmenu })
-                              -- }}}
+-- mylauncher = awful.widget.launcher({ image = image(beautiful.awesome_icon),
+--                                     menu = mymainmenu
+--                                    })
+-- }}}
 
-                              -- {{{ Wibox
+-- {{{ Wibox
                               -- Create a textclock widget
-                              mytextclock = awful.widget.textclock({ align = "right" })
+                              -- mytextclock = awful.widget.textclock({ align = "right" }) v3.4
 
                               -- Create a systray
-                              mysystray = widget({ type = "systray" })
+                              -- mysystray = widget({ type = "systray" })
+                              -- mysystray = wibox.widget.systray()
 
                               -- Create a wibox for each screen and add it
                               mywibox = {}
@@ -149,7 +153,7 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
 
                               for s = 1, screen.count() do
                                   -- Create a promptbox for each screen
-                                  mypromptbox[s] = awful.widget.prompt({ layout = awful.widget.layout.horizontal.leftright })
+                                  -- mypromptbox[s] = awful.widget.prompt({ layout = awful.widget.layout.horizontal.leftright }) v3.4
                                   -- Create an imagebox widget which will contains an icon indicating which layout we're using.
                                   -- We need one layoutbox per screen.
                                   mylayoutbox[s] = awful.widget.layoutbox(s)
@@ -425,9 +429,7 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
                                   --"firefox",
                                   --"chromium",
                                   "batti",
-                                  "dropbox",
-                                  "yunio",
-                                  "/home/yueyang/bin/nutstore-pydaemon"
+                                  "cloud"
                               }
                               if autorun then
                                   for app = 1, #autorunApps do

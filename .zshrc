@@ -286,6 +286,7 @@ uncmp () {
       *.tgz)       tar xzf $1       ;;
       *.zip)       unzip $1     ;;
       *.Z)         uncompress $1  ;;
+      *.tar.xz)    xz -kvd $1        ;;
       *.7z)        7za x $1    ;;
       *)           echo "'$1' cannot be extracted via extract()" ;;
     esac
@@ -308,3 +309,4 @@ export PERL_MB_OPT="--install_base /home/yueyang/perl5";
 export PERL_MM_OPT="INSTALL_BASE=/home/yueyang/perl5";
 export PERL5LIB="/home/yueyang/perl5/lib/perl5/x86_64-linux-thread-multi:/home/yueyang/perl5/lib/perl5";
 export PATH="/home/yueyang/perl5/bin:$PATH";
+
