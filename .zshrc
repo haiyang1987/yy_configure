@@ -101,6 +101,7 @@ hash -d S="/home/yueyang/Workspace/Shell"
 hash -d D="/usr/local/lib/python2.6/dist-packages" 
 hash -d T="/home/yueyang/Temp"
 hash -d C="/home/yueyang/Workspace/C"
+hash -d Go="/home/yueyang/Workspace/Go"
 hash -d Cpp="/home/yueyang/Workspace/Cpp"
 hash -d P="/home/yueyang/Workspace/Python"
 hash -d J="/home/yueyang/Workspace/Java"
@@ -270,6 +271,8 @@ $PR_CYAN$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT$PR_NO_COLOUR '
 setprompt
 
 export WORKON_HOME=$HOME/.virtualenvs
+export GOPATH=/home/yueyang/Workspace/Go
+
 source /usr/bin/virtualenvwrapper.sh
 
 #uncompuress

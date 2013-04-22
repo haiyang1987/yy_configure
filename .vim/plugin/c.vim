@@ -2943,6 +2943,8 @@ endfunction    " ----------  end of function C_InsertTemplate  ----------
 function! C_HighlightJumpTargets ()
 	if s:C_Ctrl_j == 'on'
 		exe 'match Search /'.s:C_TemplateJumpTarget1.'\|'.s:C_TemplateJumpTarget2.'/'
+    highlight WhitespaceEOL ctermbg=red guibg=red
+    match WhitespaceEOL /\s\+$/
 	endif
 endfunction    " ----------  end of function C_HighlightJumpTargets  ----------
 

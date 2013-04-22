@@ -855,6 +855,3 @@ if filereadable("/home/ganquan/linux-2.6.34-rc4/filenametags")                "è
 let g:LookupFile_TagExpr ='"/home/ganquan/linux-2.6.34-rc4/filenametags"'
 endif
 
-highlight WhitespaceEOL ctermbg=red guibg=red
-match WhitespaceEOL /\s\+$/
-
