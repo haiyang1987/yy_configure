@@ -1,13 +1,21 @@
 startup_message off
 
-defscrollback 10240
+defscrollback 65500
 
 altscreen on
 
+defutf8 on
+
+nonblock on
+
 hardstatus alwayslastline
 
-hardstatus string "%{= kG}[%{G}%H%{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}%Y-%m-%d%{W} %c:%s%{g}]"
+hardstatus string "%{= G}[%{G}%H%{g}][%= %{= w}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}%Y-%m-%d%{W} %c:%s%{g}]"
 
 bind w windowlist -b
 
 escape ^Zz #Instead of control -a
+
+term screen-256color
+
+termcapinfo xterm* ti@:te@
