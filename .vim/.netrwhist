@@ -1,11 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/yueyang/Workspace/CI/04_源码/01_接口/src/ciin'
-let g:netrw_dirhist_2='/home/yueyang/.config'
-let g:netrw_dirhist_3='ftp://hadooper@192.168.132.253/'
-let g:netrw_dirhist_4='/'
-let g:netrw_dirhist_5='/home/yueyang/Workspace/CI/04_源码/01_接口/src/data_handing_profile/bin'
-let g:netrw_dirhist_6='/home/yueyang/Workspace/fetion_interface/src/sub_projects/old_version'
-let g:netrw_dirhist_7='/home/yueyang/Workspace/Python/mint-analyzer/src/mint_analyzer/modules/datasource'
-let g:netrw_dirhist_8='/home/yueyang/Workspace/fetion_interface/src/sub_projects/feiliao_new/conf'
-let g:netrw_dirhist_9='/home/yueyang/src/zguide/examples/C++'
+let g:netrw_dirhist_cnt =0

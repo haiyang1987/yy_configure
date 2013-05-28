@@ -174,6 +174,9 @@ map <down> <leader>bd
 map <right> :bn<cr>
 map <left> :bp<cr>
 
+map <leader>rr :bn<cr>
+map <leader>ll :bp<cr>
+
 "Tab configuration
 map <F5> :tabprevious<cr>
 map <F6> :tabnext<cr>
@@ -817,7 +820,7 @@ map <leader>a <esc>:call AddHeadMsg()<cr><esc>:$<esc>o
 map <leader>u <esc>:/# *Last modified: /s@:.*$@\=strftime(": %Y-%m-%d %H:%M")@<cr>
 
 set encoding=utf-8
-set fileencoding=utf-8
+"set fileencoding=utf-8
 set fileencodings=utf-8,gb2312,gbk,gb18030,big5
 
 " set taglist rigth
