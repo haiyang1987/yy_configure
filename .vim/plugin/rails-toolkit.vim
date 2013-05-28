@@ -15,7 +15,7 @@
 " You should have received a copy of the GNU General Public License
 " along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-syntax on
+"syntax on
 filetype indent on
 set shiftwidth=4 expandtab smarttab incsearch tabstop=2
 let g:rails_subversion=1
