@@ -220,8 +220,8 @@ setprompt () {
         PR_TITLEBAR=''
         ;;
     esac
-    
-    
+
+
     ###
     # Decide whether to set a screen title
     if [[ "$TERM" == "screen" ]]; then
@@ -229,11 +229,11 @@ setprompt () {
     else
     PR_STITLE=''
     fi
-    
-    
+
+
     ###
     # APM detection
-    
+
     #if which ibam > /dev/null; then
     #PR_APM='$PR_RED${${PR_APM_RESULT[(f)1]}[(w)-2]}%%(${${PR_APM_RESULT[(f)3]}[(w)-1]})$PR_LIGHT_BLUE:'
     #elif which apm > /dev/null; then
@@ -241,11 +241,11 @@ setprompt () {
     #else
     PR_APM=''
     #fi
-    
-    
+
+
     ###
     # Finally, the prompt.
-    
+
     PROMPT='$PR_SET_CHARSET$PR_STITLE${(e)PR_TITLEBAR}\
 $PR_CYAN$PR_SHIFT_IN$PR_ULCORNER$PR_BLUE$PR_HBAR$PR_SHIFT_OUT(\
 $PR_GREEN%(!.%SROOT%s.%n)$PR_GREEN@%m:%l\
