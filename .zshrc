@@ -271,10 +271,10 @@ $PR_CYAN$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT$PR_NO_COLOUR '
 
 setprompt
 
-export WORKON_HOME=$HOME/.virtualenvs
+export WORKON_HOME=$HOME/.Envs
 export GOPATH=/home/yueyang/Workspace/Go
 
-source /usr/bin/virtualenvwrapper.sh
+source /usr/local/bin/virtualenvwrapper.sh
 
 #uncompuress
 uncmp () {
