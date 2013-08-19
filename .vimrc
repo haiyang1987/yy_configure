@@ -832,7 +832,7 @@ map <leader>P <esc>:Project<cr>
 set tags=tags
 
 let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
-set grepprg=/usr/bin/grep\ -nH
+set grepprg=/bin/grep\ -nH
 """"""""""""""""""""""""""""""""""""""""
 let NERDChristmasTree=1
 set linespace=0

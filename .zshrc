@@ -99,7 +99,6 @@ alias cd...='cd ../../..'
 #alias of path
 hash -d S="/home/yueyang/Workspace/Shell"
 hash -d D="/usr/local/lib/python2.6/dist-packages" 
-hash -d T="/home/yueyang/Temp"
 hash -d C="/home/yueyang/Workspace/C"
 hash -d Go="/home/yueyang/Workspace/Go"
 hash -d Cpp="/home/yueyang/Workspace/Cpp"
@@ -111,7 +110,7 @@ hash -d R="/home/yueyang/Workspace/R"
 hash -d p="/home/yueyang/Workspace/Perl"
 hash -d L="/home/yueyang/Workspace/lua"
 hash -d PHP="/home/yueyang/Workspace/PHP"
-hash -d W="/home/yueyang/Workspace/03_code/src"
+hash -d W="/home/yueyang/Workspace/data_src"
 hash -d F="/home/yueyang/Workspace/fetion_interface/src"
 hash -d CI="/home/yueyang/Workspace/CI/04_源码/01_接口/src"
 
@@ -302,15 +301,15 @@ uncmp () {
 #auto into path
 setopt autocd
 
-#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
-# Add ~/bin/ to PATH
-PATH="$PATH:/home/yueyang/bin"
-export PATH
+## Add ~/bin/ to PATH
+#PATH="$PATH:/home/yueyang/bin"
+#export PATH
 
 export PERL_LOCAL_LIB_ROOT="/home/yueyang/perl5";
 export PERL_MB_OPT="--install_base /home/yueyang/perl5";
 export PERL_MM_OPT="INSTALL_BASE=/home/yueyang/perl5";
 export PERL5LIB="/home/yueyang/perl5/lib/perl5/x86_64-linux-thread-multi:/home/yueyang/perl5/lib/perl5";
 export PATH="/home/yueyang/perl5/bin:$PATH";
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
