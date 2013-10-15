@@ -311,5 +311,6 @@ export PERL_MM_OPT="INSTALL_BASE=/home/yueyang/perl5";
 export PERL5LIB="/home/yueyang/perl5/lib/perl5/x86_64-linux-thread-multi:/home/yueyang/perl5/lib/perl5";
 export PATH="/home/yueyang/perl5/bin:$PATH";
 
+source ~/.rvm/scripts/rvm
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
