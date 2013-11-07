@@ -96,7 +96,6 @@ alias cd.='cd ..'
 alias cd..='cd ../..'
 alias cd...='cd ../../..'
 
-
 #alias of path
 hash -d S="/home/yueyang/Workspace/Shell"
 hash -d D="/usr/local/lib/python2.6/dist-packages" 
@@ -111,7 +110,7 @@ hash -d R="/home/yueyang/Workspace/R"
 hash -d p="/home/yueyang/Workspace/Perl"
 hash -d L="/home/yueyang/Workspace/lua"
 hash -d PHP="/home/yueyang/Workspace/PHP"
-hash -d W="/home/yueyang/Workspace/data_src"
+hash -d W="/home/yueyang/Workspace"
 hash -d F="/home/yueyang/Workspace/fetion_interface/src"
 hash -d CI="/home/yueyang/Workspace/CI/04_源码/01_接口/src"
 
@@ -122,9 +121,6 @@ PROMPT='%n@%M %/
 >>'
 alias ls='ls -F'
 fi 
-
-
-
 
 #
 function precmd {
@@ -158,7 +154,6 @@ function precmd {
     #PR_APM_RESULT=`apm`
     #fi
 }
-
 
 setopt extended_glob
 preexec () {
@@ -221,7 +216,6 @@ setprompt () {
         ;;
     esac
 
-
     ###
     # Decide whether to set a screen title
     if [[ "$TERM" == "screen" ]]; then
@@ -229,7 +223,6 @@ setprompt () {
     else
     PR_STITLE=''
     fi
-
 
     ###
     # APM detection
@@ -241,7 +234,6 @@ setprompt () {
     #else
     PR_APM=''
     #fi
-
 
     ###
     # Finally, the prompt.
@@ -312,6 +304,7 @@ export PERL_MM_OPT="INSTALL_BASE=/home/yueyang/perl5";
 export PERL5LIB="/home/yueyang/perl5/lib/perl5/x86_64-linux-thread-multi:/home/yueyang/perl5/lib/perl5";
 export PATH="/home/yueyang/perl5/bin:$PATH";
 
-source ~/.rvm/scripts/rvm
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+source /home/yueyang/.rvm/scripts/rvm
+source /home/yueyang/.rvm/scripts/rvm
 
