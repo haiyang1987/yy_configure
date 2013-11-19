@@ -313,3 +313,4 @@ export PATH="/home/yueyang/perl5/bin:$PATH";
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
+export PATH=/usr/local/bin:$PATH
