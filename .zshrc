@@ -111,8 +111,6 @@ hash -d p="/home/yueyang/Workspace/Perl"
 hash -d L="/home/yueyang/Workspace/lua"
 hash -d PHP="/home/yueyang/Workspace/PHP"
 hash -d W="/home/yueyang/Workspace/data_src"
-hash -d F="/home/yueyang/Workspace/fetion_interface/src"
-hash -d CI="/home/yueyang/Workspace/CI/04_源码/01_接口/src"
 
 #used zsh setting in Emacs terminal 
 if [[ "$TERM" == "dumb" ]]; then
