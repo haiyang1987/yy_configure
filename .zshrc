@@ -98,7 +98,7 @@ alias cd...='cd ../../..'
 
 #alias of path
 hash -d S="/home/yueyang/Workspace/Shell"
-hash -d D="/usr/local/lib/python2.6/dist-packages" 
+hash -d D="/usr/local/lib/python2.7/dist-packages" 
 hash -d C="/home/yueyang/Workspace/C"
 hash -d Go="/home/yueyang/Workspace/Go"
 hash -d Cpp="/home/yueyang/Workspace/Cpp"
@@ -111,6 +111,8 @@ hash -d p="/home/yueyang/Workspace/Perl"
 hash -d L="/home/yueyang/Workspace/lua"
 hash -d PHP="/home/yueyang/Workspace/PHP"
 hash -d W="/home/yueyang/Workspace"
+hash -d s="/home/yueyang/Workspace/svn"
+hash -d g="/home/yueyang/Workspace/gitlab"
 
 #used zsh setting in Emacs terminal 
 if [[ "$TERM" == "dumb" ]]; then
