@@ -618,6 +618,8 @@ inoremap <c-j> <esc>:call JumpToNextPlaceholder()<cr>a</cr></esc></c-j></cr></c-
    function! JavaFold()
      setl foldmethod=syntax
      setl foldlevelstart=1
+     "?disable autofold
+     setl foldlevel=100
      syn region foldBraces start=/{/ end=/}/ transparent fold keepend extend
      syn match foldImports /\(\n\?import.\+;\n\)\+/ transparent fold
 
