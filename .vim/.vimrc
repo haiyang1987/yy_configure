@@ -493,7 +493,7 @@ inoremap <c-j> <esc>:call JumpToNextPlaceholder()<cr>a</cr></esc></c-j></cr></c-
    "A function for insert head message in source file
    function! AddHeadMsg()
      call setline(1, "# ")
-     call append(1, "# Author: YueYang - bj.yueyang@gmail.com")
+     call append(1, "# Author: YueYang - yang.yue@baifendian.com")
      call append(2, "# "."Last modified: ". strftime("%Y-%m-%d %H:%M"))
    endfunction
 
@@ -505,8 +505,8 @@ inoremap <c-j> <esc>:call JumpToNextPlaceholder()<cr>a</cr></esc></c-j></cr></c-
    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
    let g:Lua_AuthorName = 'YueYang'
    let g:Lua_AuthorRef  = '<>'
-   let g:Lua_Email      = 'bj.yueyang@gmail.com'
-   let g:Lua_Company    = 'FCT'
+   let g:Lua_Email      = 'yang.yue@baifendian.com'
+   let g:Lua_Company    = 'BFD'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Filetype generic
@@ -671,8 +671,8 @@ inoremap <c-j> <esc>:call JumpToNextPlaceholder()<cr>a</cr></esc></c-j></cr></c-
    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
    let g:C_AuthorName = "YueYang"
    let g:C_AuthorRef  = "Picg"
-   let g:C_Email      = "bj.yueyang@gmail.com"
-   let g:C_Company    = "www.feinno.com"
+   let g:C_Email      = "yang.yue@baifendian.com"
+   let g:C_Company    = "www.baifendian.com"
 
    """""""""""""""""""""""""""""""
    " SML
