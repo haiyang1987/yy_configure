@@ -305,5 +305,5 @@ export PERL5LIB="/home/yueyang/perl5/lib/perl5/x86_64-linux-thread-multi:/home/y
 export PATH="/home/yueyang/perl5/bin:$PATH";
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-source /home/yueyang/.rvm/scripts/rvm
+source ~/.rvm/scripts/rvm
 
