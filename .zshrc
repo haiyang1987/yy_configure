@@ -96,6 +96,9 @@ alias cd.='cd ..'
 alias cd..='cd ../..'
 alias cd...='cd ../../..'
 
+alias mktag='ctags -R .'
+alias rmtag='rm -f ./tags'
+
 #alias of path
 hash -d S="/home/yueyang/Workspace/Shell"
 hash -d D="/usr/local/lib/python2.7/dist-packages" 
