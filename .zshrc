@@ -97,22 +97,22 @@ alias cd..='cd ../..'
 alias cd...='cd ../../..'
 
 #alias of path
-hash -d S="/home/yueyang/Workspace/Shell"
+hash -d S="$HOME/Workspace/Shell"
 hash -d D="/usr/local/lib/python2.7/dist-packages" 
-hash -d C="/home/yueyang/Workspace/C"
-hash -d Go="/home/yueyang/Workspace/Go"
-hash -d Cpp="/home/yueyang/Workspace/Cpp"
-hash -d P="/home/yueyang/Workspace/Python"
-hash -d J="/home/yueyang/Workspace/Java"
-hash -d j="/home/yueyang/Workspace/JS"
-hash -d r="/home/yueyang/Workspace/Ruby"
-hash -d R="/home/yueyang/Workspace/R"
-hash -d p="/home/yueyang/Workspace/Perl"
-hash -d L="/home/yueyang/Workspace/lua"
-hash -d PHP="/home/yueyang/Workspace/PHP"
-hash -d W="/home/yueyang/Workspace"
-hash -d s="/home/yueyang/Workspace/svn"
-hash -d g="/home/yueyang/Workspace/gitlab"
+hash -d C="$HOME/Workspace/C"
+hash -d Go="$HOME/Workspace/Go"
+hash -d Cpp="$HOME/Workspace/Cpp"
+hash -d P="$HOME/Workspace/Python"
+hash -d J="$HOME/Workspace/Java"
+hash -d j="$HOME/Workspace/JS"
+hash -d r="$HOME/Workspace/Ruby"
+hash -d R="$HOME/Workspace/R"
+hash -d p="$HOME/Workspace/Perl"
+hash -d L="$HOME/Workspace/lua"
+hash -d PHP="$HOME/Workspace/PHP"
+hash -d W="$HOME/Workspace"
+hash -d s="$HOME/Workspace/svn"
+hash -d g="$HOME/Workspace/gitlab"
 
 #used zsh setting in Emacs terminal 
 if [[ "$TERM" == "dumb" ]]; then
@@ -264,7 +264,7 @@ $PR_CYAN$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT$PR_NO_COLOUR '
 setprompt
 
 export WORKON_HOME=$HOME/.virtualenvs
-export GOPATH=/home/yueyang/Workspace/Go
+export GOPATH=$HOME/Workspace/Go
 
 source /usr/local/bin/virtualenvwrapper.sh
 
@@ -295,14 +295,14 @@ uncmp () {
 setopt autocd
 
 ## Add ~/bin/ to PATH
-#PATH="$PATH:/home/yueyang/bin"
+#PATH="$PATH:$HOME/bin"
 #export PATH
 
-export PERL_LOCAL_LIB_ROOT="/home/yueyang/perl5";
-export PERL_MB_OPT="--install_base /home/yueyang/perl5";
-export PERL_MM_OPT="INSTALL_BASE=/home/yueyang/perl5";
-export PERL5LIB="/home/yueyang/perl5/lib/perl5/x86_64-linux-thread-multi:/home/yueyang/perl5/lib/perl5";
-export PATH="/home/yueyang/perl5/bin:$PATH";
+export PERL_LOCAL_LIB_ROOT="$HOME/perl5";
+export PERL_MB_OPT="--install_base $HOME/perl5";
+export PERL_MM_OPT="INSTALL_BASE=$HOME/perl5";
+export PERL5LIB="$HOME/perl5/lib/perl5/x86_64-linux-thread-multi:$HOME/perl5/lib/perl5";
+export PATH="$HOME/perl5/bin:$PATH";
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
