@@ -167,7 +167,7 @@ map <c-space> ?
 "Actually, the tab does not switch buffers, but my arrows
 "Bclose function ca be found in "Buffer related" section
 map <leader>bd :close<cr>
-map <up> :set tags=/home/yueyang/src/tags<cr>
+map <up> :set tags=./tags<cr>
 map <down> <leader>bd
 
 "Use the arrows to something usefull
