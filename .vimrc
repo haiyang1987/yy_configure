@@ -167,7 +167,7 @@ map <c-space> ?
 "Actually, the tab does not switch buffers, but my arrows
 "Bclose function ca be found in "Buffer related" section
 map <leader>bd :close<cr>
-map <up> :set tags=/home/yueyang/src/tags<cr>
+map <up> :set tags=./tags<cr>
 map <down> <leader>bd
 
 "Use the arrows to something usefull
@@ -618,6 +618,8 @@ inoremap <c-j> <esc>:call JumpToNextPlaceholder()<cr>a</cr></esc></c-j></cr></c-
    function! JavaFold()
      setl foldmethod=syntax
      setl foldlevelstart=1
+     "?disable autofold
+     setl foldlevel=100
      syn region foldBraces start=/{/ end=/}/ transparent fold keepend extend
      syn match foldImports /\(\n\?import.\+;\n\)\+/ transparent fold
 

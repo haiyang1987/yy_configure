@@ -1,3 +1,4 @@
+#In debian branch
 #set char
 #export LANG=zh_CN.UTF-8
 export LANG=en_US.UTF-8
@@ -95,10 +96,9 @@ alias cd.='cd ..'
 alias cd..='cd ../..'
 alias cd...='cd ../../..'
 
-
 #alias of path
 hash -d S="/home/yueyang/Workspace/Shell"
-hash -d D="/usr/local/lib/python2.6/dist-packages" 
+hash -d D="/usr/local/lib/python2.7/dist-packages" 
 hash -d C="/home/yueyang/Workspace/C"
 hash -d Go="/home/yueyang/Workspace/Go"
 hash -d Cpp="/home/yueyang/Workspace/Cpp"
@@ -110,7 +110,9 @@ hash -d R="/home/yueyang/Workspace/R"
 hash -d p="/home/yueyang/Workspace/Perl"
 hash -d L="/home/yueyang/Workspace/lua"
 hash -d PHP="/home/yueyang/Workspace/PHP"
-hash -d W="/home/yueyang/Workspace/data_src"
+hash -d W="/home/yueyang/Workspace"
+hash -d s="/home/yueyang/Workspace/svn"
+hash -d g="/home/yueyang/Workspace/gitlab"
 
 #used zsh setting in Emacs terminal 
 if [[ "$TERM" == "dumb" ]]; then
@@ -119,9 +121,6 @@ PROMPT='%n@%M %/
 >>'
 alias ls='ls -F'
 fi 
-
-
-
 
 #
 function precmd {
@@ -155,7 +154,6 @@ function precmd {
     #PR_APM_RESULT=`apm`
     #fi
 }
-
 
 setopt extended_glob
 preexec () {
@@ -218,7 +216,6 @@ setprompt () {
         ;;
     esac
 
-
     ###
     # Decide whether to set a screen title
     if [[ "$TERM" == "screen" ]]; then
@@ -226,7 +223,6 @@ setprompt () {
     else
     PR_STITLE=''
     fi
-
 
     ###
     # APM detection
@@ -238,7 +234,6 @@ setprompt () {
     #else
     PR_APM=''
     #fi
-
 
     ###
     # Finally, the prompt.
@@ -256,10 +251,10 @@ ${(e)PR_APM}$PR_YELLOW%D{%H:%M}\
 $PR_LIGHT_BLUE:%(!.$PR_RED.$PR_WHITE)%#$PR_BLUE)$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT\
 $PR_CYAN$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT\
 $PR_NO_COLOUR '
-    
+
     RPROMPT=' $PR_CYAN$PR_SHIFT_IN$PR_HBAR$PR_BLUE$PR_HBAR$PR_SHIFT_OUT\
 ($PR_YELLOW%D{%a,%b%d}$PR_BLUE)$PR_SHIFT_IN$PR_HBAR$PR_CYAN$PR_LRCORNER$PR_SHIFT_OUT$PR_NO_COLOUR'
-    
+
     PS2='$PR_CYAN$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT\
 $PR_BLUE$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT(\
 $PR_LIGHT_GREEN%_$PR_BLUE)$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT\
@@ -312,3 +307,4 @@ export PATH="/home/yueyang/perl5/bin:$PATH";
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 export PATH=/usr/local/bin:$PATH
+
