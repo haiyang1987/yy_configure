@@ -177,6 +177,9 @@ map <left> :bp<cr>
 map <leader>rr :bn<cr>
 map <leader>ll :bp<cr>
 
+" Taglist fun by yang.yue
+map <F4> :TlistToggle<cr>
+
 "Tab configuration
 map <F5> :tabprevious<cr>
 map <F6> :tabnext<cr>
@@ -699,12 +702,12 @@ inoremap <c-j> <esc>:call JumpToNextPlaceholder()<cr>a</cr></esc></c-j></cr></c-
    autocmd BufNewFile,BufRead *.scm vnoremap <C-t> <esc>`>a)<esc>`<i(pretty-print <esc>
 
 
-   """"""""""""""""""""""""""""""
-   " SVN section
-   """""""""""""""""""""""""""""""
-   "map <F8> :new<CR>:read !svn diff<CR>:set syntax=diff buftype=nofile<CR>gg
-   map <F8> <Plug>D 
-   map <F7> :set nodiff<CR>
+""""""""""""""""""""""""""""""
+" SVN section
+"""""""""""""""""""""""""""""""
+  "map <F8> :new<CR>:read !svn diff<CR>:set syntax=diff buftype=nofile<CR>gg
+  map <F8> <Plug>D 
+  map <F7> :set nodiff<CR>
 
 """"""""""""""""""""""""""""""
 " Snippets
