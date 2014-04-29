@@ -423,6 +423,7 @@ Tex_ViewRuleComplete_format	latex-suite.txt	/*Tex_ViewRuleComplete_format*
 Tex_ViewRule_format	latex-suite.txt	/*Tex_ViewRule_format*
 Tex_ViewerCwindowHeight	latex-suite.txt	/*Tex_ViewerCwindowHeight*
 Tex_ViewerPreviewHeight	latex-suite.txt	/*Tex_ViewerPreviewHeight*
+Tlist_Get_Filenames()	taglist.txt	/*Tlist_Get_Filenames()*
 Tlist_Get_Tag_Prototype_By_Line()	taglist.txt	/*Tlist_Get_Tag_Prototype_By_Line()*
 Tlist_Get_Tagname_By_Line()	taglist.txt	/*Tlist_Get_Tagname_By_Line()*
 Tlist_Set_App()	taglist.txt	/*Tlist_Set_App()*
