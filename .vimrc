@@ -705,9 +705,10 @@ inoremap <c-j> <esc>:call JumpToNextPlaceholder()<cr>a</cr></esc></c-j></cr></c-
 """"""""""""""""""""""""""""""
 " SVN section
 """""""""""""""""""""""""""""""
+  " Not used SVN plugin
   "map <F8> :new<CR>:read !svn diff<CR>:set syntax=diff buftype=nofile<CR>gg
-  map <F8> <Plug>D
-  map <F7> :set nodiff<CR>
+  "map <F8> <Plug>D
+  "map <F7> :set nodiff<CR>
 
 """"""""""""""""""""""""""""""
 " Snippets
