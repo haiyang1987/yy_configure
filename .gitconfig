@@ -1,3 +1,6 @@
 [user]
 	email = yang.yue@baifendian.com
 	name = yang.yue
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
