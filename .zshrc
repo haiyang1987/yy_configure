@@ -309,5 +309,5 @@ export PATH="$HOME/perl5/bin:$PATH";
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-export PATH=/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
