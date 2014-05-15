@@ -864,3 +864,10 @@ if filereadable("/home/ganquan/linux-2.6.34-rc4/filenametags")                "è
 let g:LookupFile_TagExpr ='"/home/ganquan/linux-2.6.34-rc4/filenametags"'
 endif
 
+
+""""""""""""""""""""""""""""""
+" NERDTree
+"""""""""""""""""""""""""""""""
+  map <F8> :NERDTree<CR>
+  "map <F7> :set nodiff<CR>
+
