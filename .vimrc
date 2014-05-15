@@ -705,9 +705,10 @@ inoremap <c-j> <esc>:call JumpToNextPlaceholder()<cr>a</cr></esc></c-j></cr></c-
 """"""""""""""""""""""""""""""
 " SVN section
 """""""""""""""""""""""""""""""
+  " Not used SVN plugin
   "map <F8> :new<CR>:read !svn diff<CR>:set syntax=diff buftype=nofile<CR>gg
-  map <F8> <Plug>D
-  map <F7> :set nodiff<CR>
+  "map <F8> <Plug>D
+  "map <F7> :set nodiff<CR>
 
 """"""""""""""""""""""""""""""
 " Snippets
@@ -862,4 +863,11 @@ let g:LookupFile_SortMethod = ""                "关闭对搜索结果的字母�
 if filereadable("/home/ganquan/linux-2.6.34-rc4/filenametags")                "设置tag文件的名字
 let g:LookupFile_TagExpr ='"/home/ganquan/linux-2.6.34-rc4/filenametags"'
 endif
+
+
+""""""""""""""""""""""""""""""
+" NERDTree
+"""""""""""""""""""""""""""""""
+  map <F8> :NERDTree<CR>
+  "map <F7> :set nodiff<CR>
 
