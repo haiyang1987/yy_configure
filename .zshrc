@@ -116,6 +116,7 @@ hash -d PHP="$HOME/Workspace/PHP"
 hash -d W="$HOME/Workspace"
 hash -d s="$HOME/Workspace/svn"
 hash -d g="$HOME/Workspace/gitlab"
+hash -d w="$HOME/Documents/workspace"
 
 #used zsh setting in Emacs terminal 
 if [[ "$TERM" == "dumb" ]]; then
