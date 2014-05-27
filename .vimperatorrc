@@ -13,3 +13,4 @@ set runtimepath=/home/yueyang/.vimperator
 source! /home/yueyang/.vimperatorrc.local
 
 " vim: set ft=vimperator:
+set gui=noaddons,nobookmarks,nomenu,nonavigation,tabs
