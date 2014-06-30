@@ -314,7 +314,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/home/yueyang/google-cloud-sdk/path.bash.inc'
+source '/home/yueyang/google-cloud-sdk/path.zsh.inc'
 
 # The next line enables bash completion for gcloud.
-source '/home/yueyang/google-cloud-sdk/completion.bash.inc'
+source '/home/yueyang/google-cloud-sdk/completion.zsh.inc'
