@@ -18,7 +18,7 @@ setopt EXTENDED_HISTORY
 #Disable core dumps
 limit coredumpsize 0
 
-#bind Emacs Sytle key 
+#bind Emacs Sytle key
 bindkey -e
 #set Delete delete char forword
 bindkey "\e[3~" delete-char
@@ -101,7 +101,7 @@ alias rmtag='rm -f ./tags'
 
 #alias of path
 hash -d S="$HOME/Workspace/Shell"
-hash -d D="/usr/local/lib/python2.7/dist-packages" 
+hash -d D="/usr/local/lib/python2.7/dist-packages"
 hash -d C="$HOME/Workspace/C"
 hash -d Go="$HOME/Workspace/Go"
 hash -d Cpp="$HOME/Workspace/Cpp"
@@ -118,40 +118,40 @@ hash -d s="$HOME/Workspace/svn"
 hash -d g="$HOME/Workspace/gitlab"
 hash -d w="$HOME/Documents/workspace"
 
-#used zsh setting in Emacs terminal 
+#used zsh setting in Emacs terminal
 if [[ "$TERM" == "dumb" ]]; then
 setopt No_zle
 PROMPT='%n@%M %/
 >>'
 alias ls='ls -F'
-fi 
+fi
 
 #
 function precmd {
-    
+
     local TERMWIDTH
     (( TERMWIDTH = ${COLUMNS} - 1 ))
 
-    
+    #
     ###
     # Truncate the path if it's too long.
-    
+
     PR_FILLBAR=""
     PR_PWDLEN=""
-    
+
     local promptsize=${#${(%):---(%n@%m:%l)---()--}}
     local pwdsize=${#${(%):-%~}}
-    
+
     if [[ "$promptsize + $pwdsize" -gt $TERMWIDTH ]]; then
     ((PR_PWDLEN=$TERMWIDTH - $promptsize))
     else
     PR_FILLBAR="\${(l.(($TERMWIDTH - ($promptsize + $pwdsize)))..${PR_HBAR}.)}"
     fi
-    
-    
+
+
     ###
     # Get APM info.
-    
+
     #if which ibam > /dev/null; then
     #PR_APM_RESULT=`ibam --percentbattery`
     #elif which apm > /dev/null; then
@@ -172,7 +172,7 @@ setprompt () {
     # Need this so the prompt will work.
 
     setopt prompt_subst
-    
+
 
     ###
     # See if we can use colors.
@@ -187,11 +187,11 @@ setprompt () {
     (( count = $count + 1 ))
     done
     PR_NO_COLOUR="%{$terminfo[sgr0]%}"
-    
-    
+
+
     ###
     # See if we can use extended characters to look nicer.
-    
+
     typeset -A altchar
     set -A altchar ${(s..)terminfo[acsc]}
     PR_SET_CHARSET="%{$terminfo[enacs]%}"
@@ -203,11 +203,11 @@ setprompt () {
     PR_LLCORNER=${altchar[m]:--}
     PR_LRCORNER=${altchar[j]:--}
     PR_URCORNER=${altchar[k]:--}
-    
-    
+
+
     ###
     # Decide if we need to set titlebar text.
-    
+
     case $TERM in
     xterm*)
         PR_TITLEBAR=$'%{\e]0;%(!.-=*[ROOT]*=- | .)%n@%m:%~ | ${COLUMNS}x${LINES} | %y\a%}'
@@ -298,10 +298,6 @@ uncmp () {
 #auto into path
 setopt autocd
 
-## Add ~/bin/ to PATH
-#PATH="$PATH:$HOME/bin"
-#export PATH
-
 export PERL_LOCAL_LIB_ROOT="$HOME/perl5";
 export PERL_MB_OPT="--install_base $HOME/perl5";
 export PERL_MM_OPT="INSTALL_BASE=$HOME/perl5";
@@ -310,11 +306,9 @@ export PATH="$HOME/perl5/bin:$PATH";
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=/usr/local/bin:$PATH
 
+# Add ~/bin/ to PATH
+PATH="$HOME/bin:$PATH"
+export PATH
 
-# The next line updates PATH for the Google Cloud SDK.
-source '/home/yueyang/google-cloud-sdk/path.zsh.inc'
-
-# The next line enables bash completion for gcloud.
-source '/home/yueyang/google-cloud-sdk/completion.zsh.inc'
