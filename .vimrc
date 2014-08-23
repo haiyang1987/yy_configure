@@ -868,6 +868,6 @@ endif
 """"""""""""""""""""""""""""""
 " NERDTree
 """""""""""""""""""""""""""""""
-  map <F8> :NERDTree<CR>
-  "map <F7> :set nodiff<CR>
+map <F8> :NERDTree<CR>
+"map <F7> :set nodiff<CR>
 
