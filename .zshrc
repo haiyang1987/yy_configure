@@ -101,7 +101,7 @@ alias rmtag='rm -f ./tags'
 
 #alias of path
 hash -d S="$HOME/Workspace/Shell"
-hash -d D="/usr/local/lib/python2.7/dist-packages" 
+hash -d D="/usr/local/lib/python2.7/dist-packages"
 hash -d C="$HOME/Workspace/C"
 hash -d Go="$HOME/Workspace/Go"
 hash -d Cpp="$HOME/Workspace/Cpp"
@@ -119,30 +119,30 @@ hash -d g="$HOME/Workspace/gitlab"
 hash -d G="$HOME/Workspace/go"
 hash -d w="$HOME/Documents/workspace"
 
-#used zsh setting in Emacs terminal 
+#used zsh setting in Emacs terminal
 if [[ "$TERM" == "dumb" ]]; then
 setopt No_zle
 PROMPT='%n@%M %/
 >>'
 alias ls='ls -F'
-fi 
+fi
 
 #
 function precmd {
-    
+
     local TERMWIDTH
     (( TERMWIDTH = ${COLUMNS} - 1 ))
 
-    
+
     ###
     # Truncate the path if it's too long.
-    
+
     PR_FILLBAR=""
     PR_PWDLEN=""
-    
+
     local promptsize=${#${(%):---(%n@%m:%l)---()--}}
     local pwdsize=${#${(%):-%~}}
-    
+
     if [[ "$promptsize + $pwdsize" -gt $TERMWIDTH ]]; then
     ((PR_PWDLEN=$TERMWIDTH - $promptsize))
     else
