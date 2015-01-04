@@ -88,7 +88,7 @@ alias ee='emacsclient -t'
 alias e='emacs -nw'
 alias free='free -m'
 
-alias ll='ls -ahlF'
+alias ll='ls -ahlF --color'
 alias lt='ls -ahlrt'
 alias l='ls -CF'
 alias lc='ls -CF *.c'
