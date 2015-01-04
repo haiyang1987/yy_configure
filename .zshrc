@@ -187,7 +187,7 @@ setprompt () {
 
     ###
     # See if we can use extended characters to look nicer.
-    
+
     typeset -A altchar
     set -A altchar ${(s..)terminfo[acsc]}
     PR_SET_CHARSET="%{$terminfo[enacs]%}"
@@ -202,7 +202,7 @@ setprompt () {
 
     ###
     # Decide if we need to set titlebar text.
-    
+
     case $TERM in
     xterm*)
         PR_TITLEBAR=$'%{\e]0;%(!.-=*[ROOT]*=- | .)%n@%m:%~ | ${COLUMNS}x${LINES} | %y\a%}'
