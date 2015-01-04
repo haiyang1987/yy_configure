@@ -82,7 +82,7 @@ zstyle ':completion:*:warnings' format $'\e[01;31m -- No Matches Found --\e[0m'
 alias cp='cp -iv'
 alias mv='mv -iv'
 alias rm='rm -iv'
-alias ls='ls -F --color=auto'
+alias ls='ls -CFG'
 alias grep='grep --color=auto'
 alias ee='emacsclient -t'
 alias e='emacs -nw'
@@ -116,6 +116,7 @@ hash -d PHP="$HOME/Workspace/PHP"
 hash -d W="$HOME/Workspace"
 hash -d s="$HOME/Workspace/svn"
 hash -d g="$HOME/Workspace/gitlab"
+hash -d G="$HOME/Workspace/go"
 hash -d w="$HOME/Documents/workspace"
 
 #used zsh setting in Emacs terminal
@@ -126,13 +127,11 @@ PROMPT='%n@%M %/
 alias ls='ls -F'
 fi
 
-#
 function precmd {
 
     local TERMWIDTH
     (( TERMWIDTH = ${COLUMNS} - 1 ))
 
-    #
     ###
     # Truncate the path if it's too long.
 
@@ -147,7 +146,6 @@ function precmd {
     else
     PR_FILLBAR="\${(l.(($TERMWIDTH - ($promptsize + $pwdsize)))..${PR_HBAR}.)}"
     fi
-
 
     ###
     # Get APM info.
@@ -173,7 +171,6 @@ setprompt () {
 
     setopt prompt_subst
 
-
     ###
     # See if we can use colors.
 
@@ -188,8 +185,6 @@ setprompt () {
     done
     PR_NO_COLOUR="%{$terminfo[sgr0]%}"
 
-
-    ###
     # See if we can use extended characters to look nicer.
 
     typeset -A altchar
@@ -204,8 +199,6 @@ setprompt () {
     PR_LRCORNER=${altchar[j]:--}
     PR_URCORNER=${altchar[k]:--}
 
-
-    ###
     # Decide if we need to set titlebar text.
 
     case $TERM in
@@ -239,7 +232,6 @@ setprompt () {
     PR_APM=''
     #fi
 
-    ###
     # Finally, the prompt.
 
     PROMPT='$PR_SET_CHARSET$PR_STITLE${(e)PR_TITLEBAR}\
