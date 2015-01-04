@@ -127,12 +127,10 @@ PROMPT='%n@%M %/
 alias ls='ls -F'
 fi
 
-#
 function precmd {
 
     local TERMWIDTH
     (( TERMWIDTH = ${COLUMNS} - 1 ))
-
 
     ###
     # Truncate the path if it's too long.
@@ -148,11 +146,10 @@ function precmd {
     else
     PR_FILLBAR="\${(l.(($TERMWIDTH - ($promptsize + $pwdsize)))..${PR_HBAR}.)}"
     fi
-    
-    
+
     ###
     # Get APM info.
-    
+
     #if which ibam > /dev/null; then
     #PR_APM_RESULT=`ibam --percentbattery`
     #elif which apm > /dev/null; then
@@ -173,7 +170,6 @@ setprompt () {
     # Need this so the prompt will work.
 
     setopt prompt_subst
-    
 
     ###
     # See if we can use colors.
@@ -188,8 +184,7 @@ setprompt () {
     (( count = $count + 1 ))
     done
     PR_NO_COLOUR="%{$terminfo[sgr0]%}"
-    
-    
+
     ###
     # See if we can use extended characters to look nicer.
     
@@ -204,8 +199,7 @@ setprompt () {
     PR_LLCORNER=${altchar[m]:--}
     PR_LRCORNER=${altchar[j]:--}
     PR_URCORNER=${altchar[k]:--}
-    
-    
+
     ###
     # Decide if we need to set titlebar text.
     
