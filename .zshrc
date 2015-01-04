@@ -18,7 +18,7 @@ setopt EXTENDED_HISTORY
 #Disable core dumps
 limit coredumpsize 0
 
-#bind Emacs Sytle key 
+#bind Emacs Sytle key
 bindkey -e
 #set Delete delete char forword
 bindkey "\e[3~" delete-char
