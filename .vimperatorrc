@@ -17,3 +17,4 @@ source! /home/yueyang/.vimperatorrc.local
 "vim: set ft=vimperator:
 "
 set gui=addons,nobookmarks,nomenu,nonavigation,tabs
+
